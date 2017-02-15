@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/wata.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Miriam+Libre" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style type="text/css">
+        h2{
+            font-family: 'Miriam Libre', sans-serif;
+        }
+        p{
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
     <!--Scripts-->
     <script>
         window.Laravel = {!! json_encode([
@@ -29,7 +39,8 @@
                 <div class="nav-wrapper">
                     <!-- Site name -->
                     <a href="/">
-                        <img src="/images/logo/TED.svg" style="width: 15%; height: auto">
+
+                        <img src="/images/logo/TEDxUMSA-1.svg" style="margin:4px">
                     </a>
                     
                     <!-- Mobile menu button -->
