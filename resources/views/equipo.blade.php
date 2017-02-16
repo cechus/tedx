@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
- <!-- Equipo section -->
+ <!-- Equipo section --> 
         <div class="section scrollspy" id="services">
             <div class="container">
                 <div class="row">
