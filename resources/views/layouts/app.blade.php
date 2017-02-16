@@ -11,7 +11,18 @@
     <link rel="stylesheet" href="libs/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/wata.css">
-    <!-- Scripts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Miriam+Libre" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style type="text/css">
+        h2{
+            font-family: 'Miriam Libre', sans-serif;
+        }
+        p{
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+    <!--Scripts-->
     <script>
         window.Laravel = {!! json_encode([
             'csrfToken' => csrf_token(),
@@ -26,10 +37,12 @@
         <div class="navbar-fixed" id="nav">
             <nav>
                 <div class="nav-wrapper">
-
                     <!-- Site name -->
-                    <a href="/" class="brand-logo">TEDxUMSA</a>
+                    <a href="/">
 
+                        <img src="/images/logo/TEDxUMSA-1.svg" style="margin:4px">
+                    </a>
+                    
                     <!-- Mobile menu button -->
                     <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 
@@ -64,8 +77,12 @@
 
         <!-- Footer section -->
         <footer class="page-footer">
+                    
             <div class="footer-copyright">
                 <div class="container">
+                    <a href="/">
+                        <img src="/images/logo/TEDxUMSA.svg" style="width: 10%; height: auto;">
+                    </a>
                             © 2017 TEDX | <a href="ajax/pages/privacy-policy.html" class="ajax-link">Privacy policy</a>
                             <!-- Social icons -->
                     <span class="social right">
