@@ -21,3 +21,9 @@ Route::get('expositores',function(){return view ('expositores');});
 Route::get('equipo',function(){return view ('equipo');});
 Route::get('blog',function(){return view ('blog');});
 Route::get('participar',function(){return view ('participar');});
+
+//PARA EL ADMINISTRADOR
+/*Route::get('aliado','AliadoController@aliado');
+Route::post('aliado','AliadoController@aliado');*/
+
+Route::match(['get', 'post'], 'aliado', 'AliadoController@aliado')->name('aliado');
