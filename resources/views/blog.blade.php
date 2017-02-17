@@ -24,7 +24,7 @@
 	letter-spacing: inherit;
 }
 .border{
-	background: red;
+	border-radius: 5px;
 	border:1px solid #3c3c3c;
 	padding: 5px;
 	margin: 3px;
@@ -32,12 +32,41 @@
 .blog_title{
 	text-align: center;
 }
+.commenter {
+    border: 5px solid #fff;
+    border-radius:50%;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.commenter img {
+    width: 80px;
+    height: 80px;
+}
+
+.comment_area .about_commenter{
+    padding: 0 0 0 30px;
+    width:calc(100% - 105px);
+    display: inline-block;
+    vertical-align:top;
+}
+.comment_area .col-md-12 {
+    border-bottom: 1px solid #ddd;
+    padding: 30px 0 26px;
+}
+.comment_area .col-md-12:nth-child(2n) .comment {
+    margin-left: 120px;
+}
+.comment_area h6{
+    color: #9b9b9b;
+}
+
 </style>
 @section('content')
 <div class="section scrollspy" id="contact">
 	<div class="row">
 		<h2>Blog</h2>
-		<div class="col s12 m4 l3" style="background: #3b5998">
+		<div class="col s12 m4 l3">
 			<!-- Note that "m4 l3" was added -->
 			<div class="border">
 				<h4>Search</h4>
@@ -84,7 +113,7 @@
 		<div class="col s12 m8 l9" style="background: #eee">
 			<div class="bloggrid_left">
                                 <div class="blog_top">
-                                    <h3 class="blog_title">10 beautiful place in the world
+                                    <h3 class="blog_title">Lorem Ipsum
                                     </h3>
                                 	<figure class="postImg waves-effect">
 	                                    <img src="images/logo/TEDxUMSA.png" alt="">
@@ -118,51 +147,14 @@
                                         <a class="btn btn-info" href="#">World</a>
                                         
                                     </h5>
-                                    <ul class="share_social">
-                                       <li>
-                                            <a href="#!">
-                                                <i class="zmdi zmdi-facebook waves-effect"></i>
-                                            </a>
-                                        </li> 
-                                       <li>
-                                           <a href="#!">
-                                               <i class="zmdi zmdi-twitter waves-effect"></i>
-                                            </a>
-                                        </li> 
-                                       <li>
-                                           <a href="#!">
-                                               <i class="zmdi zmdi-linkedin waves-effect"></i>
-                                            </a>
-                                        </li> 
-                                       <li>
-                                            <a href="#!">
-                                               <i class="zmdi zmdi-google waves-effect"></i>
-                                            </a>
-                                        </li> 
-                                       <li>
-                                           <a href="#!">
-                                               <i class="zmdi zmdi-pinterest waves-effect"></i>
-                                            </a>
-                                        </li> 
-                                    </ul>
                                 </div>
-                                <div class="about_auther">
-                                    <div class="auther">
-                                        <img src="img/comment_1.jpg" alt="">
-                                    </div>
-                                    <div class="auther_details">
-                                        <h5><a href="#">Nadia Afnan</a></h5>
-                                        <p>Many are people just like you and me that like to play online and have fun doing it. Some of these people enjoy it so much. Working on skills will not only help you improve your success while playing online .</p>
-                                    </div>  
-                                </div>
-                                
                                 <div class="comment_area">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <h3>Comments (3)</h3>
+                                            <h3>Comentarios (3)</h3>
                                             <div class="comment">
                                                 <div class="commenter">
-                                                    <img src="img/comment_2.jpg" alt="">
+                                                    <img src="/images/blog/coment_siluete.png" alt="">
                                                 </div>
                                                 <div class="about_commenter">
                                                    <h5><a href="#">Faridul Haque</a></h5>
@@ -175,7 +167,7 @@
                                         <div class="col-md-12">
                                             <div class="comment">
                                                 <div class="commenter">
-                                                    <img src="img/comment_2.jpg" alt="">
+                                                    <img src="/images/blog/coment_siluete.png" alt="">
                                                 </div>
                                                 <div class="about_commenter">
                                                    <h5><a href="#">Faridul Haque</a></h5>
@@ -188,7 +180,7 @@
                                         <div class="col-md-12">
                                             <div class="comment">
                                                 <div class="commenter">
-                                                    <img src="img/comment_2.jpg" alt="">
+                                                    <img src="/images/blog/coment_siluete.png" alt="">
                                                 </div>
                                                 <div class="about_commenter">
                                                    <h5><a href="#">Faridul Haque</a></h5>
@@ -203,7 +195,7 @@
                                 <div class="leave_comment">
                                     <div class="row">
                                         <div class="col-xs-12">
-                                           <h3>LEAVE A COMMENT</h3>
+                                           <h3>Deja tu comentario</h3>
                                         </div>
                                     </div>
                                     <form action="index.html" method="get">
@@ -211,32 +203,20 @@
                                             <div class="input-field col-md-4">
                                                 <input id="contact_name" type="text" class="validate" required="">
                                                 <label for="contact_name">
-                                                    <i class="zmdi zmdi-account"></i>First Name
-                                                    <span>*</span>
-                                                </label>
-                                            </div>
-                                            <div class="input-field col-md-4">
-                                                <input id="contact_email" type="email" class="validate" required="">
-                                                    <label for="contact_email"><i class="zmdi zmdi-email"></i>Your Email
-                                                    <span>*</span>
-                                                </label>
-                                            </div>
-                                            <div class="input-field col-md-4">
-                                                <input id="website" type="text" class="validate" required="">
-                                                    <label for="website"><i class="zmdi zmdi-globe"></i>Your website
+                                                    <i class="zmdi zmdi-account"></i>Nombre
                                                     <span>*</span>
                                                 </label>
                                             </div>
                                             <div class="input-field col-md-12">
                                                 <textarea id="textarea1" class="materialize-textarea" required=""></textarea>
-                                                <label for="textarea1"><i class="zmdi zmdi-border-color"></i>Your massage
+                                                <label for="textarea1"><i class="zmdi zmdi-border-color"></i>Comentario
                                                     <span>*</span>
                                                 </label>
 
                                             </div>
                                             <div class="col-md-12">
                                                 <button type="submit" class="th_bt btn waves-effect" disabled="">
-                                                    send<i class="zmdi zmdi-mail-send"></i>
+                                                    Nuevo Comentario<i class="zmdi zmdi-mail-send"></i>
                                                 </button>
                                             </div>
                                         </div>
