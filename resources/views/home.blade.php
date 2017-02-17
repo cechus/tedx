@@ -97,7 +97,7 @@
                                <!--First column-->
                                <div class="col m8">
                                    <!--Map container-->
-                                   <div id="map" class="map" style="height: 400px"></div>
+                                   <div id="map" class="z-depth-1 wow fadeInUp" style="height: 400px"></div>
                                </div>
                                <!--/First column-->
                                <!--Second column-->
