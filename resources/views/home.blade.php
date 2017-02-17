@@ -6,6 +6,19 @@
         font-size: 35px;
         font-weight: bold;
     }
+    .text-center {
+        text-align: center;
+    }
+    @keyframes flash {
+      0%, 100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+    }
+
     .typed-cursor {
         font-size: 60px;
         display: inline-block;
@@ -63,7 +76,10 @@
                             <div class="col s12">
                                 <h1>TEDxUMSA</h1>
                             </div>
-                            <div class="element"></div>
+                            <div class="col s12 text-center">
+                                  <h3 class="typed">13 de Mayo / 9:00 a 17:00 / Paraninfo Universitario</h3>
+                                  <span class="typed-cursor">|</span>
+                            </div>
                         </div>
                     </div>
                     <!-- Action button -->
@@ -77,60 +93,36 @@
         <div class="section scrollspy" id="services">
             <div class="container">
                 <div class="row">
-                    <h2>We are Wata</h2>
-                    <div class="col s12 m10 offset-m1 l8 offset-l2">
-                        <p class="flow-text center-align">
-                            We're a small local company focused on crafting special and precise products that really help in
-                            your everyday life. Feel free to check out our services and explore the gallery of our works.
-                        </p>
-                    </div>
+                   <!--Section: event info-->
+                               <!--First column-->
+                               <div class="col m8">
+                                   <!--Map container-->
+                                   <div id="map" class="map" style="height: 400px"></div>
+                               </div>
+                               <!--/First column-->
+                               <!--Second column-->
+                               <div class="col m4">
+                                   <ul class="text-xs-center">
+                                       <li class="event-info wow fadeInUp" data-wow-delay="0.3s"><i class="fa fa-calendar"></i>
+                                           <p>13 / Mayo / 2017</p>
+                                       </li>
+                                       <li class="event-info wow fadeInUp" data-wow-delay="0.2s"><i class="fa fa-map-marker"></i>
+                                           <p>Paraninfo de la UMSA, La Paz &ndash; Bolivia</p>
+                                       </li>
+                                       <li class="event-info wow fadeInUp" data-wow-delay="0.4s"><i class="fa fa-envelope"></i>
+                                           <p>tedxumsa@gmail.com</p>
+                                       </li>
+                                   </ul>
+                               </div>
+                               <!--/Second column-->
+                       <!--Section: event info-->
                 </div>
 
-                <!-- Row with service icons
-                <div class="row services">
-                    <div class="col s12 l3">
-                        <i class="fa fa-5x fa-paint-brush animated-color"></i>
-                        <div class="divider"></div>
-                        <h5>Creative design</h5>
-                        <p>Inspired by the latest trends of Material design, using cutting-edge technologies for a fresh and modern look. More design, all the time</p>
-                        <a class="btn waves-effect waves-dark white black-text">Learn more</a>
-                    </div>
-                    <div class="col s12 l3">
-                        <i class="fa fa-5x fa-desktop animated-color"></i>
-                        <div class="divider"></div>
-                        <h5>Fits all screens</h5>
-                        <p>Designed as a mobile-first application, the grid scales to fit even the largest monitors. The content always looks nice and balanced.</p>
-                        <a class="btn waves-effect waves-dark white black-text">Discover</a>
-                    </div>
-                    <div class="col s12 l3">
-                        <i class="fa fa-5x fa-cog animated-color"></i>
-                        <div class="divider"></div>
-                        <h5>Easily customizable</h5>
-                        <p>You are welcome to customize the elements to fit your needs. The proccess is simple and pleasant thanks for a Material color palette</p>
-                        <a class="btn waves-effect waves-dark white black-text">Try it</a>
-                    </div>
-                    <div class="col s12 l3">
-                        <i class="fa fa-5x fa-code animated-color"></i>
-                        <div class="divider"></div>
-                        <h5>Carefully coded</h5>
-                        <p>Beautiful on the outside and smart on the inside. Our code is clean, extremely readable and no trouble to modify or maintain.</p>
-                        <a class="btn waves-effect waves-dark white black-text">Explore</a>
-                    </div>
-                </div>
-                 -->
             </div>
         </div>
-
-            <div class="container">
-                  <h1 class="white typed">30 de Julio / 9:00 a 17:30 / Paraninfo Universitario</h1>
-                  <span class="typed-cursor">|</span>
-            </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
         </div>
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
         <script src="/js/home.js"></script>
 @endsection
