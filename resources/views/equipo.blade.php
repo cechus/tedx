@@ -6,7 +6,7 @@
   }
 </style>
 @section('content')
- <!-- Equipo section --> 
+ <!-- Equipo section -->
         <div class="section scrollspy">
             <div class="container">
                 <div class="row">

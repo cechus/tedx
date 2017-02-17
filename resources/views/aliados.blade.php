@@ -16,6 +16,7 @@
                         {{--<h5>Heisenberg ice-cream</h5>--}}
                     </a>
                 @endforeach
+                <hr>
             </div>
         </div>
     </div>

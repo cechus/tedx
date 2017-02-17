@@ -1,5 +1,24 @@
 @extends('layouts.app')
-
+<style>
+    .typed {
+        display: inline-block;
+        margin: 0;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .typed-cursor {
+        font-size: 60px;
+        display: inline-block;
+        margin: 0 10px;
+        color: red;
+        -webkit-animation-name: flash;
+        animation-name: flash;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+    }
+</style>
 @section('content')
 
         <!-- The preloader we see before the whole site is loaded -->
@@ -44,6 +63,7 @@
                             <div class="col s12">
                                 <h1>TEDxUMSA</h1>
                             </div>
+                            <div class="element"></div>
                         </div>
                     </div>
                     <!-- Action button -->
@@ -66,7 +86,7 @@
                     </div>
                 </div>
 
-                <!-- Row with service icons -->
+                <!-- Row with service icons
                 <div class="row services">
                     <div class="col s12 l3">
                         <i class="fa fa-5x fa-paint-brush animated-color"></i>
@@ -97,11 +117,20 @@
                         <a class="btn waves-effect waves-dark white black-text">Explore</a>
                     </div>
                 </div>
+                 -->
             </div>
         </div>
 
-        <div class="container">
-            <div class="divider"></div>
+            <div class="container">
+                  <h1 class="white typed">30 de Julio / 9:00 a 17:30 / Paraninfo Universitario</h1>
+                  <span class="typed-cursor">|</span>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
-
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="/js/home.js"></script>
 @endsection
