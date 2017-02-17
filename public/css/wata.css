@@ -417,7 +417,7 @@ blockquote {
       .services .col {
         margin-bottom: 40px; } }
     .services .col .divider {
-      margin: 15px 0;
+      margin: 10px 0;
       -webkit-transition: background-color 0.3s ease;
       -moz-transition: background-color 0.3s ease;
       transition: background-color 0.3s ease; }

@@ -1,146 +1,249 @@
 @extends('layouts.app')
-
+	<style>
+		.tit {
+			text-align: center;
+		}
+		
+		.tag_list  a {
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+	color: #666666;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 600;
+	margin: 8px 0;
+	padding: 0 10px;
+}
+.tag_list  a .btn.focus{
+	color: #666666;
+}
+.tag_list  a:hover {
+	background: #ff4081;
+	color: #ffffff;
+	-webkit-transform: translateY(-2px);
+	transform: translateY(-2px);
+	letter-spacing: inherit;
+}
+.border{
+	background: red;
+	border:1px solid #3c3c3c;
+	padding: 5px;
+	margin: 3px;
+}
+.blog_title{
+	text-align: center;
+}
+</style>
 @section('content')
-  <!-- Blog section -->
-        <div class="section scrollspy" id="blog">
-            <div class="container">
-                <div class="row">
-                    <h2>Latest blog posts</h2>
-                    <div class="col s12 m10 offset-m1 l8 offset-l2">
-                        <p class="flow-text center-align">
-                            Want to get a little more personal? Read our stories, meet the team and get a preview of the future
-                            products. All this and more in our blog.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="wide-container">
-                <div class="row masonry">
-                    <div class="col s12 m6 l4">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="images/blog/building.jpg" alt="Building">
-                            </div>
-                            <a class="btn-floating btn-large waves-effect waves-dark green accent-2 activator">
-                                <i class="mdi-navigation-expand-less indigo-text text-darken-4"></i>
-                            </a>
-                            <div class="card-reveal">
-                                <span class="card-date grey-text">June 22<sup>nd</sup>, 2015</span>
-                                <span class="card-title black-text">New office <i class="mdi-navigation-expand-more right"></i></span>
-                                <p>
-                                    After reaching 25 team members, we had to move to a bigger office and we've chosen
-                                    this beautiful historic building in the middle of downtown area.
-                                </p>
-                                <p><a href="ajax/blog-posts/new-office.html" class="ajax-link">Read the full story</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m6 l8">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="images/blog/bottles.jpg" alt="Bottles">
-                            </div>
-                            <a class="btn-floating btn-large waves-effect waves-dark green accent-2 activator">
-                                <i class="mdi-navigation-expand-less indigo-text text-darken-4"></i>
-                            </a>
-                            <div class="card-reveal">
-                                <span class="card-date grey-text">June 22<sup>nd</sup>, 2015</span>
-                                <span class="card-title black-text">Drink milk <i class="mdi-navigation-expand-more right"></i></span>
-                                <p>
-                                    Throughout the world, there are more than six billion consumers of milk and milk products.
-                                    Over 750 million people live within dairy farming households.
-                                </p>
-                                <p><a href="ajax/blog-posts/drink-milk.html" class="ajax-link">Read the full story</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m12 l4">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="images/blog/yoga.jpg" alt="Yoga">
-                            </div>
-                            <a class="btn-floating btn-large waves-effect waves-dark green accent-2 activator">
-                                <i class="mdi-navigation-expand-less indigo-text text-darken-4"></i>
-                            </a>
-                            <div class="card-reveal">
-                                <span class="card-date grey-text">June 22<sup>nd</sup>, 2015</span>
-                                <span class="card-title black-text">Promoting yoga <i class="mdi-navigation-expand-more right"></i></span>
-                                <p>
-                                    Various yogic groups had become prominent in Punjab in the 15th and 16th century,
-                                    when Sikhism was in its nascent stage. The Guru Granth Sahib states:
-                                </p>
-                                <blockquote>
-                                    O Yogi, Nanak tells nothing but the truth. You must discipline your mind.
-                                    The devotee must meditate on the Word Divine. It is His grace which brings about the union.
-                                    He understands, he also sees. Good deeds help one merge into Divination.
-                                </blockquote>
-                                <p><a href="ajax/blog-posts/promoting-yoga.html" class="ajax-link">Read the full story</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="images/blog/coffee.jpg" alt="Coffee">
-                            </div>
-                            <a class="btn-floating btn-large waves-effect waves-dark green accent-2 activator">
-                                <i class="mdi-navigation-expand-less indigo-text text-darken-4"></i>
-                            </a>
-                            <div class="card-reveal">
-                                <span class="card-date grey-text">June 22<sup>nd</sup>, 2015</span>
-                                <span class="card-title black-text">Coffee is your friend <i class="mdi-navigation-expand-more right"></i></span>
-                                <p>
-                                    Coffee berries and their seeds undergo several processes before they become the familiar
-                                    roasted coffee. Berries have been traditionally selectively picked by hand;
-                                    a labor-intensive method, it involves the selection of only the berries at the peak of ripeness.
-                                </p>
-                                <p><a href="ajax/blog-posts/coffee.html" class="ajax-link">Read the full story</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="images/blog/a4-paper-mockup.jpg" alt="A4 paper mockup">
-                            </div>
-                            <a class="btn-floating btn-large waves-effect waves-dark green accent-2 activator">
-                                <i class="mdi-navigation-expand-less indigo-text text-darken-4"></i>
-                            </a>
-                            <div class="card-reveal">
-                                <span class="card-date grey-text">June 22<sup>nd</sup>, 2015</span>
-                                <span class="card-title black-text">A4 paper mockup <i class="mdi-navigation-expand-more right"></i></span>
-                                <p>
-                                    Our latest freebie release includes beautiful A4 paper mockup. You can use it to show
-                                    off your stationary design efforts and other print stuff.
-                                </p>
-                                <p><a href="ajax/blog-posts/a4-paper-mockup.html" class="ajax-link">Read the full story</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="images/blog/drone.jpg" alt="Drone">
-                            </div>
-                            <a class="btn-floating btn-large waves-effect waves-dark green accent-2 activator">
-                                <i class="mdi-navigation-expand-less indigo-text text-darken-4"></i>
-                            </a>
-                            <div class="card-reveal">
-                                <span class="card-date grey-text">June 22<sup>nd</sup>, 2015</span>
-                                <span class="card-title black-text">Droning around <i class="mdi-navigation-expand-more right"></i></span>
-                                <p>
-                                    Just taking our brand new custom-made drone for a spin. We're planning on using it to
-                                    create awesome aerial footage and take wonderful photos from above.
-                                </p>
-                                <p><a href="ajax/blog-posts/droning-around.html" class="ajax-link">Read the full story</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="section scrollspy" id="contact">
+	<div class="row">
+		<h2>Blog</h2>
+		<div class="col s12 m4 l3" style="background: #3b5998">
+			<!-- Note that "m4 l3" was added -->
+			<div class="border">
+				<h4>Search</h4>
+				<div class="row">
+				<form class="col s12">
+					<div class="input-field col s12">
+						<i class="material-icons prefix">account_circle</i>
+							<input id="icon_prefix" type="text" class="validate">
+							<label for="icon_prefix">Buscar...</label>
+					</div>
+				</form>
+			</div>
+			</div>
+			<div class="border"> 
+				<h4>Archives</h4>
+					<ul class="collection">
+						<li class="collection-item"><a href="#">March 2016<span class="secondary-content">(10)</span></a></li>
+						<li class="collection-item"><a href="#">March 2016<span class="secondary-content">(10)</span></a></li>
+						<li class="collection-item"><a href="#">March 2016<span class="secondary-content">(10)</span></a></li>
+						<li class="collection-item"><a href="#">March 2016<span class="secondary-content">(10)</span></a></li>
+						<li class="collection-item"><a href="#">March 2016<span class="secondary-content">(10)</span></a></li>
+						<li class="collection-item"><a href="#">March 2016<span class="secondary-content">(10)</span></a></li>
+						<li class="collection-item"><a href="#">March 2016<span class="secondary-content">(10)</span></a></li>
+						<li class="collection-item"><a href="#">March 2016<span class="secondary-content">(10)</span></a></li>
+						<li class="collection-item"><a href="#">March 2016<span class="secondary-content">(10)</span></a></li>
+						<li class="collection-item"><a href="#">March 2016<span class="secondary-content">(10)</span></a></li>
+						
+					</ul>
+			</div>
+	
+			<div class="border">
+				<h4>tags</h4>
+					<div class="tag_list">
+						<a class="btn waves-effect" href="#!">creative</a>
+						<a class="btn waves-effect" href="#!">Web design</a>
+						<a class="btn waves-effect" href="#!">Photography</a>
+						<a class="btn waves-effect" href="#">Graphic</a>
+						<a class="btn waves-effect" href="#!">Ui/UX</a>
+						<a class="btn waves-effect" href="#!">Material Design</a>
+						<a class="btn waves-effect" href="#!">Animation</a>
+					</div>
+			</div>
+		</div>
+		<div class="col s12 m8 l9" style="background: #eee">
+			<div class="bloggrid_left">
+                                <div class="blog_top">
+                                    <h3 class="blog_title">10 beautiful place in the world
+                                    </h3>
+                                	<figure class="postImg waves-effect">
+	                                    <img src="images/logo/TEDxUMSA.png" alt="">
+                                	</figure>
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="fa fa-calendar"></i>June 18,2015</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-comments" aria-hidden="true"></i>2
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="blog_content">
+                                    <p>Learn how to improve your playing quality and even overall understanding of online gaming and how you perform while playing online. Gaming online is a huge business nowadays and that means that there are millions of people worldwide at online game sites all the time. Many are people just like you and me that like to play online and have fun doing it. Some of these people enjoy it so much.</p>
+                                    <p>Working on skills will not only help you improve your success while playing online games but will also give you higher self-esteem and a sense of achievement. And remember that the faster you master the easy games, you can turn to the more complicated ones and match your brain and skills against the real experts.</p>
+                                    <blockquote>
+                                        Learn how to improve your playing quality and even overall understanding of online gaming and how you perform while playing online. Gaming online is a huge business nowadays and that means that there are millions of people worldwide at online game sites all the time
+                                    </blockquote>
+                               <p>Gaming online is a huge business nowadays and that means that there are millions of people worldwide at online game sites all the time. Many are people just like you and me that like to play online and have fun doing it. Some of these people enjoy it  are millions of people worldwide so much.
+</p>
+                                </div>
+                                <div class="share_comment">
+                                   <h5>
+                                        <i class="fa fa-tag"></i>
+                                        <a class="btn btn-info" href="#">World</a>
+                                        <a class="btn btn-info" href="#">World</a>
+                                        <a class="btn btn-info" href="#">World</a>
+                                        <a class="btn btn-info" href="#">World</a>
+                                        
+                                    </h5>
+                                    <ul class="share_social">
+                                       <li>
+                                            <a href="#!">
+                                                <i class="zmdi zmdi-facebook waves-effect"></i>
+                                            </a>
+                                        </li> 
+                                       <li>
+                                           <a href="#!">
+                                               <i class="zmdi zmdi-twitter waves-effect"></i>
+                                            </a>
+                                        </li> 
+                                       <li>
+                                           <a href="#!">
+                                               <i class="zmdi zmdi-linkedin waves-effect"></i>
+                                            </a>
+                                        </li> 
+                                       <li>
+                                            <a href="#!">
+                                               <i class="zmdi zmdi-google waves-effect"></i>
+                                            </a>
+                                        </li> 
+                                       <li>
+                                           <a href="#!">
+                                               <i class="zmdi zmdi-pinterest waves-effect"></i>
+                                            </a>
+                                        </li> 
+                                    </ul>
+                                </div>
+                                <div class="about_auther">
+                                    <div class="auther">
+                                        <img src="img/comment_1.jpg" alt="">
+                                    </div>
+                                    <div class="auther_details">
+                                        <h5><a href="#">Nadia Afnan</a></h5>
+                                        <p>Many are people just like you and me that like to play online and have fun doing it. Some of these people enjoy it so much. Working on skills will not only help you improve your success while playing online .</p>
+                                    </div>  
+                                </div>
+                                
+                                <div class="comment_area">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h3>Comments (3)</h3>
+                                            <div class="comment">
+                                                <div class="commenter">
+                                                    <img src="img/comment_2.jpg" alt="">
+                                                </div>
+                                                <div class="about_commenter">
+                                                   <h5><a href="#">Faridul Haque</a></h5>
+                                                   <h6>18 Hours ago</h6>
+                                                    <p>Many are people just like you and me that like to play online and have fun doing it. Some of these people enjoy it so much.</p>
+                                                    <a href="#">Reply</a>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="comment">
+                                                <div class="commenter">
+                                                    <img src="img/comment_2.jpg" alt="">
+                                                </div>
+                                                <div class="about_commenter">
+                                                   <h5><a href="#">Faridul Haque</a></h5>
+                                                   <h6>18 Hours ago</h6>
+                                                    <p>Many are people just like you and me that like to play online and have fun doing it. Some of these people enjoy it so much.</p>
+                                                    <a href="#">Reply</a>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="comment">
+                                                <div class="commenter">
+                                                    <img src="img/comment_2.jpg" alt="">
+                                                </div>
+                                                <div class="about_commenter">
+                                                   <h5><a href="#">Faridul Haque</a></h5>
+                                                   <h6>18 Hours ago</h6>
+                                                    <p>Many are people just like you and me that like to play online and have fun doing it. Some of these people enjoy it so much.</p>
+                                                    <a href="#">Reply</a>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="leave_comment">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                           <h3>LEAVE A COMMENT</h3>
+                                        </div>
+                                    </div>
+                                    <form action="index.html" method="get">
+                                        <div class="row jsSubmit_button">
+                                            <div class="input-field col-md-4">
+                                                <input id="contact_name" type="text" class="validate" required="">
+                                                <label for="contact_name">
+                                                    <i class="zmdi zmdi-account"></i>First Name
+                                                    <span>*</span>
+                                                </label>
+                                            </div>
+                                            <div class="input-field col-md-4">
+                                                <input id="contact_email" type="email" class="validate" required="">
+                                                    <label for="contact_email"><i class="zmdi zmdi-email"></i>Your Email
+                                                    <span>*</span>
+                                                </label>
+                                            </div>
+                                            <div class="input-field col-md-4">
+                                                <input id="website" type="text" class="validate" required="">
+                                                    <label for="website"><i class="zmdi zmdi-globe"></i>Your website
+                                                    <span>*</span>
+                                                </label>
+                                            </div>
+                                            <div class="input-field col-md-12">
+                                                <textarea id="textarea1" class="materialize-textarea" required=""></textarea>
+                                                <label for="textarea1"><i class="zmdi zmdi-border-color"></i>Your massage
+                                                    <span>*</span>
+                                                </label>
 
-        <div class="container">
-            <div class="divider"></div>
-        </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <button type="submit" class="th_bt btn waves-effect" disabled="">
+                                                    send<i class="zmdi zmdi-mail-send"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+		</div>
+	</div>
+</div>
 @endsection

@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
         <!-- Participar section -->
         <div class="section scrollspy" id="contact">
             <div class="container">
@@ -9,39 +8,43 @@
                     <h2>Participar</h2>
                     <div class="col s12 m10 offset-m1 l8 offset-l2">
                         <p class="flow-text center-align">
-                            Let us know if you want to work on your project with us or just drop a line to say hello. We're
-                            always glad to receive your messages.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                         
                     </div>
                 </div>
                 <div class="row services">
                     <div class="col s12 l4">
-                        <i class="fa fa-5x fa-paint-brush animated-color"></i>
+                    <a href="">
+                        
+                        <i class="fa fa-5x fa-microphone animated-color"></i>
                         <div class="divider"></div>
-                        <h5>Creative design</h5>
-                        <p>Inspired by the latest trends of Material design, using cutting-edge technologies for a fresh and modern look. More design, all the time</p>
-                        <a class="btn waves-effect waves-dark white black-text">Learn more</a>
+                        <h5>Recomendar un Expositor</h5>
+                    </a>
+                        <p></p>
                     </div>
                     <div class="col s12 l4">
-                        <i class="fa fa-5x fa-desktop animated-color"></i>
+                    <a href="">
+                        <i class="fa fa-5x fa-comments-o animated-color"></i>
                         <div class="divider"></div>
-                        <h5>Fits all screens</h5>
-                        <p>Designed as a mobile-first application, the grid scales to fit even the largest monitors. The content always looks nice and balanced.</p>
-                        <a class="btn waves-effect waves-dark white black-text">Discover</a>
+                        <h5>Asistir Al evento</h5>
+                        <p></p>
+                    </a>
                     </div>  
                     <div class="col s12 l4">
-                        <i class="fa fa-5x fa-cog animated-color"></i>
+                    <a href="">
+                        <i class="fa fa-5x fa-user-plus animated-color"></i>
                         <div class="divider"></div>
-                        <h5>Easily customizable</h5>
-                        <p>You are welcome to customize the elements to fit your needs. The proccess is simple and pleasant thanks for a Material color palette</p>
-                        <a class="btn waves-effect waves-dark white black-text">Try it</a>
+                        <h5>Ser voluntario</h5>
+                        <p></p>
+                    </a>
                     </div>
-                    
                 </div>
-
             </div>
-
         </div>
-
 @endsection
