@@ -8,9 +8,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- Styles -->
-    <link rel="stylesheet" href="libs/materialize/css/materialize.min.css">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/wata.css">
+    <link rel="stylesheet" href="{{ asset('/') }}libs/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="{{ asset('/') }}libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ asset('/') }}css/wata.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Miriam+Libre" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -24,9 +24,7 @@
     </style>
     <!--Scripts-->
     <script>
-        window.Laravel = {!! json_encode([
-            'csrfToken' => csrf_token(),
-        ]) !!};
+
     </script>
 </head>
 <body>
@@ -102,8 +100,8 @@
     </div>
     
     <!-- Scripts -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="js/config.js"></script>
-    <script src="js/build.js"></script>
+    {{--<script src="https://maps.googleapis.com/maps/api/js"></script>--}}
+    <script src="{{ asset('/') }}js/config.js"></script>
+    <script src="{{ asset('/') }}js/build.js"></script>
 </body>
 </html>
