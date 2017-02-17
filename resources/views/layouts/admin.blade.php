@@ -8,18 +8,16 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- Styles -->
-    <link rel="stylesheet" href="libs/materialize/css/materialize.min.css">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/wata.css">
+    <link rel="stylesheet" href="{{ asset('/') }}libs/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="{{ asset('/') }}libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ asset('/') }}css/wata.css">
     <!-- Scripts -->
     <script>
-        window.Laravel = {!! json_encode([
-            'csrfToken' => csrf_token(),
-        ]) !!};
+
     </script>
 </head>
 <body>
-<div id="wrapper">
+<div >
 
 
     <!-- Navigation bar -->
@@ -63,9 +61,12 @@
 </div>
 
 
-<!-- Scripts -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-<script src="js/config.js"></script>
-<script src="js/build.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="{{ asset('/') }}libs/materialize/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('select').material_select();
+    });
+</script>
 </body>
 </html>
