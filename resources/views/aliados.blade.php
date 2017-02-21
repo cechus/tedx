@@ -61,7 +61,7 @@
         <br>
         <br>
         <br>
-        <div class="container">
+         <div class="container">
              <div class="row">
                <h2 class="centre-line"><span>Aliados gold</span></h2>
             </div>
@@ -75,7 +75,6 @@
                         {{--<h5>Heisenberg ice-cream</h5>--}}
                     </a>
                 @endforeach
-                <hr>
             </div>
         </div>
         <br><br>
