@@ -72,8 +72,16 @@ class AliadoController extends Controller
     }
 
     public function aliados(){
-        $aliados = Aliado::get();
-        return view('aliados')->with(compact('aliados'));
+        //$aliados = Aliado::get();
+        $ag = Aliado::where('categoria', 'Gold')->get();
+        $ap = Aliado::where('categoria', 'Platinum')->get();
+        $am = Aliado::where('categoria', 'Amigos')->get();
+        //return view('aliados')->with(compact('aliados'));
+        return view('aliados',[
+            'aliadosGold' => $ag,
+            'aliadosPlatimun' => $ap,
+            'aliadosAmigos' => $am
+        ]);
     }
 
     public function eliminar($idAliado){
