@@ -55,67 +55,7 @@
 	}
 </style>
 @section('content')
-<<<<<<< HEAD
-    <div class="section scrollspy" id="works">
-        <div class="container">
-            <div class="row">
-                <h2>Aliados</h2>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-         <div class="container">
-             <div class="row">
-               <h2 class="centre-line"><span>Aliados gold</span></h2>
-            </div>
-         </div>
-        <div class="wide-container">
-            <!-- Shuffle grid -->
-            <div id="shuffle-grid" class="row">
-                @foreach($aliados as $aliado)
-                    <a href="javascript:" class="col s12 m6 l4  ">
-                        <img src="{!! asset('img_aliados/'.$aliado->imagen) !!}" class="responsive-img" alt="{!! $aliado->nombre !!}">
-                        {{--<h5>Heisenberg ice-cream</h5>--}}
-                    </a>
-                @endforeach
-            </div>
-        </div>
-        <br><br>
-        <div class="container">
-             <div class="row">
-               <h2 class="centre-line"><span>Aliados platinum</span></h2>
-            </div>
-        </div>
-        <div class="wide-container">
-            <div id="shuffle-grid" class="row platinum">
-                @foreach($aliados as $aliado)
-                    <a href="javascript:" class="col s12 m6 l4">
-                        <img src="{!! asset('img_aliados/'.$aliado->imagen) !!}" class="responsive-img" alt="{!! $aliado->nombre !!}">
-                        {{--<h5>Heisenberg ice-cream</h5>--}}
-                    </a>
-                @endforeach
-            </div>
-        </div>
-        
-        <div class="container">
-             <div class="row">
-               <h2 class="centre-line"><span>Amigos</span></h2>
-            </div>
-        </div>
-        <div class="wide-container">
-            <div id="shuffle-grid" class="row amigos">
-                @foreach($aliados as $aliado)
-                    <a href="javascript:" class="col s12 m3">
-                        <img src="{!! asset('img_aliados/'.$aliado->imagen) !!}" class="responsive-img" alt="{!! $aliado->nombre !!}">
-                        {{--<h5>Heisenberg ice-cream</h5>--}}
-                    </a>
-                @endforeach
-            </div>
-        </div>
 
-    </div>
-=======
 	<div class="section scrollspy" id="works">
 		<div class="container">
 			<div class="row">
