@@ -135,7 +135,7 @@
 
                     <div class="row">
                         <div class="input-field col s12">
-                            {{ Form::text('password', null, ['class' => 'required']) }}
+                            {{ Form::password('password', null, ['class' => 'required']) }}
                             <label>Password</label>
                         </div>
                     </div>
@@ -144,9 +144,6 @@
                         <button type="submit" name="send" class="btn-large">
                             INGRESAR
                         </button>
-                        <a href="{!! route('register') !!}" name="send" class="btn-large">
-                            REGISTRARSE
-                        </a>
                     </div>
                     {!! Form::hidden('id') !!}
                     {!! Form::close() !!}

@@ -46,32 +46,7 @@ class AliadosSeeder extends Seeder
         	'categoria' => 'Amigos',
         	'imagen' => '/images/aliados/test.jpg',
         	'descripcion'=> 'Description'
-        ]);DB::table('aliados')->insert([
-        	'nombre' => 'Uno',
-        	'categoria' => 'Gold',
-        	'imagen' => '/images/aliados/test.jpg',
-        	'descripcion'=> 'Description'
-        ]);DB::table('aliados')->insert([
-        	'nombre' => 'Uno',
-        	'categoria' => 'Gold',
-        	'imagen' => '/images/aliados/test.jpg',
-        	'descripcion'=> 'Description'
-        ]);DB::table('aliados')->insert([
-        	'nombre' => 'Uno',
-        	'categoria' => 'Gold',
-        	'imagen' => '/images/aliados/test.jpg',
-        	'descripcion'=> 'Description'
-        ]);DB::table('aliados')->insert([
-        	'nombre' => 'Uno',
-        	'categoria' => 'Gold',
-        	'imagen' => '/images/aliados/test.jpg',
-        	'descripcion'=> 'Description'
-        ]);DB::table('aliados')->insert([
-        	'nombre' => 'Uno',
-        	'categoria' => 'Gold',
-        	'imagen' => '/images/aliados/test.jpg',
-        	'descripcion'=> 'Description'
-        ]);DB::table('aliados')->insert([
+        ]);;DB::table('aliados')->insert([
         	'nombre' => 'Uno',
         	'categoria' => 'Platinum',
         	'imagen' => '/images/aliados/test.jpg',
