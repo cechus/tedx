@@ -10,4 +10,10 @@ class Post extends Model
     {
         return $this->belongsToMany('App\Tag','post_tag')->withPivot('post_id');
     }
+
+    public function comments()
+    {
+        return $this->hasMany('App\Comment');
+    }
 }
+
