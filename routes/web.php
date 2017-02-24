@@ -32,3 +32,11 @@ Route::get('eliminar_aliado/{idAliado}','AliadoController@eliminar')->name('elim
 
 
 Route::get('admin','AdminController@index')->name('admin');
+
+Use App\Tag;
+Use App\Post;
+Route::get('test',function ()
+{
+	$t=Post::find(1)->tags()->get()->toArray();
+	dd($t);
+});

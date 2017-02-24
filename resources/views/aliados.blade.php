@@ -68,8 +68,9 @@
 			</div>
 		 </div>
 		<div class="wide-container">
+		<!--<div class="wide-container">-->
 			<!-- Gold -->
-			<div id="shuffle-grid" class="row">
+			<div id="shuffle-grids" class="row" style="">
 				@foreach($aliadosGold as $aliado)
 					<a href="javascript:" class="col s12 m6 l4  ">
 						<img src="{!! $aliado->imagen !!}" class="responsive-img" alt="{!! $aliado->nombre !!}">
