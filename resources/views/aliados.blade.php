@@ -55,15 +55,13 @@
 	}
 </style>
 @section('content')
+
 	<div class="section scrollspy" id="works">
 		<div class="container">
 			<div class="row">
 				<h2>Aliados</h2>
 			</div>
 		</div>
-		<br>
-		<br>
-		<br>
 		<div class="container">
 			 <div class="row">
 			   <h2 class="centre-line"><span>Aliados gold</span></h2>

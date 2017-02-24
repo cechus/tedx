@@ -29,3 +29,6 @@ Route::post('aliado','AliadoController@aliado');*/
 Route::match(['get', 'post'], 'aliado/{idAliado?}', 'AliadoController@aliado')->name('aliado');
 Route::get('lista_aliados','AliadoController@lista_aliados')->name('lista_aliados');
 Route::get('eliminar_aliado/{idAliado}','AliadoController@eliminar')->name('eliminar_aliado');
+
+
+Route::get('admin','AdminController@index')->name('admin');

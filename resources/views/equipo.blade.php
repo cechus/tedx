@@ -18,7 +18,7 @@
                         <div class="col s12 m4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                  <img class="activator" src="images/team/carlos.jpg">
+                                  <img class="img-responsive" src="images/team/carlos.jpg">
                                 </div>
                                 <div class="card-content">
                                   <span class="card-title activator grey-text text-darken-4">
@@ -33,10 +33,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m4">
+                        <div class="col s12">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                  <img class="activator" src="images/team/ana.jpg">
+                                  <img class="img-responsiveages/team/ana.jpg">
                                 </div>
                                 <div class="card-content">
                                   <span class="card-title activator grey-text text-darken-4">
@@ -54,7 +54,7 @@
                         <div class="col s12 m4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                  <img class="activator" src="images/team/herman.jpg">
+                                  <img class="img-responsive" src="images/team/herman.jpg">
                                 </div>
                                 <div class="card-content">
                                   <span class="card-title activator grey-text text-darken-4">
@@ -72,7 +72,7 @@
                         <div class="col s12 m4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                  <img class="activator" src="images/team/veronica.jpg">
+                                  <img class="img-responsive" src="images/team/veronica.jpg">
                                 </div>
                                 <div class="card-content">
                                   <span class="card-title activator grey-text text-darken-4">
@@ -90,7 +90,7 @@
                         <div class="col s12 m4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                  <img class="activator" src="images/team/andres.jpg">
+                                  <img class="img-responsive" src="images/team/andres.jpg">
                                 </div>
                                 <div class="card-content">
                                   <span class="card-title activator grey-text text-darken-4">
@@ -108,7 +108,7 @@
                         <div class="col s12 m4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                  <img class="activator" src="images/team/kevin.jpg">
+                                  <img class="img-responsive" src="images/team/kevin.jpg">
                                 </div>
                                 <div class="card-content">
                                   <span class="card-title activator grey-text text-darken-4">
@@ -126,7 +126,7 @@
                         <div class="col s12 m4">
                             <div class="card">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                  <img class="activator" src="images/team/kari.jpg">
+                                  <img class="img-responsive" src="images/team/kari.jpg">
                                 </div>
                                 <div class="card-content">
                                   <span class="card-title activator grey-text text-darken-4">
