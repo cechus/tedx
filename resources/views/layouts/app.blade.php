@@ -21,6 +21,18 @@
         p{
             font-family: 'Open Sans', sans-serif;
         }
+        
+        footer.page-footer .footer-copyright{
+            line-height: 0px;
+        }
+        ul{
+            display: block;   
+            -webkit-margin-after: .5em;
+            -webkit-margin-before: .5em;
+        }
+        .ic{
+            font-size:19px;
+        }
     </style>
     <!--Scripts-->
     <script>
@@ -66,21 +78,21 @@
         <!--/content-->
         <!-- Footer section -->
         <footer class="page-footer">
-            <div class="footer-copyright" style="background: #3b5998; height: auto">
-                <div class="container" style="background: #0f0;height: auto">
+            <div class="footer-copyright" style=" height: auto">
+                <div class="container" style="height: auto">
                     <a href="/">
-                        <img src="/images/logo/TEDxUMSA-1.png" >
+                        <img src="/images/logo/TEDxUMSA-1.svg" style="margin:10px" >
                     </a>
                     <!-- Social icons -->
-                    <span class="social right">
+                    <!--<span class="social right">
                         <a href=""><i class="fa fa-facebook"></i></a>
                         <a href=""><i class="fa fa-twitter"></i></a>
                         <a href=""><i class="fa fa-send"></i></a>
-                    </span>
-                    <ul>
-                        <li><a href="#!"><i class="fa fa-facebook"></i>hola dnasn</a></li>
-                        <li><a href="#!"><i class="fa fa-twitter"></i>hola dnasn</a></li>
-                        <li><a href="#!"><i class="fa fa-send"></i>hola dnasn</a></li>
+                    </span>-->
+                    <ul class="icons right">
+                        <li><a href="#!"><i class="fa ic fa-facebook"></i>  facebook.com/TEDxUMSA</a></li>
+                        <li><a href="#!"><i class="fa ic fa-twitter"></i> @tedxumsa</a></li>
+                        <li><a href="#!"><i class="fa ic fa-send"></i> tedxumsa@gmail.com</a></li>
                     </ul>
                 </div>
             </div>
