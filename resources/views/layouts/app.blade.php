@@ -66,10 +66,10 @@
         <!--/content-->
         <!-- Footer section -->
         <footer class="page-footer">
-            <div class="footer-copyright" style="background: #3b5998; height: auto">
-                <div class="container" style="background: #0f0;height: auto">
+            <div class="footer-copyright" >
+                <div class="container" >
                     <a href="/">
-                        <img src="/images/logo/TEDxUMSA-1.png" >
+                        <img src="/images/logo/TEDxUMSA-1.svg" style="widht:30%;height:auto;">
                     </a>
                     <!-- Social icons -->
                     <span class="social right">
@@ -84,7 +84,7 @@
                     </ul>
                 </div>
             </div>
-        </footer>    
+        </footer>
     </div>
     <!-- Scripts -->
     {{--<script src="https://maps.googleapis.com/maps/api/js"></script>--}}

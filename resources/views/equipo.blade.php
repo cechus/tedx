@@ -14,8 +14,8 @@
                         <!-- equipo tedX , recorrer con fetch-->
                         <div class="col s12 m6 l4">
                             <div class="card">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                  <img class="img-responsive activator" src="images/team/carlos.jpg">
+                                <div class="card-image waves-effect waves-block waves-light" onMouseOver="cambiar();" onMouseOut="volver();">
+                                  <img class="img-responsive activator" id="carlos" src="images/team/carlos.jpg">
                                 </div>
                                 <div class="card-content">
                                   <span class="card-title activator grey-text text-darken-4">
@@ -143,4 +143,12 @@
                 <br><br><br><br><br><br>
             </div>
         </div>
+        <script type="text/javascript">
+         function cambiar () {
+          document.getElementById('carlos').src = "images/team/andres.jpg";
+         }
+         function volver () {
+          document.getElementById('carlos').src = "images/team/carlos.jpg";
+         }
+        </script>
 @endsection
