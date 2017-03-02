@@ -104,7 +104,7 @@
                                     <h3 class="blog_title">{{ $post->title }}
                                     </h3>
                                 	<figure class="postImg waves-effect">
-	                                    <img src="{{ $post->image }}" alt="">
+	                                    <img src="{{public_path('/images/posts').'/'.$post->image }}" alt="">
                                 	</figure>
                                     <ul>
                                         <li>

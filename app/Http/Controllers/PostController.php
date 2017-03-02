@@ -8,6 +8,7 @@ use App\Post;
 use App\Tag;
 use Carbon\Carbon;
 use DB;
+//use App\Http\Requests\UploadRequest;
 class PostController extends Controller
 {
     /**
@@ -49,19 +50,22 @@ class PostController extends Controller
         $post->description=request('description');
         $post->date=Carbon::now();
         if ($request->hasFile('image')) {
-            $extension = $request->image->extension();    
-            $path=$request->image->store(storage_path().'/images/filename'.Carbon::now()->timestamp.'.'.$extension);
-            //$path=$request->image->storeAs(public_path().'/images/posts', 'filename'.Carbon::now()->timestamp.'.'.$extension);
+           $extension = $request->image->extension();
+            //$path=$request->image->store('photos');
+            $path='filename'.Carbon::now()->timestamp.'.'.$extension;
+            $request->image->move(public_path('posts'), $path);
+
+            //$path=$request->image->store('photosfilename'.Carbon::now()->timestamp.'.'.$extension);
             $post->image=$path;
         }else{
-            echo "NOOsia hat";
+            echo "No hay Imagen";
         }
-        
         $post->save();
         DB::table('post_tag')->insert([
             'tag_id' => $request->tags,
             'post_id' => $post->id
         ]);
+        return;
         return redirect('posts');
     }
 
