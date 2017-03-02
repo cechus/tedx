@@ -22,6 +22,76 @@
     .typed-cursor {
         font-size: 60px;
         display: inline-block;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .
         margin: 0 10px;
         color: red;
         -webkit-animation-name: flash;

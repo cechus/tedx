@@ -29,3 +29,7 @@ Route::group(['middleware' => 'auth'], function () {
     //Please do not remove this if you want adminlte:route and adminlte:link commands to works correctly.
     #adminlte_routes
 });
+Route::get('lista_aliados','AliadoController@lista_aliados')->name('lista_aliados');
+Route::get('aliado/{idAliado?}','AliadoController@aliado')->name('aliado');
+Route::get('eliminar_aliado/{idAliado}','AliadoController@eliminar_aliado')->name('eliminar_aliado');
+Route::post('aliado/{idAliado?}','AliadoController@aliado')->name('aliado');
