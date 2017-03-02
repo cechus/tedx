@@ -5,7 +5,7 @@
 	<title>Create Post</title>
 </head>
 <body>
-	<form method="post" action="/post" files="true">
+	<form method="post" action="/posts" enctype="multipart/form-data">
 		{{ csrf_field() }}
 		<label for="title">Titulo: </label>
 		<input type="text" name="title" id="title">

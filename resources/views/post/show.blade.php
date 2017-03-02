@@ -104,7 +104,7 @@
                                     <h3 class="blog_title">{{ $post->title }}
                                     </h3>
                                 	<figure class="postImg waves-effect">
-	                                    <img src="images/logo/TEDxUMSA.png" alt="">
+	                                    <img src="{{ $post->image }}" alt="">
                                 	</figure>
                                     <ul>
                                         <li>

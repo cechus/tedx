@@ -18,8 +18,8 @@ class Post extends Model
     public function scopeFilter($query, $filters)
     {
     	if ($month=$filters['month']) {
-    		$query->whereMonth('date',8);
-    		//$query->whereMonth('date',Carbon::parse($month)->month);
+    		//$query->whereMonth('date',8);
+    		$query->whereMonth('date',Carbon::parse($month)->month);
     		
     	}
     	if ($year=$filters['year']) {

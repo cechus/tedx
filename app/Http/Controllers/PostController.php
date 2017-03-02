@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 use App\Post;
 use App\Tag;
+use Carbon\Carbon;
 use DB;
 class PostController extends Controller
 {
@@ -43,36 +44,25 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        date_default_timezone_set('UTC');
-
-
         $post=new Post();
         $post->title=request('title');
         $post->description=request('description');
-        $post->date="2017-09-09 00:00:00";
-        $post->image="/dujdsujsuj";
-        /*if (!empty(request('image'))) {
-                $ext = $request->file('image')->getClientOriginalExtension();
-                $nombre_uui = uniqid('', true);
-                if ($request->file('image')->move('images/posts', "$nombre_uui.$ext")) {
-                    if (!empty($post->image)) {
-                        $directo = public_path()  . '/images/posts/' . $post->image;
-                        if (file_exists($directo)) {
-                            unlink($directo);
-                        }
-                    }
-                    $post->image = "$nombre_uui.$ext";
-                }
-            }
-            else{
-            }*/
+        $post->date=Carbon::now();
+        if ($request->hasFile('image')) {
+            $extension = $request->image->extension();    
+            $path=$request->image->store(storage_path().'/images/filename'.Carbon::now()->timestamp.'.'.$extension);
+            //$path=$request->image->storeAs(public_path().'/images/posts', 'filename'.Carbon::now()->timestamp.'.'.$extension);
+            $post->image=$path;
+        }else{
+            echo "NOOsia hat";
+        }
         
         $post->save();
         DB::table('post_tag')->insert([
             'tag_id' => $request->tags,
             'post_id' => $post->id
         ]);
-        return redirect('post');
+        return redirect('posts');
     }
 
     /**

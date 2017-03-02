@@ -11,8 +11,6 @@
 |
 */
 
-Auth::routes();
-
 Route::get('/', 'HomeController@index');
 
 Route::get('about',function(){return view ('about');});
@@ -21,16 +19,13 @@ Route::get('expositores',function(){return view ('expositores');});
 Route::get('equipo',function(){return view ('equipo');});
 Route::get('participar',function(){return view ('participar');});
 
-//PARA EL ADMINISTRADOR
-/*Route::get('aliado','AliadoController@aliado');
-Route::post('aliado','AliadoController@aliado');*/
+Route::group(['middleware' => 'auth'], function () {
+       Route::get('/admin', function ()    {
+       	return view('adminlte::home');
+       // Uses Auth Middleware
+   });
 
-Route::match(['get', 'post'], 'aliado/{idAliado?}', 'AliadoController@aliado')->name('aliado');
-Route::get('lista_aliados','AliadoController@lista_aliados')->name('lista_aliados');
-Route::get('eliminar_aliado/{idAliado}','AliadoController@eliminar')->name('eliminar_aliado');
-
-
-Route::get('admin','AdminController@index')->name('admin');
+});
 
 Use App\Tag;
 Use App\Post;
@@ -46,3 +41,6 @@ Route::resource('posts','PostController');
 //Route::resource('blog','BlogController');
 Route::get('/posts/tag/{tag}','TagController@index');
 Route::post('/posts/{post}/comments','CommentController@store');
+    //Please do not remove this if you want adminlte:route and adminlte:link commands to works correctly.
+    #adminlte_routes
+
