@@ -9,7 +9,11 @@ window._ = require('lodash');
 
 window.$ = window.jQuery = require('jquery');
 
-require('bootstrap-sass');
+require('bootstrap-less');
+
+require('admin-lte');
+window.toastr = require('toastr');
+require('icheck');
 
 /**
  * Vue is a modern JavaScript library for building interactive web interfaces
@@ -31,6 +35,14 @@ window.axios.defaults.headers.common = {
     'X-CSRF-TOKEN': window.Laravel.csrfToken,
     'X-Requested-With': 'XMLHttpRequest'
 };
+
+// Use trans function in Vue (equivalent to trans() Laravel Translations helper). See htmlheader.balde.php partial.
+Vue.prototype.trans = (key) => {
+    return _.get(window.trans, key, key);
+};
+
+//Laravel AdminLTE login input field component
+Vue.component('login-input-field', require('./components/LoginInputField.vue'));
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening

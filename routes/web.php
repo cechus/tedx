@@ -11,8 +11,6 @@
 |
 */
 
-Auth::routes();
-
 Route::get('/', 'HomeController@index');
 
 Route::get('about',function(){return view ('about');});
@@ -22,21 +20,12 @@ Route::get('equipo',function(){return view ('equipo');});
 Route::get('blog',function(){return view ('blog');});
 Route::get('participar',function(){return view ('participar');});
 
-//PARA EL ADMINISTRADOR
-/*Route::get('aliado','AliadoController@aliado');
-Route::post('aliado','AliadoController@aliado');*/
+Route::group(['middleware' => 'auth'], function () {
+       Route::get('/admin', function ()    {
+       	return view('adminlte::home');
+       // Uses Auth Middleware
+   });
 
-Route::match(['get', 'post'], 'aliado/{idAliado?}', 'AliadoController@aliado')->name('aliado');
-Route::get('lista_aliados','AliadoController@lista_aliados')->name('lista_aliados');
-Route::get('eliminar_aliado/{idAliado}','AliadoController@eliminar')->name('eliminar_aliado');
-
-
-Route::get('admin','AdminController@index')->name('admin');
-
-Use App\Tag;
-Use App\Post;
-Route::get('test',function ()
-{
-	$t=Post::find(1)->tags()->get()->toArray();
-	dd($t);
+    //Please do not remove this if you want adminlte:route and adminlte:link commands to works correctly.
+    #adminlte_routes
 });
