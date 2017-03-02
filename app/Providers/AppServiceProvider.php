@@ -15,6 +15,18 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
+        view()->composer('post.index', function ($view)
+        {
+            $archives=\App\Post::archives();
+            $tags=\App\Tag::has('posts')->pluck('name');
+            $view->with(compact('archives','tags'));
+        });
+        view()->composer('post.show', function ($view)
+        {
+            $archives=\App\Post::archives();
+            $tags=\App\Tag::has('posts')->pluck('name');
+            $view->with(compact('archives','tags'));
+        });
     }
 
     /**

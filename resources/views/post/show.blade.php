@@ -84,7 +84,7 @@
 				<h4>Archives</h4>
 					<ul class="collection">
                     @foreach($archives as $arch)
-						<li class="collection-item"><a href="/blog?month={{ $arch['month'] }}&year={{ $arch['year']}}">{{ $arch['month'].' '.$arch['year']  }}<span class="secondary-content"> ({{ $arch['published'] }}) </span></a></li>
+						<li class="collection-item"><a href="/posts?month={{ $arch['month'] }}&year={{ $arch['year']}}">{{ $arch['month'].' '.$arch['year']  }}<span class="secondary-content"> ({{ $arch['published'] }}) </span></a></li>
                     @endforeach
 					</ul>
 			</div>
@@ -92,30 +92,16 @@
 			<div class="border">
 				<h4>tags</h4>
 					<div class="tag_list">
-						<a class="btn waves-effect" href="#!">creative</a>
-						<a class="btn waves-effect" href="#!">Web design</a>
-						<a class="btn waves-effect" href="#!">Photography</a>
-						<a class="btn waves-effect" href="#">Graphic</a>
-						<a class="btn waves-effect" href="#!">Ui/UX</a>
-						<a class="btn waves-effect" href="#!">Material Design</a>
-						<a class="btn waves-effect" href="#!">Animation</a>
+                    @foreach($tags as $tag)
+						<a class="btn waves-effect" href="/posts/tag/{{$tag}}">{{$tag}}</a>
+                    @endforeach
 					</div>
 			</div>
 		</div>
 		<div class="col s12 m8 l9" style="background: #eee">
 			<div class="bloggrid_left">
-
-                @foreach($posts as $post)
-                    <div class="panel">
-                        <h3 class="panel-title">{{ $post->title }}</h3>
-                      <div class="panel-body">
-                        {{ $post->description }}
-                      </div>
-                    </div>
-                    <hr>
-                @endforeach
-                                <!--<div class="blog_top">
-                                    <h3 class="blog_title">Lorem Ipsum
+                                <div class="blog_top">
+                                    <h3 class="blog_title">{{ $post->title }}
                                     </h3>
                                 	<figure class="postImg waves-effect">
 	                                    <img src="images/logo/TEDxUMSA.png" alt="">
@@ -123,6 +109,7 @@
                                     <ul>
                                         <li>
                                             <a href="#"><i class="fa fa-calendar"></i>June 18,2015</a>
+                                            <a href="#"><i class="fa fa-calendar"></i>{{ $post->date}}</a>
                                         </li>
                                         <li>
                                             <a href="#">
@@ -132,66 +119,45 @@
                                     </ul>
                                 </div>
                                 <div class="blog_content">
-                                    <p>Learn how to improve your playing quality and even overall understanding of online gaming and how you perform while playing online. Gaming online is a huge business nowadays and that means that there are millions of people worldwide at online game sites all the time. Many are people just like you and me that like to play online and have fun doing it. Some of these people enjoy it so much.</p>
-                                    <p>Working on skills will not only help you improve your success while playing online games but will also give you higher self-esteem and a sense of achievement. And remember that the faster you master the easy games, you can turn to the more complicated ones and match your brain and skills against the real experts.</p>
+                                    <p>{{ $post->description}}</p>
+                                    
                                     <blockquote>
                                         Learn how to improve your playing quality and even overall understanding of online gaming and how you perform while playing online. Gaming online is a huge business nowadays and that means that there are millions of people worldwide at online game sites all the time
                                     </blockquote>
-                               <p>Gaming online is a huge business nowadays and that means that there are millions of people worldwide at online game sites all the time. Many are people just like you and me that like to play online and have fun doing it. Some of these people enjoy it  are millions of people worldwide so much.
-                                </p>
+                               
                                 </div>
+                                @if(count($post->tags))
                                 <div class="share_comment">
                                    <h5>
                                         <i class="fa fa-tag"></i>
-                                        <a class="btn btn-info" href="#">World</a>
-                                        <a class="btn btn-info" href="#">World</a>
-                                        <a class="btn btn-info" href="#">World</a>
-                                        <a class="btn btn-info" href="#">World</a>
-                                        
+                                        @foreach($post->tags as $tag)
+                                        <a class="btn btn-info" href="/posts/tag/{{$tag->name}}">{{$tag->name}}</a>
+                                        @endforeach
                                     </h5>
                                 </div>
+                                @endif
                                 <div class="comment_area">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <h3>Comentarios (3)</h3>
+                                            @if(count($post->comments))
+                                            <h4>Comentarios ({{count($post->comments)}})</h4>
+                                            @endif
+                                            @foreach($post->comments as $comment)
                                             <div class="comment">
                                                 <div class="commenter">
                                                     <img src="/images/blog/coment_siluete.png" alt="">
                                                 </div>
                                                 <div class="about_commenter">
-                                                   <h5><a href="#">Faridul Haque</a></h5>
-                                                   <h6>18 Hours ago</h6>
-                                                    <p>Many are people just like you and me that like to play online and have fun doing it. Some of these people enjoy it so much.</p>
-                                                    <a href="#">Reply</a>
+                                                   <h5><a href="#">{{ $comment->name }}</a></h5>
+                                                   <h6>{{ $comment->created_at->diffForHumans()}}</h6>
+                                                    <p>{{ $comment->comment }}</p>
+                                                    <!--<a href="#">Reply</a>-->
                                                 </div>  
                                             </div>
+                                            @endforeach
                                         </div>
-                                        <div class="col-md-12">
-                                            <div class="comment">
-                                                <div class="commenter">
-                                                    <img src="/images/blog/coment_siluete.png" alt="">
-                                                </div>
-                                                <div class="about_commenter">
-                                                   <h5><a href="#">Faridul Haque</a></h5>
-                                                   <h6>18 Hours ago</h6>
-                                                    <p>Many are people just like you and me that like to play online and have fun doing it. Some of these people enjoy it so much.</p>
-                                                    <a href="#">Reply</a>
-                                                </div>  
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="comment">
-                                                <div class="commenter">
-                                                    <img src="/images/blog/coment_siluete.png" alt="">
-                                                </div>
-                                                <div class="about_commenter">
-                                                   <h5><a href="#">Faridul Haque</a></h5>
-                                                   <h6>18 Hours ago</h6>
-                                                    <p>Many are people just like you and me that like to play online and have fun doing it. Some of these people enjoy it so much.</p>
-                                                    <a href="#">Reply</a>
-                                                </div>  
-                                            </div>
-                                        </div>
+                                        
+                                        
                                     </div>
                                 </div>
                                 <div class="leave_comment">
@@ -200,30 +166,31 @@
                                            <h3>Deja tu comentario</h3>
                                         </div>
                                     </div>
-                                    <form action="index.html" method="get">
+                                    <form action="/posts/{{ $post->id }}/comments" method="POST">
+                                        {{ csrf_field() }}
                                         <div class="row jsSubmit_button">
                                             <div class="input-field col-md-4">
-                                                <input id="contact_name" type="text" class="validate" required="">
-                                                <label for="contact_name">
+                                                <input id="name" type="text" class="validate" name="name" required="">
+                                                <label for="name">
                                                     <i class="zmdi zmdi-account"></i>Nombre
                                                     <span>*</span>
                                                 </label>
                                             </div>
                                             <div class="input-field col-md-12">
-                                                <textarea id="textarea1" class="materialize-textarea" required=""></textarea>
-                                                <label for="textarea1"><i class="zmdi zmdi-border-color"></i>Comentario
+                                                <textarea id="comment" class="materialize-textarea" name="comment" required=""></textarea>
+                                                <label for="comment"><i class="zmdi zmdi-border-color"></i>Comentario
                                                     <span>*</span>
                                                 </label>
 
                                             </div>
                                             <div class="col-md-12">
-                                                <button type="submit" class="th_bt btn waves-effect" disabled="">
+                                                <button type="submit" class="th_bt btn waves-effect">
                                                     Nuevo Comentario<i class="zmdi zmdi-mail-send"></i>
                                                 </button>
                                             </div>
                                         </div>
                                     </form>
-                                </div>-->
+                                </div>
             </div>
 		</div>
 	</div>

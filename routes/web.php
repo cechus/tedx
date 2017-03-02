@@ -19,7 +19,6 @@ Route::get('about',function(){return view ('about');});
 Route::get('aliados','AliadoController@aliados')->name('aliados');
 Route::get('expositores',function(){return view ('expositores');});
 Route::get('equipo',function(){return view ('equipo');});
-Route::get('blog',function(){return view ('blog');});
 Route::get('participar',function(){return view ('participar');});
 
 //PARA EL ADMINISTRADOR
@@ -40,3 +39,10 @@ Route::get('test',function ()
 	$t=Post::find(1)->tags()->get()->toArray();
 	dd($t);
 });
+
+/**post **/
+Route::resource('posts','PostController');
+//Route::get('blog',function(){return view ('blog');});
+//Route::resource('blog','BlogController');
+Route::get('/posts/tag/{tag}','TagController@index');
+Route::post('/posts/{post}/comments','CommentController@store');
