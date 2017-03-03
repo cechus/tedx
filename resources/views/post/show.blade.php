@@ -105,6 +105,7 @@
                                     </h3>
                                 	<figure class="postImg waves-effect">
 	                                    <img src="{{ asset('img_posts/'.$post->image) }}" alt="">
+
                                 	</figure>
                                     <ul>
                                         <li>

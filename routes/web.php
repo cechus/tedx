@@ -53,3 +53,4 @@ Route::get('lista_posts','PostController@lista_posts')->name('lista_posts');
 Route::get('post/{idPost?}','PostController@post')->name('post');
 Route::post('post/{idPost?}','PostController@post')->name('post');
 Route::get('eliminar_post/{idPost}','PostController@eliminar_post')->name('eliminar_post');
+
