@@ -84,7 +84,7 @@
 				<h4>Archives</h4>
 					<ul class="collection">
                     @foreach($archives as $arch)
-						<li class="collection-item"><a href="/blog?month={{ $arch['month'] }}&year={{ $arch['year']}}">{{ $arch['month'].' '.$arch['year']  }}<span class="secondary-content"> ({{ $arch['published'] }}) </span></a></li>
+						<li class="collection-item"><a href="/posts?month={{ $arch['month'] }}&year={{ $arch['year']}}">{{ $arch['month'].' '.$arch['year']  }}<span class="secondary-content"> ({{ $arch['published'] }}) </span></a></li>
                     @endforeach
 					</ul>
 			</div>
@@ -92,13 +92,11 @@
 			<div class="border">
 				<h4>tags</h4>
 					<div class="tag_list">
-						<a class="btn waves-effect" href="#!">creative</a>
-						<a class="btn waves-effect" href="#!">Web design</a>
-						<a class="btn waves-effect" href="#!">Photography</a>
-						<a class="btn waves-effect" href="#">Graphic</a>
-						<a class="btn waves-effect" href="#!">Ui/UX</a>
-						<a class="btn waves-effect" href="#!">Material Design</a>
-						<a class="btn waves-effect" href="#!">Animation</a>
+						<div class="tag_list">
+                    @foreach($tags as $tag)
+                        <a class="btn waves-effect" href="/posts/tag/{{$tag}}">{{$tag}}</a>
+                    @endforeach
+                    </div>
 					</div>
 			</div>
 		</div>
@@ -107,7 +105,8 @@
 
                 @foreach($posts as $post)
                     <div class="panel">
-                        <h3 class="panel-title">{{ $post->title }}</h3>
+                        <h3 class="panel-title">
+                        <a href="/posts/{{$post->id}}">{{ $post->title }}</a></h3>
                       <div class="panel-body">
                         {{ $post->description }}
                       </div>
