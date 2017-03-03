@@ -8,7 +8,6 @@ use App\Post;
 use App\Tag;
 use Carbon\Carbon;
 use DB;
-//use App\Http\Requests\UploadRequest;
 class PostController extends Controller
 {
     /**
@@ -43,9 +42,9 @@ class PostController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    /*public function store(Request $request)
     {
-        $post=new Post();
+        /*$post=new Post();
         $post->title=request('title');
         $post->description=request('description');
         $post->date=Carbon::now();
@@ -68,7 +67,7 @@ class PostController extends Controller
         return;
         return redirect('posts');
     }
-
+*/
     /**
      * Display the specified resource.
      *
@@ -77,8 +76,8 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        dd("dsad");
-        return view('post.show',compact('post'));
+        $date=Carbon::parse($post->date)->toFormattedDateString();  
+        return view('post.show',compact('post','date'));
     }
 
     /**

@@ -68,6 +68,7 @@
 		<h2>Blog</h2>
 		<div class="col s12 m4 l3">
 			<!-- Note that "m4 l3" was added -->
+            <!--
 			<div class="border">
 				<h4>Search</h4>
 				<div class="row">
@@ -78,10 +79,10 @@
 							<label for="icon_prefix">Buscar...</label>
 					</div>
 				</form>
-			</div>
-			</div>
+			     </div>
+			</div>-->
 			<div class="border">
-				<h4>Archives</h4>
+				<h4>Archivos</h4>
 					<ul class="collection">
                     @foreach($archives as $arch)
 						<li class="collection-item"><a href="/posts?month={{ $arch['month'] }}&year={{ $arch['year']}}">{{ $arch['month'].' '.$arch['year']  }}<span class="secondary-content"> ({{ $arch['published'] }}) </span></a></li>
@@ -90,7 +91,7 @@
 			</div>
 
 			<div class="border">
-				<h4>tags</h4>
+				<h4>Etiquetas</h4>
 					<div class="tag_list">
                     @foreach($tags as $tag)
 						<a class="btn waves-effect" href="/posts/tag/{{$tag}}">{{$tag}}</a>
@@ -104,13 +105,13 @@
                                     <h3 class="blog_title">{{ $post->title }}
                                     </h3>
                                 	<figure class="postImg waves-effect">
-	                                    <img src="{{ asset('img_posts/'.$post->image) }}" alt="">
+	                                    <img width="100%" height="auto" src="{{ asset('img_posts/'.$post->image) }}" alt="">
 
                                 	</figure>
                                     <ul>
                                         <li>
-                                            <a href="#"><i class="fa fa-calendar"></i>June 18,2015</a>
-                                            <a href="#"><i class="fa fa-calendar"></i>{{ $post->date}}</a>
+                                            
+                                            <a href="#"> <i class="fa fa-calendar"> </i> {{ $date}}</a>
                                         </li>
                                         <li>
                                             <a href="#">
@@ -119,13 +120,8 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="blog_content">
-                                    <p>{{ $post->description}}</p>
-
-                                    <blockquote>
-                                        Learn how to improve your playing quality and even overall understanding of online gaming and how you perform while playing online. Gaming online is a huge business nowadays and that means that there are millions of people worldwide at online game sites all the time
-                                    </blockquote>
-
+                                <div class="blog_content" style="padding:10px">
+                                    <p>{!! $post->description  !!}</p>  
                                 </div>
                                 @if(count($post->tags))
                                 <div class="share_comment">
@@ -161,7 +157,7 @@
 
                                     </div>
                                 </div>
-                                <div class="leave_comment">
+                                <div class="leave_comment"> 
                                     <div class="row">
                                         <div class="col-xs-12">
                                            <h3>Deja tu comentario</h3>
