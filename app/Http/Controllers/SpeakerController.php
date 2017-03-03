@@ -27,17 +27,17 @@ class SpeakerController extends Controller
         'nombre' => 'required',
         'charla' => 'required',
         'descripcion' => 'required',
-        'imagen' => 'required'
+        
       ]);
 
       $speaker = new Speaker;
-      $speaker->nombre = request('nombre');
+      $speaker->nombre = request('nombre'); 
       $speaker->charla = request('charla');
       $speaker->descripcion = request('descripcion');
-      $speaker->imagen = request('imagen')->move('img_speakers');
+      $speaker->imagen = request('imagen');
       $speaker->save();
-
-      return redirect('/');
+      return redirect('list_speakers');
+      //redirect('administrador.list_speaker');
     }
 
 }

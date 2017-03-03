@@ -17,7 +17,7 @@
                         <h3 class="box-title">Speakers CRUD</h3>
 
                         <div class="box-tools pull-right">
-                            <a href="#" class="btn btn-box-tool"  title="Adicionar">
+                            <a href="{!! route('speaker') !!}" class="btn btn-box-tool"  title="Adicionar">
                                 <i class="fa fa-plus"></i></a>
                         </div>
                     </div>

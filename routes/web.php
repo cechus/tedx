@@ -56,11 +56,12 @@ Route::post('post/{idPost?}','PostController@post')->name('post');
 Route::get('eliminar_post/{idPost}','PostController@eliminar_post')->name('eliminar_post');
 
 
-// Route::get('list_tags','PostController@lista_posts')->name('lista_posts');
+ //Route::get('list_tags','PostController@lista_posts')->name('list_tags');
 // Route::get('tag/{idTag?}','PostController@post')->name('post');
 // Route::post('post/{idPost?}','PostController@post')->name('post');
 // Route::get('eliminar_post/{idPost}','PostController@eliminar_post')->name('eliminar_post');
 
 // /****************Rutas Speakers**********************************************/
 Route::get('list_speakers', 'SpeakerController@list_speaker')->name('list_speakers');
-Route::post('speaker', 'SpeakerController@store');
+Route::get('speaker', 'SpeakerController@create')->name('speaker');
+Route::post('speaker', 'SpeakerController@store')->name('speaker');
