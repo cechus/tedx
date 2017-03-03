@@ -17,13 +17,13 @@
                             <div class="card-content">
                               <span class="card-title activator grey-text text-darken-4">
                               {{ $speak->nombre }}<i class="material-icons right">more_vert</i></span>
-                              <p> {{ $speak->charla }} </p>
+                              <p> <b>{{ $speak->charla }}</b> </p>
                             </div>
                             <div class="card-reveal">
                               <span class="card-title grey-text text-darken-4">{{ $speak->nombre }}
                               <i class="material-icons right">close</i></span>
-                              <h6>{{ $speak->charla }}</h6>
-                              <p>{{ $speak->deescripcion }}</p>
+                              <h6><b>{{ $speak->charla }}</b></h6>
+                              <p>{{ $speak->descripcion }}</p>
                             </div>
                         </div>
                     </div>
