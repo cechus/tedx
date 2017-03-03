@@ -13,6 +13,11 @@ class SpeakerController extends Controller
       return view('speakers.index', compact('speakers'));
     }
 
+    public function list_speaker(){
+      $speakers = Speaker::all();
+      return view('administrador.list_speaker', compact('speakers'));
+    }
+
     public function create() {
       return view('speakers.create');
     }
@@ -22,17 +27,17 @@ class SpeakerController extends Controller
         'nombre' => 'required',
         'charla' => 'required',
         'descripcion' => 'required',
-        'imagen' => 'required'
+        
       ]);
 
       $speaker = new Speaker;
-      $speaker->nombre = request('nombre');
+      $speaker->nombre = request('nombre'); 
       $speaker->charla = request('charla');
       $speaker->descripcion = request('descripcion');
       $speaker->imagen = request('imagen');
       $speaker->save();
-
-      return redirect('/');
+      return redirect('list_speakers');
+      //redirect('administrador.list_speaker');
     }
 
 }

@@ -16,6 +16,7 @@ Route::get('/', 'HomeController@index');
 Route::get('about',function(){return view ('about');});
 Route::get('aliados','AliadoController@aliados')->name('aliados');
 Route::get('expositores','SpeakerController@index');
+
 Route::get('equipo',function(){return view ('equipo');});
 Route::get('participar',function(){return view ('participar');});
 
@@ -55,3 +56,12 @@ Route::post('post/{idPost?}','PostController@post')->name('post');
 Route::get('eliminar_post/{idPost}','PostController@eliminar_post')->name('eliminar_post');
 
 
+ //Route::get('list_tags','PostController@lista_posts')->name('list_tags');
+// Route::get('tag/{idTag?}','PostController@post')->name('post');
+// Route::post('post/{idPost?}','PostController@post')->name('post');
+// Route::get('eliminar_post/{idPost}','PostController@eliminar_post')->name('eliminar_post');
+
+// /****************Rutas Speakers**********************************************/
+Route::get('list_speakers', 'SpeakerController@list_speaker')->name('list_speakers');
+Route::get('speaker', 'SpeakerController@create')->name('speaker');
+Route::post('speaker', 'SpeakerController@store')->name('speaker');
