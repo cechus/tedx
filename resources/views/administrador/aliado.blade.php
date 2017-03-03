@@ -1,84 +1,47 @@
-@extends('layouts.admin')
-@section('content')
-    {{--<form>
-        <p>
-            <input type="text" name="nombre">
-        </p>
-        <p>
-            <select name="categoria">
-                <option value="GOLD">GOLD</option>
-                <option value="PLATINIUM">PLATINIUM</option>
-            </select>
-        </p>
-        <p>
-            <input type="file">
-        </p>
-    </form>--}}
 
-    <div class="section scrollspy" id="contact">
-        <div class="container">
-            <div class="row">
-                <h2>Aliado</h2>
-            </div>
-            <div class="row">
+@extends('vendor.adminlte.layouts.app')
 
-            @if(isset($aliado))
-                {!! Form::model($aliado, ['route' => ['aliado'], 'files'=>true, 'method' => 'post']) !!}
-            @else
-                {!! Form::open(['route' => ['aliado'], 'files'=>true]) !!}
-            @endif
-
-            {{--<form class="col s12 m12 l8 offset-l2"  accept-charset="UTF-8" files="true" enctype="multipart/form-data">--}}
-            <!-- This field helps us avoid spam bots, don't remove it -->
-
-                <!-- End of anti-spam field -->
-                <div class="row">
-                    <div class="input-field col s12">
-                        {{ Form::select('categoria', ['Gold' => 'Gold','Platinum' => 'Platinum','Amigos' => 'Amigos'], [ 'required']) }}
-                        <label>Cstegoria</label>
+@section('main-content')
+    <div class="container-fluid spark-screen">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Aliado</h3>
                     </div>
-                </div>
-
-
-
-                <div class="row">
-                    <div class="file-field input-field">
-                        <div class="btn">
-                            <span>file</span>
-                            {!! Form::file('archivo',['accept' => 'image/*']) !!}
-                            {{--<input type="file" name="archivo">--}}
+                    <!-- /.box-header -->
+                    <!-- form start -->
+                    @if(isset($aliado))
+                        {!! Form::model($aliado, ['route' => ['aliado'], 'files'=>true, 'method' => 'post']) !!}
+                    @else
+                        {!! Form::open(['route' => ['aliado'], 'files'=>true]) !!}
+                    @endif
+                        <div class="box-body">
+                            <div class="form-group">
+                                <label>Categoria</label>
+                                {{ Form::select('categoria', ['Gold' => 'Gold','Platinum' => 'Platinum','Amigos' => 'Amigos'],null, [ 'required','class' => 'form-control']) }}
+                            </div>
+                            <div class="form-group">
+                                <label>Imagen</label>
+                                {!! Form::file('archivo',['accept' => 'image/*']) !!}
+                            </div>
+                            <div class="form-group">
+                                <label>Nombre</label>
+                                {{ Form::text('nombre', null, ['class' => 'form-control','required']) }}
+                            </div>
+                            <div class="form-group">
+                                <label>Descripcion</label>
+                                {{ Form::textarea('descripcion', null, ['class' => 'form-control','rows' => 3]) }}
+                            </div>
                         </div>
-                        <div class="file-path-wrapper">
-                            <input class="file-path validate" placeholder="seleccione el logo" type="text"
-                                   name="archivo2">
+                        <!-- /.box-body -->
+
+                        <div class="box-footer">
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
-                    </div>
+                    {!! Form::hidden('id') !!}
+                    {!! Form::close() !!}
                 </div>
-
-
-                <div class="row">
-                    <div class="input-field col s12">
-                        {{ Form::text('nombre', null, ['class' => 'required']) }}
-                        {{--<input  name="nombre" type="text" class="required">--}}
-                        <label>Nombre</label>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="input-field col s12">
-                        {{ Form::textarea('descripcion', null, ['class' => 'materialize-textarea']) }}
-                        {{--<textarea name="descripcion" class="materialize-textarea"></textarea>--}}
-                        <label>Descripcion</label>
-                    </div>
-                </div>
-                <div class="center-align">
-                    <button type="submit" name="send" class="btn-large">
-                        GUARDAR
-                    </button>
-                </div>
-                {!! Form::hidden('id') !!}
-                {!! Form::close() !!}
             </div>
         </div>
     </div>

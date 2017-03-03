@@ -3,7 +3,7 @@
 		.tit {
 			text-align: center;
 		}
-		
+
 		.tag_list  a {
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 	color: #666666;
@@ -80,7 +80,7 @@
 				</form>
 			</div>
 			</div>
-			<div class="border"> 
+			<div class="border">
 				<h4>Archives</h4>
 					<ul class="collection">
                     @foreach($archives as $arch)
@@ -88,7 +88,7 @@
                     @endforeach
 					</ul>
 			</div>
-	
+
 			<div class="border">
 				<h4>tags</h4>
 					<div class="tag_list">
@@ -104,7 +104,8 @@
                                     <h3 class="blog_title">{{ $post->title }}
                                     </h3>
                                 	<figure class="postImg waves-effect">
-	                                    <img src="{{public_path('/images/posts').'/'.$post->image }}" alt="">
+	                                    <img src="{{ asset('img_posts/'.$post->image) }}" alt="">
+
                                 	</figure>
                                     <ul>
                                         <li>
@@ -120,11 +121,11 @@
                                 </div>
                                 <div class="blog_content">
                                     <p>{{ $post->description}}</p>
-                                    
+
                                     <blockquote>
                                         Learn how to improve your playing quality and even overall understanding of online gaming and how you perform while playing online. Gaming online is a huge business nowadays and that means that there are millions of people worldwide at online game sites all the time
                                     </blockquote>
-                               
+
                                 </div>
                                 @if(count($post->tags))
                                 <div class="share_comment">
@@ -152,12 +153,12 @@
                                                    <h6>{{ $comment->created_at->diffForHumans()}}</h6>
                                                     <p>{{ $comment->comment }}</p>
                                                     <!--<a href="#">Reply</a>-->
-                                                </div>  
+                                                </div>
                                             </div>
                                             @endforeach
                                         </div>
-                                        
-                                        
+
+
                                     </div>
                                 </div>
                                 <div class="leave_comment">

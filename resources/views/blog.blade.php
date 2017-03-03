@@ -3,7 +3,7 @@
 		.tit {
 			text-align: center;
 		}
-		
+
 		.tag_list  a {
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 	color: #666666;
@@ -80,7 +80,7 @@
 				</form>
 			</div>
 			</div>
-			<div class="border"> 
+			<div class="border">
 				<h4>Archives</h4>
 					<ul class="collection">
                     @foreach($archives as $arch)
@@ -88,7 +88,7 @@
                     @endforeach
 					</ul>
 			</div>
-	
+
 			<div class="border">
 				<h4>tags</h4>
 					<div class="tag_list">
@@ -147,7 +147,7 @@
                                         <a class="btn btn-info" href="#">World</a>
                                         <a class="btn btn-info" href="#">World</a>
                                         <a class="btn btn-info" href="#">World</a>
-                                        
+
                                     </h5>
                                 </div>
                                 <div class="comment_area">
@@ -163,7 +163,7 @@
                                                    <h6>18 Hours ago</h6>
                                                     <p>Many are people just like you and me that like to play online and have fun doing it. Some of these people enjoy it so much.</p>
                                                     <a href="#">Reply</a>
-                                                </div>  
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -176,7 +176,7 @@
                                                    <h6>18 Hours ago</h6>
                                                     <p>Many are people just like you and me that like to play online and have fun doing it. Some of these people enjoy it so much.</p>
                                                     <a href="#">Reply</a>
-                                                </div>  
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -189,7 +189,7 @@
                                                    <h6>18 Hours ago</h6>
                                                     <p>Many are people just like you and me that like to play online and have fun doing it. Some of these people enjoy it so much.</p>
                                                     <a href="#">Reply</a>
-                                                </div>  
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

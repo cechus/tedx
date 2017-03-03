@@ -77,7 +77,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        
+        dd("dsad");
         return view('post.show',compact('post'));
     }
 
@@ -113,5 +113,71 @@ class PostController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+
+    public function post(Request $request, $idPost = null)
+    {
+        $tags_us = [];
+        if (!empty($request->all())) {
+            //dd($request->all());
+            if (!empty($request->id)) {
+                $post = Post::find($request->id);
+            } else {
+                $post = new Post();
+            }
+            if (!empty($request->file('archivo'))) {
+                $ext = $request->file('archivo')->getClientOriginalExtension();
+                $nombre_uui = uniqid('', true);
+                if ($request->file('archivo')->move('img_posts', "$nombre_uui.$ext")) {
+                    if (!empty($post->imagen)) {
+                        $directo = public_path()  . '/img_posts/' . $post->imagen;
+                        if (file_exists($directo)) {
+                            unlink($directo);
+                        }
+                    }
+                    $post->image = "$nombre_uui.$ext";
+                }
+            }
+
+
+            $post->title = $request->title;
+            $post->description = $request->description;
+            $post->date = date("Y--m-d H:i:s");
+            $post->save();
+            $post->tags()->sync($request->tags);
+
+
+            //Flash::success('Se ha guardado correctamente los el logo!!');
+//            return redirect()->back();
+            return redirect('lista_posts');
+        } else {
+            if(!empty($idPost)){
+                $post = Post::find($idPost);
+                $tags_us = $post->tags->pluck('id','id')->all();
+            }
+
+        }
+        $tags = Tag::get()->pluck('name', 'id')->all();
+        //dd($tags);
+        return view('administrador.post')->with(compact('post','tags','tags_us'));
+    }
+    public function lista_posts()
+    {
+        $lista_posts = Post::get();
+        return view('administrador.lista_posts')->with(compact('lista_posts'));
+    }
+
+    public function eliminar_post($idPost){
+        $post = Post::find($idPost);
+        if (!empty($post->image)) {
+            $directo = public_path()  . '/img_posts/' . $post->image;
+            if (file_exists($directo)) {
+                unlink($directo);
+            }
+        }
+        $post->tags()->sync([]);
+        $post->delete();
+        return redirect()->back();
     }
 }

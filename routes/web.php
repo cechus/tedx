@@ -43,3 +43,15 @@ Route::get('/posts/tag/{tag}','TagController@index');
 Route::post('/posts/{post}/comments','CommentController@store');
     //Please do not remove this if you want adminlte:route and adminlte:link commands to works correctly.
     #adminlte_routes
+
+Route::get('lista_aliados','AliadoController@lista_aliados')->name('lista_aliados');
+Route::get('aliado/{idAliado?}','AliadoController@aliado')->name('aliado');
+Route::get('eliminar_aliado/{idAliado}','AliadoController@eliminar_aliado')->name('eliminar_aliado');
+Route::post('aliado/{idAliado?}','AliadoController@aliado')->name('aliado');
+
+Route::get('lista_posts','PostController@lista_posts')->name('lista_posts');
+Route::get('post/{idPost?}','PostController@post')->name('post');
+Route::post('post/{idPost?}','PostController@post')->name('post');
+Route::get('eliminar_post/{idPost}','PostController@eliminar_post')->name('eliminar_post');
+
+
