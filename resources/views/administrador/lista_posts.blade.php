@@ -1,4 +1,3 @@
-
 @extends('adminlte::layouts.app')
 
 @section('htmlheader_title')
@@ -14,10 +13,10 @@
                 <!-- Default box -->
                 <div class="box">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Lista de aliados</h3>
+                        <h3 class="box-title">Lista de Posts</h3>
 
                         <div class="box-tools pull-right">
-                            <a href="{!! route('aliado') !!}" class="btn btn-box-tool"  title="Adicionar">
+                            <a href="{!! route('post') !!}" class="btn btn-box-tool" title="Adicionar">
                                 <i class="fa fa-plus"></i></a>
                         </div>
                     </div>
@@ -26,24 +25,33 @@
                             <thead>
                             <tr>
                                 <th>Id</th>
-                                <th>Nombre</th>
-                                <th>Imagen</th>
-                                <th>Categoria</th>
+                                <th>Titulo</th>
                                 <th>Descripcion</th>
+                                <th>Fecha</th>
+                                <th>Imagen</th>
+                                <th>Tags</th>
                                 <th></th>
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($lista_aliados as $aliado)
+                            @foreach($lista_posts as $post)
                                 <tr>
-                                    <td>{!! $aliado->id !!}</td>
-                                    <td>{!! $aliado->nombre !!}</td>
-                                    <td>{!! $aliado->imagen !!}</td>
-                                    <td>{!! $aliado->categoria !!}</td>
-                                    <td>{!! $aliado->descripcion !!}</td>
+                                    <td>{!! $post->id !!}</td>
+                                    <td>{!! $post->title !!}</td>
+                                    <td style="font-size: 11px !important;">{!! $post->description !!}</td>
+                                    <td>{!! $post->date !!}</td>
                                     <td>
-                                        <a href="{{ route('aliado',[$aliado->id]) }}">Editar</a>
-                                        <a href="{!! route('eliminar_aliado',[$aliado->id]) !!}">Eliminar</a>
+                                        <img src="{!! asset('img_posts/'.$post->image) !!}" style="height: 60px;">
+
+                                    </td>
+                                    <td>
+                                        @foreach($post->tags as $tag)
+                                            {!! $tag->name !!}
+                                        @endforeach
+                                    </td>
+                                    <td>
+                                        <a href="{{ route('post',[$post->id]) }}">Editar</a>
+                                        <a href="{!! route('eliminar_post',[$post->id]) !!}">Eliminar</a>
                                     </td>
                                 </tr>
                             @endforeach
