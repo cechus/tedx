@@ -15,7 +15,7 @@ Route::get('/', 'HomeController@index');
 
 Route::get('about',function(){return view ('about');});
 Route::get('aliados','AliadoController@aliados')->name('aliados');
-Route::get('expositores',function(){return view ('expositores');});
+Route::get('expositores','SpeakerController@index');
 Route::get('equipo',function(){return view ('equipo');});
 Route::get('participar',function(){return view ('participar');});
 
@@ -43,4 +43,3 @@ Route::get('/posts/tag/{tag}','TagController@index');
 Route::post('/posts/{post}/comments','CommentController@store');
     //Please do not remove this if you want adminlte:route and adminlte:link commands to works correctly.
     #adminlte_routes
-
