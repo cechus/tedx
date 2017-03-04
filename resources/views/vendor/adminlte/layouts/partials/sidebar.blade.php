@@ -37,8 +37,8 @@
             <li><a href="{!! route('lista_aliados') !!}"><i class='fa fa-link'></i> <span>Aliados</span></a></li>
             <li><a href="{!! route('lista_posts') !!}"><i class='fa fa-link'></i> <span>Posts</span></a></li>
             <li><a href="{!! route('list_speakers') !!}"><i class='fa fa-link'></i> <span>Speakers</span></a></li>
-       {{--      
-            <li><a href="{!! route('list_tags') !!}"><i class='fa fa-link'></i> <span>Tags</span></a></li> --}}
+            <li><a href="{!! route('list_tags') !!}"><i class='fa fa-link'></i> <span>Tags</span></a></li>
+
         </ul><!-- /.sidebar-menu -->
     </section>
     <!-- /.sidebar -->
