@@ -24,7 +24,13 @@ class TagController extends Controller
      */
     public function create()
     {
-        //
+        //dd('aksjdhfkjsadhjkfhjkdsaf');
+        return view('administrador.create_tag');
+    }
+    public function list_tags()
+    {
+        $list_tags = Tag::get();
+        return view('administrador.list_tags')->with(compact('list_tags'));
     }
 
     /**
@@ -34,8 +40,10 @@ class TagController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
+    {       $tag= new Tag();
+         $tag->name = $request->tag_name;
+            $tag->save();
+            return redirect('list_tags');
     }
 
     /**
@@ -57,7 +65,9 @@ class TagController extends Controller
      */
     public function edit($id)
     {
-        //
+        $tag=Tag::find($id);
+         //return view('administrador.aliado')->with(compact('aliado'));
+        return view('administrador.edit_tag')->with(compact('tag'));
     }
 
     /**
@@ -69,7 +79,10 @@ class TagController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+          $tag=Tag::find($id);
+          $tag->name = $request->tag_name;
+            $tag->save();
+            return redirect('list_tags');
     }
 
     /**
@@ -80,6 +93,8 @@ class TagController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $tag=Tag::find($id);
+        $tag->delete();
+        return redirect('list_tags');
     }
 }

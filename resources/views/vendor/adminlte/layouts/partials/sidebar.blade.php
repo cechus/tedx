@@ -36,9 +36,15 @@
             <li class="active"><a href="{{ url('home') }}" target="_blank"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.home') }}</span></a></li>
             <li><a href="{!! route('lista_aliados') !!}"><i class='fa fa-link'></i> <span>Aliados</span></a></li>
             <li><a href="{!! route('lista_posts') !!}"><i class='fa fa-link'></i> <span>Posts</span></a></li>
+<<<<<<< HEAD
             <li><a href="{!! route('list_speakers') !!}"><i class="fa fa-bullhorn"></i> <span>Speakers</span></a></li>
        {{--
             <li><a href="{!! route('list_tags') !!}"><i class='fa fa-link'></i> <span>Tags</span></a></li> --}}
+=======
+            <li><a href="{!! route('list_speakers') !!}"><i class='fa fa-link'></i> <span>Speakers</span></a></li>
+            <li><a href="{!! route('list_tags') !!}"><i class='fa fa-link'></i> <span>Tags</span></a></li>
+
+>>>>>>> 275ba9e710bfb9dd36f21d9036a5c649fa9eb704
         </ul><!-- /.sidebar-menu -->
     </section>
     <!-- /.sidebar -->
