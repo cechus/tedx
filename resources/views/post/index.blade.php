@@ -1,36 +1,36 @@
 @extends('layouts.app')
-	<style>
-		.tit {
-			text-align: center;
-		}
+    <style>
+        .tit {
+            text-align: center;
+        }
 
-		.tag_list  a {
-	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-	color: #666666;
-	display: inline-block;
-	font-size: 13px;
-	font-weight: 600;
-	margin: 8px 0;
-	padding: 0 10px;
+        .tag_list  a {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    color: #666666;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 8px 0;
+    padding: 0 10px;
 }
 .tag_list  a .btn.focus{
-	color: #666666;
+    color: #666666;
 }
 .tag_list  a:hover {
-	background: #ff4081;
-	color: #ffffff;
-	-webkit-transform: translateY(-2px);
-	transform: translateY(-2px);
-	letter-spacing: inherit;
+    background: #ff4081;
+    color: #ffffff;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+    letter-spacing: inherit;
 }
 .border{
-	border-radius: 5px;
-	border:1px solid #3c3c3c;
-	padding: 5px;
-	margin: 3px;
+    border-radius: 5px;
+    border:1px solid #3c3c3c;
+    padding: 5px;
+    margin: 3px;
 }
 .blog_title{
-	text-align: center;
+    text-align: center;
 }
 .commenter {
     border: 5px solid #fff;
@@ -64,61 +64,78 @@
 </style>
 @section('content')
 <div class="section scrollspy" id="contact">
-	<div class="row">
-		<h2>Blog</h2>
-		<div class="col s12 m4 l3">
-			<!-- Note that "m4 l3" was added -->
-			<div class="border">
-				<h4>Search</h4>
-				<div class="row">
-				<form class="col s12">
-					<div class="input-field col s12">
-						<i class="material-icons prefix">account_circle</i>
-							<input id="icon_prefix" type="text" class="validate">
-							<label for="icon_prefix">Buscar...</label>
-					</div>
-				</form>
-			</div>
-			</div>
-			<div class="border">
-				<h4>Archives</h4>
-					<ul class="collection">
+    <div class="row">
+        <h2>Blog</h2>
+        <div class="col s12 m4 l3">
+            <!-- Note that "m4 l3" was added -->
+            <!--
+            <div class="border">
+                <h4>Search</h4>
+                <div class="row">
+                <form class="col s12">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" type="text" class="validate">
+                            <label for="icon_prefix">Buscar...</label>
+                    </div>
+                </form>
+             </div>
+            </div>
+            -->
+            <div class="border">
+                <h4>Archivos</h4>
+                    <ul class="collection">
                     @foreach($archives as $arch)
-						<li class="collection-item"><a href="/posts?month={{ $arch['month'] }}&year={{ $arch['year']}}">{{ $arch['month'].' '.$arch['year']  }}<span class="secondary-content"> ({{ $arch['published'] }}) </span></a></li>
+                        <li class="collection-item"><a href="/posts?month={{ $arch['month'] }}&year={{ $arch['year']}}">{{ $arch['month'].' '.$arch['year']  }}<span class="secondary-content"> ({{ $arch['published'] }}) </span></a></li>
                     @endforeach
-					</ul>
-			</div>
+                    </ul>
+            </div>
 
-			<div class="border">
-				<h4>tags</h4>
-					<div class="tag_list">
-						<div class="tag_list">
+            <div class="border">
+                <h4>Etiquetas</h4>
+                    <div class="tag_list">
+                        <div class="tag_list">
                     @foreach($tags as $tag)
                         <a class="btn waves-effect" href="/posts/tag/{{$tag}}">{{$tag}}</a>
                     @endforeach
                     </div>
-					</div>
-			</div>
-		</div>
-		<div class="col s12 m8 l9" style="background: #eee">
-			<div class="bloggrid_left">
+                    </div>
+            </div>
+        </div>
+        <div class="col s12 m8 l9" style="background: #eee">
+            <div class="bloggrid_left">
 
                 @foreach($posts as $post)
-                    <div class="panel">
+
+               <div class="col s12 m4">
+                                   <div class="card small">
+                                       <div class="card-image">
+                                           <a href="/posts/{{$post->id}}"><img src="{{ asset('img_posts/'.$post->image) }}"></a>
+                                       </div>
+                                       <div class="card-content">
+                                           <p>
+                                           <a href="/posts/{{$post->id}}"><span class="card-title" style="font-weight:bold;color:rgba(0,0,0,1)">{{ $post->title }}</span></a>
+                                           </p>
+                                       </div>
+                                   </div>
+                               </div>
+                   {{--  <div class="panel">
                         <h3 class="panel-title">
                         <a href="/posts/{{$post->id}}">{{ $post->title }}</a></h3>
                       <div class="panel-body">
                         {{ $post->description }}
                       </div>
                     </div>
-                    <hr>
+                    <hr> --}}
                 @endforeach
+                
+            
                                 <!--<div class="blog_top">
                                     <h3 class="blog_title">Lorem Ipsum
                                     </h3>
-                                	<figure class="postImg waves-effect">
-	                                    <img src="images/logo/TEDxUMSA.png" alt="">
-                                	</figure>
+                                    <figure class="postImg waves-effect">
+                                        <img src="images/logo/TEDxUMSA.png" alt="">
+                                    </figure>
                                     <ul>
                                         <li>
                                             <a href="#"><i class="fa fa-calendar"></i>June 18,2015</a>
@@ -224,7 +241,7 @@
                                     </form>
                                 </div>-->
             </div>
-		</div>
-	</div>
+        </div>
+    </div>
 </div>
 @endsection
