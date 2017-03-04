@@ -77,7 +77,6 @@ h3 {
         background-color:#fff;
         padding:0 1rem; 
     }
-
     </style>
      <div class="section scrollspy" id="about">
          <div class="container">
@@ -95,7 +94,6 @@ h3 {
                      <div class="description center-align">
                          <img  id="charlas" src="{{asset('images')}}/about/charlas.jpg" >
                      </div>
-                     
                  </div>
                  <div class="col s12 m2">
                      <div class="description-ball"></div>
@@ -108,19 +106,14 @@ h3 {
                      <div class="description-ball"></div>
                      <div class="description center-align">
                          <div class="row h4-row">
-                             <h4>Que es Ted?<br><small>Senior developer</small></h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                             <h4>¿Qué es TED y TEDx?<br><small></small></h4>
+                              <p>TED es una comunidad global sin fines de lucro, que mediante charlas se dedica a la difusión de ideas innovadoras de forma concisa. 
+                              </p>
+                              <p>
+                                Los eventos TEDx, realizados en diferentes partes del mundo, se organizan sin fines políticos, religiosos, ni ganancias personales.Estos eventos son creados pensando en que una idea puede cambiar el mundo. </p>
                          </div>
-                         
-                        
                      </div>
                  </div>
-          
              </div>
          </div>
          <div class="container">
@@ -133,49 +126,36 @@ h3 {
                      <div class="description center-align">
                          <img id ="charlas" src="{{asset('images')}}/about/charla2.png" >
                      </div>
-                     
                  </div>
                  <div class="col s12 m2">
                      <div class="description-ball"></div>
                      <div class="description center-align">
                              <img  class="responsive-img" id="logos1" src="{{asset('images')}}/about/TEDxUMSA1.svg">
-
                      </div>
                  </div>
                   <div class="col s12 m6">
                      <div class="description-ball"></div>
                      <div class="description center-align">
                          <div class="row h4-row">
-                             <h4>Que es Ted?<br><small>Senior developer</small></h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                         </div>
-                         
-                        
+                             <h4>¿Qué es TEDxUMSA?<br><small></small></h4>
+                              <p>TEDxUMSA es un evento que busca difundir ideas valiosas que provoquen en la juventud paceña la inquietud de encontrar su propósito personal para contribuir con soluciones creativas e innovadora a las necesidades y problemáticas de nuestra ciudad.</p>
+                         </div> 
                      </div>
                  </div>
-          
              </div>
          </div>
-
         <div class="video-container">
-        <iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+        <iframe width="853" height="480" src="//www.youtube.com/embed/vzhu8QTA9cc?rel=0" frameborder="0" allowfullscreen></iframe>
         </div>
-
-       
-
          <div class="container">
              <div class="row">
                <h2 class="centre-line"><span>TEDxUMSA</span></h2>
             </div>
          </div>
-
           <div class="container">
+          <!--
              <div class="row">
+
                  <div class="col s12 m4">
                      <div class="description-ball"></div>
                      <div class="description center-align">
@@ -185,6 +165,7 @@ h3 {
                  </div>
               
                   <div class="col s12 m8">
+                  
                      <div class="description-ball"></div>
                      <div class="description center-align">
                          <div class="row h4-row">
@@ -199,9 +180,10 @@ h3 {
                          
                         
                      </div>
+                     
                  </div>
           
-             </div>
+             </div>-->
          </div>
          <div class="container">
              <div class="row">
@@ -210,26 +192,18 @@ h3 {
                      <div class="description center-align">
                          <img id ="charlas" src="{{asset('images')}}/about/charla2.png" >
                      </div>
-                     
                  </div>
-              
                   <div class="col s12 m8">
                      <div class="description-ball"></div>
                      <div class="description center-align">
                          <div class="row h4-row">
-                             <h4>Mision/Vision<br></h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                         </div>
-                         
-                        
+                             <h4>Misión/Visión<br></h4>
+                              <p>Sembrar ideas que inspiren a jóvenes a encontrar su propósito.
+                              </p>
+                              <p>Ser una organización que promueva el intercambio de ideas para cambiar la actitud de los jóvenes frente a las necesidades y problemáticas de Bolivia.</p>
+                         </div> 
                      </div>
                  </div>
-          
              </div>
          </div>
          <div class="container">
@@ -238,25 +212,13 @@ h3 {
                      <div class="description-ball"></div>
                      <div class="description center-align">
                          <div class="row h4-row">
-                             <h4>LEMA CHEESE<br></h4>
-                             <h4><span>Creatividad + Innovacion</span></h4>
-                             
-                         </div>
-                         
-                        
+                             <h4 style="font-weight:bold">Difundir ideas valiosas<br></h4>
+                             <h4><span>Transformando ideas en acciones</span></h4>
+                         </div> 
                      </div>
                  </div>
-          
              </div>
-         </div>
-
-
-
-
-
-   
+         </div>   
       </div>
-
-
      </div>
     @endsection

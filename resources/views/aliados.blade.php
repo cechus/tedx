@@ -41,15 +41,34 @@
 		padding:0 1rem;
 		font-size: 30px; 
 	}
-	/**.amigos {
-		width: 50%;
-		height: 50%;
-		text-align: center;
+	.border{
+		display: flex;
+		align-items: center;
+		height: 400px;
+		border:1px solid #3c3c3c;
+		border-radius: 5px;
 	}
-	.platinum {
-		width: 85%;
-		height: 85%;
-	}**/
+	.borderin{
+		display: flex;
+		align-items: center;
+		height: 300px;
+		border:1px solid #3c3c3c;
+		border-radius: 5px;
+	}
+	.bordercr{
+		display: flex;
+		align-items: center;
+		height: 200px;
+		border:1px solid #3c3c3c;
+		border-radius: 5px;
+	}
+	.borderam{
+		display: flex;
+		align-items: center;
+		height: 100px;
+		border:1px solid #3c3c3c;
+		border-radius: 5px;
+	}
 	.responsive-img{
 		margin-bottom:15px;
 	}
@@ -64,52 +83,167 @@
 		</div>
 		<div class="container">
 			 <div class="row">
-			   <h2 class="centre-line"><span>Aliados gold</span></h2>
+			   <h2 class="centre-line"><span>Transformación</span></h2>
 			</div>
 		 </div>
 		<div class="wide-container">
 		<!--<div class="wide-container">-->
 			<!-- Gold -->
 			<div id="shuffle-grids" class="row" style="">
-				@foreach($aliadosGold as $aliado)
-					<a href="javascript:" class="col s12 m6 l4  ">
-						<img src="{!! $aliado->imagen !!}" class="responsive-img" alt="{!! $aliado->nombre !!}">
+				{{--@foreach($aliadosGold as $aliado)--}}
+					<!--<a href="javascript:" class="col s12 m6 l4  ">
+						
 						{{--<h5>Heisenberg ice-cream</h5>--}}
-					</a>
-				@endforeach
+					</a>-->
+					<div class="col s12 m6 l4 center border">
+	                	<div class="diamond center-block">
+	                    <i class="fa fa-magic fa-5x"></i>
+	                    <p>Aliado Transformación</p>
+			                </div>
+	                </div><div class="col s12 m6 l4 center border">
+	                	<div class="diamond center-block">
+	                    <i class="fa fa-magic fa-5x"></i>
+	                    <p>Aliado Transformación</p>
+			                </div>
+	                </div>			<div class="col s12 m6 l4 center border">
+	                	<div class="diamond center-block">
+	                    <i class="fa fa-magic fa-5x"></i>
+	                    <p>Aliado Transformación</p>
+			                </div>
+	                </div>
+				{{--@endforeach--}}
+
 			</div>
 		</div>
 		<br><br>
 		<div class="container">
 			 <div class="row">
-			   <h2 class="centre-line"><span>Aliados platinum</span></h2>
+			   <h2 class="centre-line"><span>Innovación</span></h2>
 			</div>
 		</div>
 		<div class="wide-container">
 		<!--Platinum-->
 			<div id="shuffle-grid" class="row platinum">
-				@foreach($aliadosPlatimun as $aliado)
-					<a href="javascript:" class="col s6 m4 l3">
-						<img src="{!! asset($aliado->imagen)!!}" class="responsive-img" alt="{!! $aliado->nombre !!}">
+				{{--@foreach($aliadosPlatimun as $aliado)--}}
+					<!--<a href="javascript:" class="col s6 m4 l3">
+						
 						{{--<h5>Heisenberg ice-cream</h5>--}}
-					</a>
-				@endforeach
+					</a>-->
+					<div class="col s6 m4 l3 center borderin">
+	                	<div class="diamond center-block">
+	                    <i class="fa fa-flask fa-5x"></i>
+	                    <p>Aliado innovacion</p>
+			            </div>
+	                </div><div class="col s6 m4 l3 center borderin">
+	                	<div class="diamond center-block">
+	                    <i class="fa fa-flask fa-5x"></i>
+	                    <p>Aliado innovacion</p>
+			            </div>
+	                </div><div class="col s6 m4 l3 center borderin">
+	                	<div class="diamond center-block">
+	                    <i class="fa fa-flask fa-5x"></i>
+	                    <p>Aliado innovacion</p>
+			            </div>
+	                </div><div class="col s6 m4 l3 center borderin">
+	                	<div class="diamond center-block">
+	                    <i class="fa fa-flask fa-5x"></i>
+	                    <p>Aliado innovacion</p>
+			            </div>
+	                </div>
+				{{--@endforeach--}}
 			</div>
 		</div>
 		<div class="container">
 			 <div class="row">
-			   <h2 class="centre-line"><span>Amigos</span></h2>
+			   <h2 class="centre-line"><span>Creatividad</span></h2>
 			</div>
 		</div>
 		<div class="wide-container">
 			<div id="shuffle-grid" class="row amigos">
-				@foreach($aliadosAmigos as $aliado)
-					<a href="javascript:" class="col s4 m2 l2">
-						<img src="{!! $aliado->imagen !!}" class="responsive-img" alt="{!! $aliado->nombre !!}">
-						<!--<img src="{!! asset('img_aliados/'.$aliado->imagen) !!}" class="responsive-img" alt="{!! $aliado->nombre !!}">-->
+				{{--@foreach($aliadosAmigos as $aliado)--}}
+					<!--<a href="javascript:" class="col s4 m2 l2">
+						
 						{{--<h5>Heisenberg ice-cream</h5>--}}
-					</a>
-				@endforeach
+					</a>-->
+					<div class="col s4 m2 l2 center bordercr">
+	                	<div class="diamond center-block">
+	                    <i class="fa fa-lightbulb-o fa-5x"></i>
+	                    <p>Aliado creatividad</p>
+			            </div>
+	                </div><div class="col s4 m2 l2 center bordercr">
+	                	<div class="diamond center-block">
+	                    <i class="fa fa-lightbulb-o fa-5x"></i>
+	                    <p>Aliado creatividad</p>
+			            </div>
+	                </div><div class="col s4 m2 l2 center bordercr">
+	                	<div class="diamond center-block">
+	                    <i class="fa fa-lightbulb-o fa-5x"></i>
+	                    <p>Aliado creatividad</p>
+			            </div>
+	                </div><div class="col s4 m2 l2 center bordercr">
+	                	<div class="diamond center-block">
+	                    <i class="fa fa-lightbulb-o fa-5x"></i>
+	                    <p>Aliado creatividad</p>
+			            </div>
+	                </div><div class="col s4 m2 l2 center bordercr">
+	                	<div class="diamond center-block">
+	                    <i class="fa fa-lightbulb-o fa-5x"></i>
+	                    <p>Aliado creatividad</p>
+			            </div>
+	                </div><div class="col s4 m2 l2 center bordercr">
+	                	<div class="diamond center-block">
+	                    <i class="fa fa-lightbulb-o fa-5x"></i>
+	                    <p>Aliado creatividad</p>
+			            </div>
+	                </div>
+				{{--@endforeach--}}
+			</div>
+		</div>
+		<div class="container">
+			 <div class="row">
+			   <h2 class="centre-line"><span>Aliado</span></h2>
+			</div>
+		</div>
+		<div class="wide-container">
+			<div id="shuffle-grid" class="row amigos">
+				{{--@foreach($aliadosAmigos as $aliado)--}}
+					<!--<a href="javascript:" class="col s2 m1 l1">
+						
+						
+						{{--<h5>Heisenberg ice-cream</h5>--}}
+					</a>-->
+					<div class="col s4 m2 l2 center borderam">
+	                	<div class="diamond center-block">
+	                    <i class="fa fa-heart fa-2x"></i>
+	                    <p>Aliado </p>
+			            </div>
+	                </div><div class="col s4 m2 l2 center borderam">
+	                	<div class="diamond center-block">
+	                    <i class="fa fa-heart fa-2x"></i>
+	                    <p>Aliado </p>
+			            </div>
+	                </div><div class="col s4 m2 l2 center borderam">
+	                	<div class="diamond center-block">
+	                    <i class="fa fa-heart fa-2x"></i>
+	                    <p>Aliado </p>
+			            </div>
+	                </div><div class="col s4 m2 l2 center borderam">
+	                	<div class="diamond center-block">
+	                    <i class="fa fa-heart fa-2x"></i>
+	                    <p>Aliado </p>
+			            </div>
+	                </div><div class="col s4 m2 l2 center borderam">
+	                	<div class="diamond center-block">
+	                    <i class="fa fa-heart fa-2x"></i>
+	                    <p>Aliado </p>
+			            </div>
+	                </div><div class="col s4 m2 l2 center borderam">
+	                	<div class="diamond center-block">
+	                    <i class="fa fa-heart fa-2x"></i>
+	                    <p>Aliado </p>
+			            </div>
+	                </div>
+				{{--@endforeach--}}
 			</div>
 		</div>
 	</div>

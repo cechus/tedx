@@ -90,9 +90,9 @@
                         <a href=""><i class="fa fa-send"></i></a>
                     </span>-->
                     <ul class="icons right">
-                        <li><a href="#!"><i class="fa ic fa-facebook"></i>  facebook.com/TEDxUMSA</a></li>
-                        <li><a href="#!"><i class="fa ic fa-twitter"></i> @tedxumsa</a></li>
-                        <li><a href="#!"><i class="fa ic fa-send"></i> tedxumsa@gmail.com</a></li>
+                        <li><a href="https://www.facebook.com/TEDxUMSA"><i class="fa ic fa-facebook"></i>  facebook.com/TEDxUMSA</a></li>
+                        <li><a href="https://www.twitter.com/tedxumsa"><i class="fa ic fa-twitter"></i> @tedxumsa</a></li>
+                        <li><a href="mailto:tedxumsa@gmail.com"><i class="fa ic fa-envelope"></i> tedxumsa@gmail.com</a></li>
                     </ul>
                 </div>
             </div>

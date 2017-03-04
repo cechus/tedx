@@ -65,3 +65,6 @@ Route::get('eliminar_post/{idPost}','PostController@eliminar_post')->name('elimi
 Route::get('list_speakers', 'SpeakerController@list_speaker')->name('list_speakers');
 Route::get('speaker', 'SpeakerController@create')->name('speaker');
 Route::post('speaker', 'SpeakerController@store')->name('speaker');
+Route::get('/error',function(){
+	return view('error');
+});

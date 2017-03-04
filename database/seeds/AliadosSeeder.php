@@ -51,11 +51,6 @@ class AliadosSeeder extends Seeder
         	'categoria' => 'Platinum',
         	'imagen' => '/images/aliados/test.jpg',
         	'descripcion'=> 'Description'
-        ]);DB::table('aliados')->insert([
-        	'nombre' => 'Uno',
-        	'categoria' => 'Platinum',
-        	'imagen' => '/images/aliados/test.jpg',
-        	'descripcion'=> 'Description'
         ]);
     }
 }

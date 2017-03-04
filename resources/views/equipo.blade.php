@@ -14,7 +14,8 @@
                         <!-- equipo tedX , recorrer con fetch-->
                         <div class="col s12 m6 l4">
                             <div class="card">
-                                <div class="card-image waves-effect waves-block waves-light" onMouseOver="cambiar();" onMouseOut="volver();">
+                                <div class="card-image waves-effect waves-block waves-light" >
+                                <!--<div class="card-image waves-effect waves-block waves-light" onMouseOver="cambiar();" onMouseOut="volver();">-->
                                   <img class="img-responsive activator" id="carlos" src="images/team/carlos.jpg">
                                 </div>
                                 <div class="card-content">
@@ -26,7 +27,7 @@
                                   <span class="card-title grey-text text-darken-4"><b>Carlos Zabaleta Copa</b>
                                   <i class="material-icons right">close</i></span>
                                   <h6>Licenciatario/Organizador</h6>
-                                  <p>Aqui va informacion acerca de mi persona. Soy parte del equipo organizador de TEDxUMSA</p>
+                                  <!--<p>Aqui va informacion acerca de mi persona. Soy parte del equipo organizador de TEDxUMSA</p>-->
                                 </div>
                             </div>
                         </div>
@@ -45,7 +46,7 @@
                                   <span class="card-title grey-text text-darken-4"><b>Ana Quispe Sirpa</b>
                                   <i class="material-icons right">close</i></span>
                                   <h6>Directora de protocolo y Produccion ejecutiva</h6>
-                                  <p>Aqui va informacion acerca de mi persona. Soy parte del equipo organizador de TEDxUMSA</p>
+                                  <!--<p>Aqui va informacion acerca de mi persona. Soy parte del equipo organizador de TEDxUMSA</p>-->
                                 </div>
                             </div>
                         </div>
@@ -63,7 +64,7 @@
                                   <span class="card-title grey-text text-darken-4"><b>Hermann Lino</b>
                                   <i class="material-icons right">close</i></span>
                                   <h6>Director de Ventas</h6>
-                                  <p>Aqui va informacion acerca de mi persona. Soy parte del equipo organizador de TEDxUMSA</p>
+                                  <!--<p>Aqui va informacion acerca de mi persona. Soy parte del equipo organizador de TEDxUMSA</p>-->
                                 </div>
                             </div>
                         </div>
@@ -81,7 +82,7 @@
                                   <span class="card-title grey-text text-darken-4"><b>Veronica Clavijo Altamirano</b>
                                   <i class="material-icons right">close</i></span>
                                   <h6>Directora de relaciones externas y Curaduría</h6>
-                                  <p>Aqui va informacion acerca de mi persona. Soy parte del equipo organizador de TEDxUMSA</p>
+                                  <!--<p>Aqui va informacion acerca de mi persona. Soy parte del equipo organizador de TEDxUMSA</p>-->
                                 </div>
                             </div>
                         </div>
@@ -99,7 +100,7 @@
                                   <span class="card-title grey-text text-darken-4"><b>Andrés Mamani</b>
                                   <i class="material-icons right">close</i></span>
                                   <h6>Director de Media</h6>
-                                  <p>Aqui va informacion acerca de mi persona. Soy parte del equipo organizador de TEDxUMSA</p>
+                                  <!--<p>Aqui va informacion acerca de mi persona. Soy parte del equipo organizador de TEDxUMSA</p>-->
                                 </div>
                             </div>
                         </div>
@@ -117,7 +118,7 @@
                                   <span class="card-title grey-text text-darken-4"><b>Kevin Vásquez</b>
                                   <i class="material-icons right">close</i></span>
                                   <h6>Director Creativo de Diseño</h6>
-                                  <p>Aqui va informacion acerca de mi persona. Soy parte del equipo organizador de TEDxUMSA</p>
+                                  <!--<p>Aqui va informacion acerca de mi persona. Soy parte del equipo organizador de TEDxUMSA</p>-->
                                 </div>
                             </div>
                         </div>
@@ -135,7 +136,7 @@
                                   <span class="card-title grey-text text-darken-4"><b>Karina Alejandra Llanos</b>
                                   <i class="material-icons right">close</i></span>
                                   <h6>Directora de Marketing y Relaciones Publicas</h6>
-                                  <p>Aqui va informacion acerca de mi persona. Soy parte del equipo organizador de TEDxUMSA</p>
+                                  <!--<p>Aqui va informacion acerca de mi persona. Soy parte del equipo organizador de TEDxUMSA</p>-->
                                 </div>
                             </div>
                         </div>
