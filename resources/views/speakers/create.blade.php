@@ -34,10 +34,11 @@
                             </div>
                         </div>
                         <!-- /.box-body -->
-
+                        @include('layouts.errors')
                         <div class="box-footer">
                             <button type="submit" class="btn btn-primary">Guardar</button>
                         </div>
+
                     {!! Form::hidden('id') !!}
                     {!! Form::close() !!}
                 </div>

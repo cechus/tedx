@@ -27,7 +27,7 @@ class SpeakerController extends Controller
         'nombre' => 'required',
         'charla' => 'required',
         'descripcion' => 'required',
-
+        'imagen' => 'required',
       ]);
 
       $speaker = new Speaker;
