@@ -68,3 +68,18 @@ Route::post('speaker', 'SpeakerController@store')->name('speaker');
 Route::get('/error',function(){
 	return view('error');
 });
+
+//***tags***************
+Route::get('list_tags', 'TagController@list_tags')->name('list_tags');
+Route::get('create_tag', 'TagController@create')->name('create_tag');
+Route::post('store_tag', 'TagController@store')->name('store_tag');
+
+Route::get('delete_tag/{idTag}','TagController@destroy')->name('delete_tag');
+Route::get('edit_tag/{idTag}','TagController@edit');
+Route::post('update_tag/{idTag}','TagController@update')->name('update_tag');
+
+
+// Route::get('speaker', 'SpeakerController@create')->name('speaker');
+// Route::post('speaker', 'SpeakerController@store')->name('speaker');
+
+
