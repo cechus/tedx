@@ -43,7 +43,7 @@
                                     <td>{!! $speaker->imagen !!}</td>
                                     <td>
                                         <a href="#">Editar</a>
-                                        <a href="#">Eliminar</a>
+                                        <a href="{!! route('eliminar_speaker',[$speaker->id]) !!}">Eliminar</a>
                                     </td>
                                 </tr>
                             @endforeach

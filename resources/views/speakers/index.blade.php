@@ -1,18 +1,22 @@
 @extends('layouts.app')
-
+<style media="screen">
+  .card-content {
+    width: auto;
+    height: 20%;
+  }
+</style>
 @section('content')
   <div class="section scrollspy" id="services">
       <div class="container">
           <div class="row">
               <h2>Expositores</h2>
-              <div class="col s12 m10 offset-m1 l8 offset-l2">
-              </div>
+
                   <!-- Recorriendo los speakers(EXPOSITORES) con foreach-->
                   @foreach ($speakers as $speak)
                     <div class="col s12 m6 l4">
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
-                              <img class="activator" src="{{ $speak->imagen}}">
+                              <img class="activator" src="{{ asset('img_speakers/'.$speak->imagen) }}">
                             </div>
                             <div class="card-content">
                               <span class="card-title activator grey-text text-darken-4">
