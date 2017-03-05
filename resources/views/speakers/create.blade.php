@@ -30,14 +30,15 @@
                             </div>
                             <div class="form-group">
                                 <label>Biografia del Expositor</label>
-                                {{ Form::textarea('descripcion', null, ['class' => 'form-control','rows' => 3]) }}
+                                {{ Form::textarea('descripcion', null, ['class' => 'form-control','rows' => 4]) }}
                             </div>
                         </div>
                         <!-- /.box-body -->
-
+                        @include('layouts.errors')
                         <div class="box-footer">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary">Guardar</button>
                         </div>
+
                     {!! Form::hidden('id') !!}
                     {!! Form::close() !!}
                 </div>

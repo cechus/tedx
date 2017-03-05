@@ -68,6 +68,8 @@ Route::post('speaker', 'SpeakerController@store')->name('speaker');
 Route::get('/error',function(){
 	return view('error');
 });
+Route::get('eliminar_speaker/{idSpeaker}','SpeakerController@eliminar')->name('eliminar_speaker');
+
 
 //***tags***************
 Route::get('list_tags', 'TagController@list_tags')->name('list_tags');
@@ -81,5 +83,3 @@ Route::post('update_tag/{idTag}','TagController@update')->name('update_tag');
 
 // Route::get('speaker', 'SpeakerController@create')->name('speaker');
 // Route::post('speaker', 'SpeakerController@store')->name('speaker');
-
-

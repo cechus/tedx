@@ -1,110 +1,21 @@
 @extends('layouts.app')
-
+<style media="screen">
+  .card-content {
+    width: auto;
+    height: 20%;
+  }
+</style>
 @section('content')
 <style>
   .col{
 	display: inline-block;
   }
 </style>
-  <div class="section scrollspy" id="services">
+  <div class="section scrollspy" id="
 	  <div class="container">
 		  <div class="row" id="speakers">
 			  <h2>Expositores</h2>
 				  <!-- Recorriendo los speakers(EXPOSITORES) con foreach-->
-				  @foreach ($speakers as $speak)
-					<div class="col s12 m6 l4">
-						<div class="card">
-							<div class="card-image waves-effect waves-block waves-light">
-							  <img class="activator" src="{{ $speak->imagen}}">
-							</div>
-							<div class="card-content">
-							  <span class="card-title activator grey-text ">
-							  {{ $speak->nombre }}<i class="material-icons right">more_vert</i></span>
-							  <p>{{ $speak->charla }}</p>
-							</div>
-							<div class="card-reveal">
-							  <span class="card-title grey-text ">{{ $speak->nombre }}
-							  <i class="material-icons right">close</i></span>
-							  <h6><b>{{ $speak->charla }}</b></h6>
-							  <p>{{ $speak->descripcion }}</p>
-							</div>
-						</div>
-					</div><div class="col s12 m6 l4">
-						<div class="card">
-							<div class="card-image waves-effect waves-block waves-light">
-							  <img class="activator" src="{{ $speak->imagen}}">
-							</div>
-							<div class="card-content">
-							  <span class="card-title activator grey-text ">
-							  {{ $speak->nombre }}<i class="material-icons right">more_vert</i></span>
-							  <p>{{ $speak->charla }}</p>
-							</div>
-							<div class="card-reveal">
-							  <span class="card-title grey-text ">{{ $speak->nombre }}
-							  <i class="material-icons right">close</i></span>
-							  <h6><b>{{ $speak->charla }}</b></h6>
-							  <p>{{ $speak->descripcion }}</p>
-							</div>
-						</div>
-					</div><div class="col s12 m6 l4">
-						<div class="card">
-							<div class="card-image waves-effect waves-block waves-light">
-							  <img class="activator" src="{{ $speak->imagen}}">
-							</div>
-							<div class="card-content">
-							  <span class="card-title activator grey-text ">
-							  {{ $speak->nombre }}<i class="material-icons right">more_vert</i></span>
-							  <p>{{ $speak->charla }}</p>
-							</div>
-							<div class="card-reveal">
-							  <span class="card-title grey-text ">{{ $speak->nombre }}
-							  <i class="material-icons right">close</i></span>
-							  <h6><b>{{ $speak->charla }}</b></h6>
-							  <p>{{ $speak->descripcion }}</p>
-							</div>
-						</div>
-					</div>
-				  @endforeach
-				  @foreach ($speakers as $speak)
-					<div class="col s12 m6 l4">
-						<div class="card">
-							<div class="card-image waves-effect waves-block waves-light">
-							  <img class="activator" src="{{ $speak->imagen}}">
-							</div>
-							<div class="card-content">
-							  <span class="card-title activator grey-text ">
-							  {{ $speak->nombre }}<i class="material-icons right">more_vert</i></span>
-							  <p>{{ $speak->charla }}</p>
-							</div>
-							<div class="card-reveal">
-							  <span class="card-title grey-text ">{{ $speak->nombre }}
-							  <i class="material-icons right">close</i></span>
-							  <h6><b>{{ $speak->charla }}</b></h6>
-							  <p>{{ $speak->descripcion }}</p>
-							</div>
-						</div>
-					</div>
-				  @endforeach
-				  @foreach ($speakers as $speak)
-					<div class="col s12 m6 l4">
-						<div class="card">
-							<div class="card-image waves-effect waves-block waves-light">
-							  <img class="activator" src="{{ $speak->imagen}}">
-							</div>
-							<div class="card-content">
-							  <span class="card-title activator grey-text ">
-							  {{ $speak->nombre }}<i class="material-icons right">more_vert</i></span>
-							  <p>{{ $speak->charla }}</p>
-							</div>
-							<div class="card-reveal">
-							  <span class="card-title grey-text ">{{ $speak->nombre }}
-							  <i class="material-icons right">close</i></span>
-							  <h6><b>{{ $speak->charla }}</b></h6>
-							  <p>{{ $speak->descripcion }}</p>
-							</div>
-						</div>
-					</div>
-				  @endforeach
 				  @foreach ($speakers as $speak)
 					<div class="col s12 m6 l4">
 						<div class="card">

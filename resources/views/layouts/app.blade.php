@@ -35,12 +35,12 @@
         p{
             font-family: 'Open Sans', sans-serif;
         }
-        
+
         footer.page-footer .footer-copyright{
             line-height: 0px;
         }
         ul{
-            display: block;   
+            display: block;
             -webkit-margin-after: .5em;
             -webkit-margin-before: .5em;
         }

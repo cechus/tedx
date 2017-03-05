@@ -22,22 +22,46 @@ class SpeakerController extends Controller
       return view('speakers.create');
     }
 
-    public function store(){
+    public function store(Request $request){
       $this->validate(request(), [
         'nombre' => 'required',
         'charla' => 'required',
         'descripcion' => 'required',
-        
+        'imagen' => 'required',
       ]);
 
       $speaker = new Speaker;
-      $speaker->nombre = request('nombre'); 
+      $speaker->nombre = request('nombre');
       $speaker->charla = request('charla');
       $speaker->descripcion = request('descripcion');
-      $speaker->imagen = request('imagen');
+      if (!empty($request->file('imagen'))) {
+          $ext = $request->file('imagen')->getClientOriginalExtension();
+          $nombre_uui = uniqid('', true);
+          if ($request->file('imagen')->move('img_speakers', "$nombre_uui.$ext")) {
+              if (!empty($speaker->imagen)) {
+                  $directo = public_path()  . '/img_speakers/' . $speaker->imagen;
+                  if (file_exists($directo)) {
+                      unlink($directo);
+                  }
+              }
+              $speaker->imagen = "$nombre_uui.$ext";
+          }
+      }
       $speaker->save();
       return redirect('list_speakers');
       //redirect('administrador.list_speaker');
+    }
+
+    public function eliminar($idSpeaker){
+        $speaker = Speaker::find($idSpeaker);
+        if (!empty($speaker->imagen)) {
+            $directo = public_path()  . '/img_speakers/' . $speaker->imagen;
+            if (file_exists($directo)) {
+                unlink($directo);
+            }
+        }
+        $speaker->delete();
+        return redirect()->back();
     }
 
 }

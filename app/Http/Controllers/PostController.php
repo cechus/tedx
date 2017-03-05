@@ -76,7 +76,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        $date=Carbon::parse($post->date)->toFormattedDateString();  
+        $date=Carbon::parse($post->date)->toFormattedDateString();
         return view('post.show',compact('post','date'));
     }
 
