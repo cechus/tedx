@@ -47,9 +47,7 @@
         .ic{
             font-size:19px;
         }
-        .leaflet-top, .leaflet-bottom{
-            z-index: ;
-        }
+        
     </style>
     <!--Scripts-->
     <script>
