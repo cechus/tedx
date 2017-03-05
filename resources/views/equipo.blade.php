@@ -139,7 +139,6 @@
 		</div>
 		<script type="text/javascript" src="/libs/jquery/jquery-2.1.1.js"></script>
 		  <!--<script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.2/dist/isotope.pkgd.min.js"></script>-->
-		  <script type="text/javascript" src="/libs/masonry/dist/masonry.min.js"></script>
 			  <script type="text/javascript">
 			  $(document).ready(function() {
 				$('#equipo').masonry({
