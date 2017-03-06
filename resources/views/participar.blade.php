@@ -10,7 +10,7 @@
                         <p class="flow-text center-align">
                             Se parte de nosotros participa en nuestro evento.
                         </p>
-                        
+
                     </div>
                 </div>
                 <div class="row services">
@@ -20,17 +20,17 @@
                         <div class="divider"></div>
                         <h5>Recomendar un Expositor</h5>
                     </a>
-                              
+
                         <p></p>
                     </div>
                     <div class="col s12 l4">
-                    <a href="/">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeB17txNlplaExo2ZrzUtEJQ_TSsH9Kjn_6UqpowhSLAhWfVw/viewform?c=0&w=1">
                         <i class="fa fa-5x fa-comments-o animated-color"></i>
                         <div class="divider"></div>
                         <h5>Asistir Al evento</h5>
                         <p></p>
                     </a>
-                    </div>  
+                    </div>
                     <div class="col s12 l4">
                     <a href="/error">
                         <i class="fa fa-5x fa-user-plus animated-color"></i>
@@ -46,10 +46,10 @@
 @section('scriptside')
 <script type="text/javascript">
     $('.button-collapse').sideNav({
-         menuWidth: 300, 
+         menuWidth: 300,
          edge: 'left',
          closeOnClick: true,
-         draggable: true 
+         draggable: true
        }
      );
 </script>
