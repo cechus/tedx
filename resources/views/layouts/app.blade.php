@@ -90,7 +90,7 @@
                         <li><a href="{{url('aliados')}}">Aliados</a></li>
                         <li><a href="{{url('expositores')}}">Expositores</a></li>
                         <li><a href="{{url('equipo')}}">Equipo</a></li>
-                        <li><a href="{{url('posts')}}">Blog</a></li>
+                        <!-- <li><a href="{{url('posts')}}">Blog</a></li> -->
                         <li><a href="{{url('participar')}}">Participar</a></li>
                     </ul>
                     <!-- Mobile menu, make sure it is equal to the statis menu -->
@@ -99,7 +99,7 @@
                         <li><a href="{{url('aliados')}}">Aliados</a></li>
                         <li><a href="{{url('expositores')}}">Expositores</a></li>
                         <li><a href="{{url('equipo')}}">Equipo</a></li>
-                        <li><a href="{{url('posts')}}">Blog</a></li>
+                        <!-- <li><a href="{{url('posts')}}">Blog</a></li> -->
                         <li><a href="{{url('participar')}}">Participar</a></li>
                     </ul>
                 </div>
