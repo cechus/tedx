@@ -68,6 +68,8 @@ Route::post('speaker', 'SpeakerController@store')->name('speaker');
 Route::get('/error',function(){
 	return view('error');
 });
+Route::get('edit_speaker/{idSpeaker}', 'SpeakerController@edit');
+Route::post('update_speaker/{idSpeaker}','SpeakerController@update')->name('update_speaker');
 Route::get('eliminar_speaker/{idSpeaker}','SpeakerController@eliminar')->name('eliminar_speaker');
 
 

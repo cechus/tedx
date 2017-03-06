@@ -43,7 +43,7 @@
                                     <td>{!! $speaker->descripcion !!}</td>
                                     <td><img src="{!! $speaker->imagen !!}" style="height: 60px;"></td>
                                     <td>
-                                        <a href="#" class="btn btn-raised btn-success">Editar</a>
+                                        <a href="{{ url('edit_speaker',array($speaker->id)) }}" class="btn btn-raised btn-success">Editar</a>
                                         <a href="{!! route('eliminar_speaker',[$speaker->id]) !!}" class="btn btn-raised btn-danger">Eliminar</a>
                                     </td>
                                 </tr>

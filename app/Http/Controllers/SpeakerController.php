@@ -23,6 +23,7 @@ class SpeakerController extends Controller
     }
 
     public function store(Request $request){
+      $speaker = new Speaker;
       $this->validate(request(), [
         'nombre' => 'required',
         'charla' => 'required',
@@ -30,7 +31,6 @@ class SpeakerController extends Controller
         'imagen' => 'required',
       ]);
 
-      $speaker = new Speaker;
       $speaker->nombre = request('nombre');
       $speaker->charla = request('charla');
       $speaker->descripcion = request('descripcion');
@@ -50,6 +50,43 @@ class SpeakerController extends Controller
       $speaker->save();
       return redirect('list_speakers');
       //redirect('administrador.list_speaker');
+    }
+
+    public function edit($idSpeaker)
+    {
+        $speaker=Speaker::find($idSpeaker);
+        return view('speakers.edit', compact('speaker'));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $idSpeaker)
+    {
+          $speaker=Speaker::find($idSpeaker);
+          $speaker->nombre= request('nombre');
+          $speaker->charla= request('charla');
+
+          if (!empty($request->file('imagen'))) {
+              $ext = $request->file('imagen')->getClientOriginalExtension();
+              $nombre_uui = uniqid('', true);
+              if ($request->file('imagen')->move(public_path('images/speakers'), "$nombre_uui.$ext")) {
+                  if (!empty($speaker->imagen)) {
+                      $directo = public_path()  . '/images/speakers/' . $speaker->imagen;
+                      if (file_exists($directo)) {
+                          unlink($directo);
+                      }
+                  }
+                  $speaker->imagen = "/images/speakers/$nombre_uui.$ext";
+              }
+          }
+          $speaker->descripcion = request('descripcion');
+          $speaker->save();
+          return redirect('list_speakers');
     }
 
     public function eliminar($idSpeaker){
