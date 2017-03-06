@@ -7,14 +7,14 @@
   font-size: 46px;
   font-weight: 200;
   line-height: 110%;
-  letter-spacing: 5px; 
+  letter-spacing: 5px;
    }
 
   @media only screen and (max-width: 600px) {
 	  h3
 	  {
 		  font-size: 46px;
-		  letter-spacing: 3px; } 
+		  letter-spacing: 3px; }
   }
   h3:after {
 	content: '';
@@ -28,18 +28,18 @@
 	background-color: #69f0ae; }
 
 	h2.centre-line{
-	   width: 90%; 
-	   border-bottom:0.1rem solid #ccc; 
+	   width: 90%;
+	   border-bottom:0.1rem solid #ccc;
 	   line-height:0.1em;
 	   margin:2.5rem 5%;
 	   text-transform: none;
 	   font-size: 30px;
-	} 
+	}
 
-	h2.centre-line span{ 
+	h2.centre-line span{
 		background-color:#fff;
 		padding:0 1rem;
-		font-size: 30px; 
+		font-size: 30px;
 	}
 	.border{
 		display: flex;
@@ -92,7 +92,7 @@
 			<div id="shuffle-grids" class="row" style="">
 				{{--@foreach($aliadosGold as $aliado)--}}
 					<!--<a href="javascript:" class="col s12 m6 l4  ">
-						
+
 						{{--<h5>Heisenberg ice-cream</h5>--}}
 					</a>-->
 					<div class="col s12 m6 l4 center border">
@@ -126,7 +126,7 @@
 			<div id="shuffle-grid" class="row platinum">
 				{{--@foreach($aliadosPlatimun as $aliado)--}}
 					<!--<a href="javascript:" class="col s6 m4 l3">
-						
+
 						{{--<h5>Heisenberg ice-cream</h5>--}}
 					</a>-->
 					<div class="col s6 m4 l3 center borderin">
@@ -162,7 +162,7 @@
 			<div id="shuffle-grid" class="row amigos">
 				{{--@foreach($aliadosAmigos as $aliado)--}}
 					<!--<a href="javascript:" class="col s4 m2 l2">
-						
+
 						{{--<h5>Heisenberg ice-cream</h5>--}}
 					</a>-->
 					<div class="col s4 m2 l2 center bordercr">
@@ -208,8 +208,8 @@
 			<div id="shuffle-grid" class="row amigos">
 				{{--@foreach($aliadosAmigos as $aliado)--}}
 					<!--<a href="javascript:" class="col s2 m1 l1">
-						
-						
+
+
 						{{--<h5>Heisenberg ice-cream</h5>--}}
 					</a>-->
 					<div class="col s4 m2 l2 center borderam">
@@ -251,10 +251,10 @@
 @section('scriptside')
 <script type="text/javascript">
     $('.button-collapse').sideNav({
-         menuWidth: 300, 
+         menuWidth: 300,
          edge: 'left',
          closeOnClick: true,
-         draggable: true 
+         draggable: true
        }
      );
 </script>
