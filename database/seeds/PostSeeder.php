@@ -13,13 +13,13 @@ class PostSeeder extends Seeder
     {
         /*
         $l=12;
+        $faker = Faker\Factory::create();
         for ($i=1; $i <=$l ; $i++) { 
-            
         DB::table('posts')->insert([
-            'title' => 'Titulo del Post'.$i,
-            'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda qui fugiat quidem reiciendis, recusandae. Unde suscipit iure sunt soluta quisquam aliquam corporis veritatis maiores odio. Pariatur, laborum a odit nobis.',
-            'date' => "2017-.$i.-08 00:00:00",
-            'image' => "/path/url",
+            'title' => 'Titulo'.$i,
+            'description' => $faker->text(),
+            'date' => $faker->date(),
+            'image' => "58b969a711b739.97759974.png",
         ]);
         DB::table('tags')->insert([
             'name' => 'tag'.$i
@@ -31,7 +31,8 @@ class PostSeeder extends Seeder
             'tag_id' => random_int(1, $l),
             'post_id' => random_int(1, $l)
         ]);
-        }*/
+        }
+        */
 
         DB::table('speakers')->insert(
             [

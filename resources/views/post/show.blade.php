@@ -6,7 +6,7 @@
 
 		.tag_list  a {
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-	color: #666666;
+	color: #eee;
 	display: inline-block;
 	font-size: 13px;
 	font-weight: 600;
@@ -14,10 +14,10 @@
 	padding: 0 10px;
 }
 .tag_list  a .btn.focus{
-	color: #666666;
+	color: #eee;
 }
 .tag_list  a:hover {
-	background: #ff4081;
+	background: #fb3846;
 	color: #ffffff;
 	-webkit-transform: translateY(-2px);
 	transform: translateY(-2px);
@@ -114,9 +114,9 @@
                                             <a href="#"> <i class="fa fa-calendar"> </i> {{ $date}}</a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <!--<a href="#">
                                                 <i class="fa fa-comments" aria-hidden="true"></i>2
-                                            </a>
+                                            </a>-->
                                         </li>
                                     </ul>
                                 </div>
