@@ -41,7 +41,7 @@
                                     <td>{!! $speaker->nombre !!}</td>
                                     <td>{!! $speaker->charla !!}</td>
                                     <td>{!! $speaker->descripcion !!}</td>
-                                    <td>{!! $speaker->imagen !!}</td>
+                                    <td><img src="{!! $speaker->imagen !!}" style="height: 60px;"></td>
                                     <td>
                                         <a href="#" class="btn btn-raised btn-success">Editar</a>
                                         <a href="{!! route('eliminar_speaker',[$speaker->id]) !!}" class="btn btn-raised btn-danger">Eliminar</a>

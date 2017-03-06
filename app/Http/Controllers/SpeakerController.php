@@ -37,14 +37,14 @@ class SpeakerController extends Controller
       if (!empty($request->file('imagen'))) {
           $ext = $request->file('imagen')->getClientOriginalExtension();
           $nombre_uui = uniqid('', true);
-          if ($request->file('imagen')->move('img_speakers', "$nombre_uui.$ext")) {
+          if ($request->file('imagen')->move(public_path('images/speakers'), "$nombre_uui.$ext")) {
               if (!empty($speaker->imagen)) {
-                  $directo = public_path()  . '/img_speakers/' . $speaker->imagen;
+                  $directo = public_path()  . '/images/speakers/' . $speaker->imagen;
                   if (file_exists($directo)) {
                       unlink($directo);
                   }
               }
-              $speaker->imagen = "$nombre_uui.$ext";
+              $speaker->imagen = "/images/speakers/$nombre_uui.$ext";
           }
       }
       $speaker->save();

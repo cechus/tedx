@@ -14,7 +14,7 @@ class PostSeeder extends Seeder
         /*
         $l=12;
         $faker = Faker\Factory::create();
-        for ($i=1; $i <=$l ; $i++) { 
+        for ($i=1; $i <=$l ; $i++) {
         DB::table('posts')->insert([
             'title' => 'Titulo'.$i,
             'description' => $faker->text(),
@@ -25,8 +25,8 @@ class PostSeeder extends Seeder
             'name' => 'tag'.$i
         ]);
     	}
-        
-        for ($i=1; $i <=$l ; $i++) { 
+
+        for ($i=1; $i <=$l ; $i++) {
         DB::table('post_tag')->insert([
             'tag_id' => random_int(1, $l),
             'post_id' => random_int(1, $l)

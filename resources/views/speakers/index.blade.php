@@ -11,7 +11,7 @@
 	display: inline-block;
   }
 </style>
-  <div class="section scrollspy" id="
+  <div class="section scrollspy" id="">
 	  <div class="container">
 		  <div class="row" id="speakers">
 			  <h2>Expositores</h2>
@@ -47,7 +47,7 @@
 				});
 			});
 			  </script>
-		  
+
 		  <br><br><br><br><br><br>
 	  </div>
   </div>
@@ -55,10 +55,10 @@
 @section('scriptside')
 <script type="text/javascript">
     $('.button-collapse').sideNav({
-         menuWidth: 300, 
+         menuWidth: 300,
          edge: 'left',
          closeOnClick: true,
-         draggable: true 
+         draggable: true
        }
      );
 </script>
