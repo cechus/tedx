@@ -222,3 +222,14 @@ h3 {
       </div>
      </div>
     @endsection
+    @section('scriptside')
+    <script type="text/javascript">
+        $('.button-collapse').sideNav({
+             menuWidth: 300, 
+             edge: 'left',
+             closeOnClick: true,
+             draggable: true 
+           }
+         );
+    </script>
+    @endsection

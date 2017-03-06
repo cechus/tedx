@@ -4,9 +4,23 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>TEDxUMSA</title>
+    <meta name="description" content="TEDxUMSA es un evento que busca difundir ideas valiosas que provoquen en la juventud paceña la inquietud de encontrar su propósito personal para contribuir con soluciones creativas e innovadora a las necesidades y problemáticas de nuestra ciudad." />
+    <!-- Para Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TEDxUMSA" />
+    <meta name="twitter:description" content="TEDxUMSA es un evento que busca difundir ideas valiosas que provoquen en la juventud paceña la inquietud de encontrar su propósito personal para contribuir con soluciones creativas e innovadora a las necesidades y problemáticas de nuestra ciudad." />
+    <meta name="twitter:image:src" content="{{asset('/images/logo/TEDxUMSA.png')}}" />
+    <!-- Para Facebook y otros -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="TEDxUMSA" />
+    <meta property="og:description" content="TEDxUMSA es un evento que busca difundir ideas valiosas que provoquen en la juventud paceña la inquietud de encontrar su propósito personal para contribuir con soluciones creativas e innovadora a las necesidades y problemáticas de nuestra ciudad." />
+    <meta property="og:image" content="{{asset('/images/logo/TEDxUMSA.png')}}" />
+    <meta property="og:url" content="http://www.tedxumsa.com" />
+    <!-- Para Google+ -->
+    <meta itemprop="name" content="TEDxUMSA" />
+    <meta itemprop="description" content="TEDxUMSA es un evento que busca difundir ideas valiosas que provoquen en la juventud paceña la inquietud de encontrar su propósito personal para contribuir con soluciones creativas e innovadora a las necesidades y problemáticas de nuestra ciudad." />
+    <meta itemprop="image" content="{{asset('/images/logo/TEDxUMSA.png')}}" />
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('/') }}libs/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="{{ asset('/') }}libs/font-awesome/css/font-awesome.min.css">
@@ -33,6 +47,7 @@
         .ic{
             font-size:19px;
         }
+        
     </style>
     <!--Scripts-->
     <script>
@@ -102,5 +117,6 @@
     {{--<script src="https://maps.googleapis.com/maps/api/js"></script>--}}
     <script src="{{ asset('/') }}js/config.js"></script>
     <script src="{{ asset('/') }}js/build.js"></script>
+    @yield('scriptside')
 </body>
 </html>

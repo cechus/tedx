@@ -9,8 +9,8 @@ var Wata = {
             slices: 250
         },
         light: {
-            ambient: '#5838e6',
-            diffuse: '#4efa62',
+            ambient: '#3b5998',
+            diffuse: '#FD2C05',
             distance: 55
         }
     },
@@ -46,9 +46,9 @@ var Wata = {
     },
 
     // Google map position and marker name
-    googleMaps: {
+    /*googleMaps: {
         lat: 34.0549946,
         lng: -118.2475384,
         zoom: 16
-    }
+    }*/
 };

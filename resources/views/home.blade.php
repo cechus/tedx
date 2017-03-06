@@ -22,76 +22,6 @@
     .typed-cursor {
         font-size: 60px;
         display: inline-block;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        .
         margin: 0 10px;
         color: red;
         -webkit-animation-name: flash;
@@ -103,7 +33,6 @@
     }
 </style>
 @section('content')
-
         <!-- The preloader we see before the whole site is loaded -->
         <div id="preloader" class="valign-wrapper">
             <div class="preloader-wrapper big active">
@@ -164,14 +93,15 @@
             <div class="container">
                 <div class="row">
                    <!--Section: event info-->
+                   <h2>Lugar del Evento</h2>
                                <!--First column-->
-                               <div class="col m8">
+                               <div class="col s12 m8 l8">
                                    <!--Map container-->
                                    <div id="map" class="z-depth-1 wow fadeInUp" style="height: 400px"></div>
                                </div>
                                <!--/First column-->
                                <!--Second column-->
-                               <div class="col m4">
+                               <div class="col s12 m4 l4">
                                    <ul class="text-xs-center">
                                        <li class="event-info wow fadeInUp" data-wow-delay="0.3s"><i class="fa fa-calendar"></i>
                                            <p>13 / Mayo / 2017</p>
@@ -193,6 +123,11 @@
         </div>
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+        <style type="text/css">
+          .leaflet-top, .leaflet-bottom{
+            z-index: 799;
+          }
+        </style>
         <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
         <script src="/js/home.js"></script>
 @endsection
