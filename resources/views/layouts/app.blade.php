@@ -38,16 +38,35 @@
 
         footer.page-footer .footer-copyright{
             line-height: 0px;
+            margin: 4px;
         }
         ul{
             display: block;
             -webkit-margin-after: .5em;
             -webkit-margin-before: .5em;
         }
-        .ic{
-            font-size:19px;
+        /*.ic{
+            font-size:12px;
+        }*/
+
+        .nav-logo{
+            margin: 10px;
+            height: 65%;
+        }
+
+        .footer-logo{
+            margin: 10px;
+        }
+
+        .social > .ic{
+            font-size: 12px;
+        }
+
+        .row-footer{
+            margin-bottom: 0px !important;
         }
     </style>
+
     <!--Scripts-->
     <script>
 
@@ -61,7 +80,7 @@
                 <div class="nav-wrapper">
                     <!-- Site name -->
                     <a href="/">
-                        <img src="/images/logo/TEDxUMSA-1.svg" style="margin:4px">
+                        <img class="nav-logo" src="/images/logo/TEDxUMSA-1.svg">
                     </a>
                     <!-- Mobile menu button -->
                     <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -92,22 +111,20 @@
         <!--/content-->
         <!-- Footer section -->
         <footer class="page-footer">
-            <div class="footer-copyright" style=" height: auto">
-                <div class="container" style="height: auto">
-                    <a href="/">
-                        <img src="/images/logo/TEDxUMSA-1.svg" style="margin:10px" >
-                    </a>
-                    <!-- Social icons -->
-                    <!--<span class="social right">
-                        <a href=""><i class="fa fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-twitter"></i></a>
-                        <a href=""><i class="fa fa-send"></i></a>
-                    </span>-->
-                    <ul class="icons right">
-                        <li><a href="https://www.facebook.com/TEDxUMSA"><i class="fa ic fa-facebook"></i>  facebook.com/TEDxUMSA</a></li>
-                        <li><a href="https://www.twitter.com/tedxumsa"><i class="fa ic fa-twitter"></i> @tedxumsa</a></li>
-                        <li><a href="mailto:tedxumsa@gmail.com"><i class="fa ic fa-envelope"></i> tedxumsa@gmail.com</a></li>
-                    </ul>
+            <div class="container" style="height: auto">
+                <div class="row row-footer" style="margin-bottom=0px">
+                    <div class="col s8">
+                        <a href="/">
+                            <img class="footer-logo" src="/images/logo/TEDxUMSA-1.svg">
+                        </a>
+                    </div>
+                    <div class="col s4">
+                        <ul class="icons right social">
+                            <li><a href="https://www.facebook.com/TEDxUMSA"><i class="fa ic fa-facebook"></i>&#160;facebook.com/TEDxUMSA</a></li>
+                            <li><a href="https://www.twitter.com/tedxumsa"><i class="fa ic fa-twitter"></i>&#160;@tedxumsa</a></li>
+                            <li><a href="mailto:tedxumsa@gmail.com"><i class="fa ic fa-envelope"></i>&#160;tedxumsa@gmail.com</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
