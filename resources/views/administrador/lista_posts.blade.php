@@ -50,8 +50,8 @@
                                         @endforeach
                                     </td>
                                     <td>
-                                        <a href="{{ route('post',[$post->id]) }}">Editar</a>
-                                        <a href="{!! route('eliminar_post',[$post->id]) !!}">Eliminar</a>
+                                        <a href="{{ route('post',[$post->id]) }}" class="btn btn-raised btn-success">Editar</a>
+                                        <a href="{!! route('eliminar_post',[$post->id]) !!}" class="btn btn-raised btn-danger">Eliminar</a>
                                     </td>
                                 </tr>
                             @endforeach

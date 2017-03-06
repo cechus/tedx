@@ -42,8 +42,8 @@
                                     <td>{!! $aliado->categoria !!}</td>
                                     <td>{!! $aliado->descripcion !!}</td>
                                     <td>
-                                        <a href="{{ route('aliado',[$aliado->id]) }}">Editar</a>
-                                        <a href="{!! route('eliminar_aliado',[$aliado->id]) !!}">Eliminar</a>
+                                        <a href="{{ route('aliado',[$aliado->id]) }}" class="btn btn-raised btn-success">Editar</a>
+                                        <a href="{!! route('eliminar_aliado',[$aliado->id]) !!}" class="btn btn-raised btn-danger">Eliminar</a>
                                     </td>
                                 </tr>
                             @endforeach

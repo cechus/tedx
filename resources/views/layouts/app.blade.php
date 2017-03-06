@@ -47,7 +47,6 @@
         .ic{
             font-size:19px;
         }
-        
     </style>
     <!--Scripts-->
     <script>

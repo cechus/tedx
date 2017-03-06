@@ -9,7 +9,7 @@
                     <div class="box-header with-border">
                         <h3 class="box-title">Tag</h3>
                     </div>
-                
+
                        <form method="POST" action="/store_tag">
                     {{ csrf_field() }}
 
@@ -17,8 +17,8 @@
                             <label for="tag_name">tag name:</label>
                             <input type="text" class="form-control" id="tag_name" name="tag_name">
                           </div>
-                          
-                          <button type="submit" class="btn btn-default">Submit</button>
+
+                          <button type="submit" class="btn btn-raised btn-primary">Guardar</button>
                     </form>
                 </div>
             </div>

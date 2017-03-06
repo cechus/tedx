@@ -14,10 +14,11 @@
                 <!-- Default box -->
                 <div class="box">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Speakers CRUD</h3>
+                        <h3 class="box-title">Lista de Speakers (Expositores)</h3>
 
                         <div class="box-tools pull-right">
-                            <a href="{!! route('speaker') !!}" class="btn btn-box-tool"  title="Adicionar">
+                            <a href="{!! route('speaker') !!}" class="btn btn-primary btn-fab-mini" title="Adicionar">
+
                                 <i class="fa fa-plus"></i></a>
                         </div>
                     </div>
@@ -42,8 +43,8 @@
                                     <td>{!! $speaker->descripcion !!}</td>
                                     <td>{!! $speaker->imagen !!}</td>
                                     <td>
-                                        <a href="#">Editar</a>
-                                        <a href="{!! route('eliminar_speaker',[$speaker->id]) !!}">Eliminar</a>
+                                        <a href="#" class="btn btn-raised btn-success">Editar</a>
+                                        <a href="{!! route('eliminar_speaker',[$speaker->id]) !!}" class="btn btn-raised btn-danger">Eliminar</a>
                                     </td>
                                 </tr>
                             @endforeach

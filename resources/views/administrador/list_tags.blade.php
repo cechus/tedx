@@ -37,8 +37,8 @@
                                     <td>{!! $tag->id !!}</td>
                                     <td>{!! $tag->name !!}</td>
                                     <td>
-                                        <a href="{{url('edit_tag',array($tag->id))}}">Editar</a>
-                                        <a href="{!! route('delete_tag',[$tag->id]) !!}">Eliminar</a>
+                                        <a href="{{url('edit_tag',array($tag->id))}}" class="btn btn-raised btn-success">Editar</a>
+                                        <a href="{!! route('delete_tag',[$tag->id]) !!}" class="btn btn-raised btn-danger">Eliminar</a>
                                     </td>
                                 </tr>
                             @endforeach

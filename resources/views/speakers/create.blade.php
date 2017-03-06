@@ -36,7 +36,7 @@
                         <!-- /.box-body -->
                         @include('layouts.errors')
                         <div class="box-footer">
-                            <button type="submit" class="btn btn-primary">Guardar</button>
+                            <button type="submit" class="btn btn-raised btn-primary">Guardar</button>
                         </div>
 
                     {!! Form::hidden('id') !!}

@@ -21,7 +21,6 @@
                     </a>
                 </li>
             </ul><!-- /.control-sidebar-menu -->
-
             <h3 class="control-sidebar-heading">{{ trans('adminlte_lang::message.progress') }}</h3>
             <ul class='control-sidebar-menu'>
                 <li>

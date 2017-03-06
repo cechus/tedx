@@ -29,12 +29,11 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="skin-blue sidebar-mini">
+<body class="material sidebar-mini">
 <div id="app">
     <div class="wrapper">
 
     @include('adminlte::layouts.partials.mainheader')
-
     @include('adminlte::layouts.partials.sidebar')
 
     <!-- Content Wrapper. Contains page content -->
