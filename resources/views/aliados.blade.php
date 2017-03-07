@@ -176,6 +176,7 @@
 				{{--@endforeach--}}
 			</div>
 		</div>
+		<br>
 		<div class="container">
 			 <div class="row">
 			   <h2 class="centre-line"><span>Creatividad</span></h2>
@@ -228,6 +229,7 @@
 				{{--@endforeach--}}
 			</div>
 		</div>
+		<br>
 		<div class="container">
 			 <div class="row">
 			   <h2 class="centre-line"><span>Aliado</span></h2>
