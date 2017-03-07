@@ -72,13 +72,29 @@
 	.responsive-img{
 		margin-bottom:15px;
 	}
+
+	.center{
+    display: flex;
+    justify-content: center;
+}
+
+.diamond{
+    width: 100%;
+    border: 1px solid black;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    align-self: center;
+    padding: 2rem;
+}
 </style>
+
 @section('content')
 
 	<div class="section scrollspy" id="works">
 		<div class="container">
 			<div class="row">
-				<h2>Aliados</h2>
+				<h2>Auspiciadores</h2>
 			</div>
 		</div>
 		<div class="container">
@@ -95,22 +111,25 @@
 
 						{{--<h5>Heisenberg ice-cream</h5>--}}
 					</a>-->
-					<div class="col s12 m6 l4 center border">
-	                	<div class="diamond center-block">
-	                    <i class="fa fa-magic fa-5x"></i>
-	                    <p>Aliado Transformación</p>
-			                </div>
-	                </div><div class="col s12 m6 l4 center border">
-	                	<div class="diamond center-block">
-	                    <i class="fa fa-magic fa-5x"></i>
-	                    <p>Aliado Transformación</p>
-			                </div>
-	                </div>			<div class="col s12 m6 l4 center border">
-	                	<div class="diamond center-block">
-	                    <i class="fa fa-magic fa-5x"></i>
-	                    <p>Aliado Transformación</p>
-			                </div>
-	                </div>
+
+					<div class="col s12 m6 l4">
+						<div class="diamond center-block">
+							<i class="fa fa-magic fa-5x"></i>
+		                    <p>Aliado Transformación</p>
+						</div>
+					</div>
+					<div class="col s12 m6 l4">
+						<div class="diamond center-block">
+							<i class="fa fa-magic fa-5x"></i>
+		                    <p>Aliado Transformación</p>
+						</div>
+					</div>
+					<div class="col s12 m6 l4">
+						<div class="diamond center-block">
+							<i class="fa fa-magic fa-5x"></i>
+		                    <p>Aliado Transformación</p>
+						</div>
+					</div>
 				{{--@endforeach--}}
 
 			</div>
@@ -129,27 +148,31 @@
 
 						{{--<h5>Heisenberg ice-cream</h5>--}}
 					</a>-->
-					<div class="col s6 m4 l3 center borderin">
-	                	<div class="diamond center-block">
-	                    <i class="fa fa-flask fa-5x"></i>
-	                    <p>Aliado innovacion</p>
-			            </div>
-	                </div><div class="col s6 m4 l3 center borderin">
-	                	<div class="diamond center-block">
-	                    <i class="fa fa-flask fa-5x"></i>
-	                    <p>Aliado innovacion</p>
-			            </div>
-	                </div><div class="col s6 m4 l3 center borderin">
-	                	<div class="diamond center-block">
-	                    <i class="fa fa-flask fa-5x"></i>
-	                    <p>Aliado innovacion</p>
-			            </div>
-	                </div><div class="col s6 m4 l3 center borderin">
-	                	<div class="diamond center-block">
-	                    <i class="fa fa-flask fa-5x"></i>
-	                    <p>Aliado innovacion</p>
-			            </div>
-	                </div>
+					<div class="col s6 m4 l3">
+						<div class="diamond center-block">
+							<i class="fa fa-flask fa-5x"></i>
+		                    <p>Aliado innovacion</p>
+						</div>
+					</div>
+					<div class="col s6 m4 l3">
+						<div class="diamond center-block">
+							<i class="fa fa-flask fa-5x"></i>
+		                    <p>Aliado innovacion</p>
+						</div>
+					</div>
+					<div class="col s6 m4 l3">
+						<div class="diamond center-block">
+							<i class="fa fa-flask fa-5x"></i>
+		                    <p>Aliado innovacion</p>
+						</div>
+					</div>
+					<div class="col s6 m4 l3">
+						<div class="diamond center-block">
+							<i class="fa fa-flask fa-5x"></i>
+		                    <p>Aliado innovacion</p>
+						</div>
+					</div>
+
 				{{--@endforeach--}}
 			</div>
 		</div>
@@ -165,37 +188,43 @@
 
 						{{--<h5>Heisenberg ice-cream</h5>--}}
 					</a>-->
-					<div class="col s4 m2 l2 center bordercr">
-	                	<div class="diamond center-block">
-	                    <i class="fa fa-lightbulb-o fa-5x"></i>
-	                    <p>Aliado creatividad</p>
-			            </div>
-	                </div><div class="col s4 m2 l2 center bordercr">
-	                	<div class="diamond center-block">
-	                    <i class="fa fa-lightbulb-o fa-5x"></i>
-	                    <p>Aliado creatividad</p>
-			            </div>
-	                </div><div class="col s4 m2 l2 center bordercr">
-	                	<div class="diamond center-block">
-	                    <i class="fa fa-lightbulb-o fa-5x"></i>
-	                    <p>Aliado creatividad</p>
-			            </div>
-	                </div><div class="col s4 m2 l2 center bordercr">
-	                	<div class="diamond center-block">
-	                    <i class="fa fa-lightbulb-o fa-5x"></i>
-	                    <p>Aliado creatividad</p>
-			            </div>
-	                </div><div class="col s4 m2 l2 center bordercr">
-	                	<div class="diamond center-block">
-	                    <i class="fa fa-lightbulb-o fa-5x"></i>
-	                    <p>Aliado creatividad</p>
-			            </div>
-	                </div><div class="col s4 m2 l2 center bordercr">
-	                	<div class="diamond center-block">
-	                    <i class="fa fa-lightbulb-o fa-5x"></i>
-	                    <p>Aliado creatividad</p>
-			            </div>
-	                </div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-lightbulb-o fa-5x"></i>
+		                    <p>Aliado creatividad</p>
+						</div>
+					</div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-lightbulb-o fa-5x"></i>
+		                    <p>Aliado creatividad</p>
+						</div>
+					</div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-lightbulb-o fa-5x"></i>
+		                    <p>Aliado creatividad</p>
+						</div>
+					</div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-lightbulb-o fa-5x"></i>
+		                    <p>Aliado creatividad</p>
+						</div>
+					</div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-lightbulb-o fa-5x"></i>
+		                    <p>Aliado creatividad</p>
+						</div>
+					</div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-lightbulb-o fa-5x"></i>
+		                    <p>Aliado creatividad</p>
+						</div>
+					</div>
+
 				{{--@endforeach--}}
 			</div>
 		</div>
@@ -212,37 +241,36 @@
 
 						{{--<h5>Heisenberg ice-cream</h5>--}}
 					</a>-->
-					<div class="col s4 m2 l2 center borderam">
-	                	<div class="diamond center-block">
-	                    <i class="fa fa-heart fa-2x"></i>
-	                    <p>Aliado </p>
-			            </div>
-	                </div><div class="col s4 m2 l2 center borderam">
-	                	<div class="diamond center-block">
-	                    <i class="fa fa-heart fa-2x"></i>
-	                    <p>Aliado </p>
-			            </div>
-	                </div><div class="col s4 m2 l2 center borderam">
-	                	<div class="diamond center-block">
-	                    <i class="fa fa-heart fa-2x"></i>
-	                    <p>Aliado </p>
-			            </div>
-	                </div><div class="col s4 m2 l2 center borderam">
-	                	<div class="diamond center-block">
-	                    <i class="fa fa-heart fa-2x"></i>
-	                    <p>Aliado </p>
-			            </div>
-	                </div><div class="col s4 m2 l2 center borderam">
-	                	<div class="diamond center-block">
-	                    <i class="fa fa-heart fa-2x"></i>
-	                    <p>Aliado </p>
-			            </div>
-	                </div><div class="col s4 m2 l2 center borderam">
-	                	<div class="diamond center-block">
-	                    <i class="fa fa-heart fa-2x"></i>
-	                    <p>Aliado </p>
-			            </div>
-	                </div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-heart fa-2x"></i>
+						</div>
+					</div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-heart fa-2x"></i>
+						</div>
+					</div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-heart fa-2x"></i>
+						</div>
+					</div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-heart fa-2x"></i>
+						</div>
+					</div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-heart fa-2x"></i>
+						</div>
+					</div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-heart fa-2x"></i>
+						</div>
+					</div>
 				{{--@endforeach--}}
 			</div>
 		</div>

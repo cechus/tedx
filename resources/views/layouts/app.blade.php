@@ -82,7 +82,7 @@
                     <!-- Static menu -->
                     <ul class="right hide-on-med-and-down table-of-contents">
                         <li><a href="{{url('about')}}">Acerca de</a></li>
-                        <li><a href="{{url('aliados')}}">Aliados</a></li>
+                        <li><a href="{{url('aliados')}}">Auspiciadores</a></li>
                         <li><a href="{{url('expositores')}}">Expositores</a></li>
                         <li><a href="{{url('equipo')}}">Equipo</a></li>
                         <!-- <li><a href="{{url('posts')}}">Blog</a></li> -->
@@ -91,7 +91,7 @@
                     <!-- Mobile menu, make sure it is equal to the statis menu -->
                     <ul class="side-nav" id="mobile-menu">
                         <li><a href="{{url('about')}}">Acerca de</a></li>
-                        <li><a href="{{url('aliados')}}">Aliados</a></li>
+                        <li><a href="{{url('aliados')}}">Auspiciadores</a></li>
                         <li><a href="{{url('expositores')}}">Expositores</a></li>
                         <li><a href="{{url('equipo')}}">Equipo</a></li>
                         <!-- <li><a href="{{url('posts')}}">Blog</a></li> -->
