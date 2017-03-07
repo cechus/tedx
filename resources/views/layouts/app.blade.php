@@ -66,11 +66,6 @@
             margin-bottom: 0px !important;
         }
     </style>
-
-    <!--Scripts-->
-    <script>
-
-    </script>
 </head>
 <body>
     <div id="wrapper">
@@ -130,9 +125,20 @@
         </footer>
     </div>
     <!-- Scripts -->
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="{{ asset('/') }}libs/materialize/js/materialize.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> -->
     {{--<script src="https://maps.googleapis.com/maps/api/js"></script>--}}
     <script src="{{ asset('/') }}js/config.js"></script>
     <script src="{{ asset('/') }}js/build.js"></script>
     @yield('scriptside')
+
+    <script>
+        $('.nav-wrapper ul li').click(function() {
+            $(this).siblings('li').removeClass('active');
+            $(this).addClass('active');
+        });
+    </script>
 </body>
 </html>
