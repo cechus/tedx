@@ -14,10 +14,10 @@
 						</p>
 				<div class="row" id="equipo" >
 					<!-- equipo tedX , recorrer con fetch-->
-					<div class="col s12 m6 l4">
+					<div class="col s12 m3 l3">
 						<div class="card">
 							<div class="card-image waves-effect waves-block waves-light" >
-							  <img class="img-responsive activator" id="carlos" src="images/team/carlos-1.jpg" />
+							  <img class="img-responsive activator" id="carlos" src="images/team/carlos.png" />
 							</div>
 							<div class="card-content">
 							  <span class="card-title activator grey-text text-darken-4">
@@ -31,10 +31,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="col s12 m6 l4">
+					<div class="col s12 m3 l3">
 						<div class="card">
 							<div class="card-image waves-effect waves-block waves-light">
-							  <img class="img-responsive activator" src="images/team/ana-1.jpg" />
+							  <img class="img-responsive activator" src="images/team/ana.png" />
 							</div>
 							<div class="card-content">
 							  <span class="card-title activator grey-text text-darken-4">
@@ -42,20 +42,20 @@
 							  <p>Directora de protocolo y Produccion ejecutiva</p>
 							</div>
 							<div class="card-reveal">
-							  <span class="card-title grey-text text-darken-4"><b>Ana Quispe Sirpa</b>
+							  <span class="card-title grey-text text-darken-4"><b>Ana Quispe</b>
 							  <i class="material-icons right">close</i></span>
 							  <h6>Directora de protocolo y Produccion ejecutiva</h6>
 							</div>
 						</div>
 					</div>
-					<div class="col s12 m6 l4">
+					<div class="col s12 m3 l3">
 						<div class="card">
 							<div class="card-image waves-effect waves-block waves-light">
-							  <img class="img-responsive activator" src="images/team/herman-1.jpg" />
+							  <img class="img-responsive activator" src="images/team/hermann.png" />
 							</div>
 							<div class="card-content">
 							  <span class="card-title activator grey-text text-darken-4">
-							  Herman Lino<i class="material-icons right">more_vert</i></span>
+							  Hermann Lino<i class="material-icons right">more_vert</i></span>
 							  <p>Director de Ventas</p>
 							</div>
 							<div class="card-reveal">
@@ -65,27 +65,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="col s12 m6 l4">
+					<div class="col s12 m3 l3">
 						<div class="card">
 							<div class="card-image waves-effect waves-block waves-light">
-							  <img class="img-responsive activator" src="images/team/veronica.jpg" />
-							</div>
-							<div class="card-content">
-							  <span class="card-title activator grey-text text-darken-4">
-							  Veronica Clavijo<i class="material-icons right">more_vert</i></span>
-							  <p>Directora de relaciones externas y Curaduría</p>
-							</div>
-							<div class="card-reveal">
-							  <span class="card-title grey-text text-darken-4"><b>Veronica Clavijo Altamirano</b>
-							  <i class="material-icons right">close</i></span>
-							  <h6>Directora de relaciones externas y Curaduría</h6>
-							</div>
-						</div>
-					</div>
-					<div class="col s12 m6 l4">
-						<div class="card">
-							<div class="card-image waves-effect waves-block waves-light">
-							  <img class="img-responsive activator" src="images/team/andres.jpg" />
+							  <img class="img-responsive activator" src="images/team/andres.png" />
 							</div>
 							<div class="card-content">
 							  <span class="card-title activator grey-text text-darken-4">
@@ -99,10 +82,29 @@
 							</div>
 						</div>
 					</div>
-					<div class="col s12 m6 l4">
+				</div>
+				<div class="row">
+					<div class="col s12 m3 l3 offset-m1 offset-l1">
 						<div class="card">
 							<div class="card-image waves-effect waves-block waves-light">
-							  <img class="img-responsive activator" src="images/team/kevin.jpg" />
+							  <img class="img-responsive activator" src="images/team/veronica.png" />
+							</div>
+							<div class="card-content">
+							  <span class="card-title activator grey-text text-darken-4">
+							  Verónica Clavijo<i class="material-icons right">more_vert</i></span>
+							  <p>Directora de relaciones externas y Curaduría</p>
+							</div>
+							<div class="card-reveal">
+							  <span class="card-title grey-text text-darken-4"><b>Verónica Clavijo Altamirano</b>
+							  <i class="material-icons right">close</i></span>
+							  <h6>Directora de relaciones externas y Curaduría</h6>
+							</div>
+						</div>
+					</div>
+					<div class="col s12 m3 l3">
+						<div class="card">
+							<div class="card-image waves-effect waves-block waves-light">
+							  <img class="img-responsive activator" src="images/team/kevin.png" />
 							</div>
 							<div class="card-content">
 							  <span class="card-title activator grey-text text-darken-4">
@@ -116,10 +118,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="col s12 m6 l4">
+					<div class="col s12 m3 l3">
 						<div class="card">
 							<div class="card-image waves-effect waves-block waves-light">
-							  <img class="img-responsive activator" src="images/team/kari.jpg" />
+							  <img class="img-responsive activator" src="images/team/karina.png" />
 							</div>
 							<div class="card-content">
 							  <span class="card-title activator grey-text text-darken-4">
@@ -145,15 +147,15 @@
 					itemSelector: '.col'
 				});
 			});
-		</script>  
+		</script>
 @endsection
 @section('scriptside')
 <script type="text/javascript">
     $('.button-collapse').sideNav({
-         menuWidth: 300, 
+         menuWidth: 300,
          edge: 'left',
          closeOnClick: true,
-         draggable: true 
+         draggable: true
        }
      );
 </script>
