@@ -136,7 +136,7 @@ h3 {
                  <div class="col s12 m2">
                      <div class="description-ball"></div>
                      <div class="description center-align">
-                             <img  class="responsive-img" id="logos1" src="{{asset('images')}}/about/TEDxUMSA1.svg">
+                             <img class="responsive-img" id="logos1" src="{{asset('images')}}/about/TEDxUMSA4.svg">
                      </div>
                  </div>
                   <div class="col s12 m6">
