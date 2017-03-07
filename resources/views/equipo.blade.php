@@ -8,10 +8,9 @@
  <!-- Equipo section -->
 		<div class="section scrollspy">
 			<div class="container">
+				<div class="row">
 					<h2>Equipo</h2>
-						<p class="flow-text center-align">
-							Nosotros somos el equipo organizador de TEDxUMSA
-						</p>
+				</div>
 				<div class="row" id="equipo" >
 					<!-- equipo tedX , recorrer con fetch-->
 					<div class="col s12 m3 l3">
@@ -22,7 +21,7 @@
 							<div class="card-content">
 							  <span class="card-title activator grey-text text-darken-4">
 							  Carlos Zabaleta<i class="material-icons right">more_vert</i></span>
-							  <p>Licenciatario/Organizador</p>
+							  <p>Licenciatario / Organizador</p>
 							</div>
 							<div class="card-reveal">
 							  <span class="card-title grey-text text-darken-4"><b>Carlos Zabaleta Copa</b>
@@ -39,7 +38,7 @@
 							<div class="card-content">
 							  <span class="card-title activator grey-text text-darken-4">
 							  Ana Quispe<i class="material-icons right">more_vert</i></span>
-							  <p>Directora de protocolo y Produccion ejecutiva</p>
+							  <p>Directora de protocolo y Produccion ejecutiva</p><br>
 							</div>
 							<div class="card-reveal">
 							  <span class="card-title grey-text text-darken-4"><b>Ana Quispe</b>
@@ -56,7 +55,7 @@
 							<div class="card-content">
 							  <span class="card-title activator grey-text text-darken-4">
 							  Hermann Lino<i class="material-icons right">more_vert</i></span>
-							  <p>Director de Ventas</p>
+							  <p>Director de Ventas</p><br>
 							</div>
 							<div class="card-reveal">
 							  <span class="card-title grey-text text-darken-4"><b>Hermann Lino</b>
@@ -73,7 +72,7 @@
 							<div class="card-content">
 							  <span class="card-title activator grey-text text-darken-4">
 							  Andrés Mamani<i class="material-icons right">more_vert</i></span>
-							  <p>Director de Media</p>
+							  <p>Director de Media</p><br>
 							</div>
 							<div class="card-reveal">
 							  <span class="card-title grey-text text-darken-4"><b>Andrés Mamani</b>
@@ -141,8 +140,8 @@
 		</div>
 		<script type="text/javascript" src="/libs/jquery/jquery-2.1.1.js"></script>
 		  <!--<script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.2/dist/isotope.pkgd.min.js"></script>-->
-			  <script type="text/javascript">
-			  $(document).ready(function() {
+		<script type="text/javascript">
+			$(document).ready(function() {
 				$('#equipo').masonry({
 					itemSelector: '.col'
 				});
