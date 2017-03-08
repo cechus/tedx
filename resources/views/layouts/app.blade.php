@@ -69,60 +69,14 @@
 </head>
 <body>
     <div id="wrapper">
-        <!-- Navigation bar -->
-        <div class="navbar-fixed" id="nav">
-            <nav>
-                <div class="nav-wrapper">
-                    <!-- Site name -->
-                    <a href="/">
-                        <img class="nav-logo" src="/images/logo/TEDxUMSA-1.svg">
-                    </a>
-                    <!-- Mobile menu button -->
-                    <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-                    <!-- Static menu -->
-                    <ul class="right hide-on-med-and-down table-of-contents">
-                        <li><a href="{{url('about')}}">Acerca de</a></li>
-                        <li><a href="{{url('aliados')}}">Auspiciadores</a></li>
-                        <li><a href="{{url('expositores')}}">Expositores</a></li>
-                        <li><a href="{{url('equipo')}}">Equipo</a></li>
-                        <!-- <li><a href="{{url('posts')}}">Blog</a></li> -->
-                        <li><a href="{{url('participar')}}">Participar</a></li>
-                    </ul>
-                    <!-- Mobile menu, make sure it is equal to the statis menu -->
-                    <ul class="side-nav" id="mobile-menu">
-                        <li><a href="{{url('about')}}">Acerca de</a></li>
-                        <li><a href="{{url('aliados')}}">Auspiciadores</a></li>
-                        <li><a href="{{url('expositores')}}">Expositores</a></li>
-                        <li><a href="{{url('equipo')}}">Equipo</a></li>
-                        <!-- <li><a href="{{url('posts')}}">Blog</a></li> -->
-                        <li><a href="{{url('participar')}}">Participar</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <!--/navabar-->
+        <!-- navbar -->
+        @include('partials.navbar')
+
         <!--content-->
         @yield('content')
-        <!--/content-->
+
         <!-- Footer section -->
-        <footer class="page-footer">
-            <div class="container" style="height: auto">
-                <div class="row row-footer" style="margin-bottom=0px">
-                    <div class="col s8">
-                        <a href="/">
-                            <img class="footer-logo" src="/images/logo/TEDxUMSA-1.svg">
-                        </a>
-                    </div>
-                    <div class="col s4">
-                        <ul class="icons right social">
-                            <li><a href="https://www.facebook.com/TEDxUMSA"><i class="fa ic fa-facebook"></i>&#160;facebook.com/TEDxUMSA</a></li>
-                            <li><a href="https://www.twitter.com/tedxumsa"><i class="fa ic fa-twitter"></i>&#160;@tedxumsa</a></li>
-                            <li><a href="mailto:tedxumsa@gmail.com"><i class="fa ic fa-envelope"></i>&#160;tedxumsa@gmail.com</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        @include('partials.footer')
     </div>
     <!-- Scripts -->
 
@@ -133,12 +87,5 @@
     <script src="{{ asset('/') }}js/config.js"></script>
     <script src="{{ asset('/') }}js/build.js"></script>
     @yield('scriptside')
-
-    <script>
-        $('.nav-wrapper ul li').click(function() {
-            $(this).siblings('li').removeClass('active');
-            $(this).addClass('active');
-        });
-    </script>
 </body>
 </html>
