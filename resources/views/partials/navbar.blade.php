@@ -7,6 +7,7 @@
             </a>
             <!-- Mobile menu button -->
             <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
             <!-- Static menu -->
             <ul class="right hide-on-med-and-down table-of-contents">
                 <li><a href="{{url('about')}}">Acerca de</a></li>
@@ -28,10 +29,3 @@
         </div>
     </nav>
 </div>
-
-<script>
-    $('.nav-wrapper ul li').click(function() {
-        $(this).siblings('li').removeClass('active');
-        $(this).addClass('active');
-    });
-</script>
