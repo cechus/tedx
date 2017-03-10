@@ -90,7 +90,7 @@
 
 @section('content')
 
-	<div class="section scrollspy" id="works">
+	<div class="section scrollspy" id="works" style="padding-bottom:0px;">
 		<div class="container">
 			<div class="row">
 				<h2>Auspiciadores</h2>
@@ -119,8 +119,10 @@
 		<div class="container">
 			<div id="shuffle-grids" class="row" style="">
 				<div class="col s12 m10 l10 offset-m1 offset-l1">
-					<p>Siendo este evento parte de la organización internacional TED, esperamos contar con su apoyo para la realización del TEDxUMSA debido a que es una gran oportunidad para los jóvenes bolivianos de encontrar su propósito personal y así formar una Bolivia mejor, mediante ideas que cambien actitudes.
-Esto será posible gracias a los expositores y auspiciadores que serán reconocidos internacionalmente a través de este evento</p>
+					<p>
+						Siendo este evento parte de la organización internacional TED, esperamos contar con su apoyo para la realización del TEDxUMSA debido a que es una gran oportunidad para los jóvenes bolivianos de encontrar su propósito personal y así formar una Bolivia mejor, mediante ideas que cambien actitudes.
+						Esto será posible gracias a los expositores y auspiciadores que serán reconocidos internacionalmente a través de este evento
+					</p>
 				</div>
 			</div>
 			<div class="row">
@@ -133,6 +135,7 @@ Esto será posible gracias a los expositores y auspiciadores que serán reconoci
 					<p style="text-align:center">Llegaremos a más de 1000 jovenes universitarios, entre los asistentes presenciales, los que verán el evento transmitido en vivo por streaming y por la red RUBI</p>
 				</div>
 			</div>
+			<br><br>
 		</div>
 
 		<!-- temporary div -->
@@ -305,7 +308,7 @@ Esto será posible gracias a los expositores y auspiciadores que serán reconoci
 		draggable: true
 	});
 
-	// Change navbar tab color when active 
+	// Change navbar tab color when active
 	$(this).siblings('li').removeClass('active');
 	$(".aliados").addClass('active');
 </script>
