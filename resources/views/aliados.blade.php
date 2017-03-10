@@ -1,4 +1,6 @@
 @extends('layouts.app')
+
+@section('extra_css')
 <style>
 	h3 {
 		margin-bottom: 50px;
@@ -84,6 +86,7 @@
 	   }
    }
 </style>
+@endsection
 
 @section('content')
 
@@ -132,184 +135,178 @@ Esto será posible gracias a los expositores y auspiciadores que serán reconoci
 			</div>
 		</div>
 
-		<div class="container">
-			 <div class="row">
-			   <h2 class="centre-line"><span>Transformación</span></h2>
+		<!-- temporary div -->
+		<div style="display:none;">
+			<div class="container">
+				<div class="row">
+					<h2 class="centre-line"><span>Transformación</span></h2>
+				</div>
 			</div>
-		 </div>
-		<div class="wide-container">
-			<!-- Gold -->
-			<div id="shuffle-grids" class="row" style="">
-				{{--@foreach($aliadosGold as $aliado)--}}
+			<div class="wide-container">
+				<!-- Gold -->
+				<div id="shuffle-grids" class="row" style="">
+					{{--@foreach($aliadosGold as $aliado)--}}
 					<div class="col s12 m6 l4">
 						<div class="diamond center-block">
 							<i class="fa fa-magic fa-5x"></i>
-		                    <p>Aliado Transformación</p>
-						</div>
-					</div>
-					<div class="col s12 m6 l4">
-						<div class="diamond center-block">
-							<i class="fa fa-magic fa-5x"></i>
-		                    <p>Aliado Transformación</p>
+							<p>Aliado Transformación</p>
 						</div>
 					</div>
 					<div class="col s12 m6 l4">
 						<div class="diamond center-block">
 							<i class="fa fa-magic fa-5x"></i>
-		                    <p>Aliado Transformación</p>
+							<p>Aliado Transformación</p>
 						</div>
 					</div>
-				{{--@endforeach--}}
+					<div class="col s12 m6 l4">
+						<div class="diamond center-block">
+							<i class="fa fa-magic fa-5x"></i>
+							<p>Aliado Transformación</p>
+						</div>
+					</div>
+					{{--@endforeach--}}
+				</div>
 			</div>
-		</div>
-		<br><br>
-		<div class="container">
-			 <div class="row">
-			   <h2 class="centre-line"><span>Innovación</span></h2>
+			<br><br>
+			<div class="container">
+				<div class="row">
+					<h2 class="centre-line"><span>Innovación</span></h2>
+				</div>
 			</div>
-		</div>
-		<div class="wide-container">
-		<!--Platinum-->
-			<div id="shuffle-grid" class="row platinum">
-				{{--@foreach($aliadosPlatimun as $aliado)--}}
+			<div class="wide-container">
+				<!--Platinum-->
+				<div id="shuffle-grid" class="row platinum">
+					{{--@foreach($aliadosPlatimun as $aliado)--}}
 					<div class="col s6 m4 l3">
 						<div class="diamond center-block">
 							<i class="fa fa-flask fa-5x"></i>
-		                    <p>Aliado innovacion</p>
-						</div>
-					</div>
-					<div class="col s6 m4 l3">
-						<div class="diamond center-block">
-							<i class="fa fa-flask fa-5x"></i>
-		                    <p>Aliado innovacion</p>
-						</div>
-					</div>
-					<div class="col s6 m4 l3">
-						<div class="diamond center-block">
-							<i class="fa fa-flask fa-5x"></i>
-		                    <p>Aliado innovacion</p>
+							<p>Aliado innovacion</p>
 						</div>
 					</div>
 					<div class="col s6 m4 l3">
 						<div class="diamond center-block">
 							<i class="fa fa-flask fa-5x"></i>
-		                    <p>Aliado innovacion</p>
+							<p>Aliado innovacion</p>
 						</div>
 					</div>
-
-				{{--@endforeach--}}
+					<div class="col s6 m4 l3">
+						<div class="diamond center-block">
+							<i class="fa fa-flask fa-5x"></i>
+							<p>Aliado innovacion</p>
+						</div>
+					</div>
+					<div class="col s6 m4 l3">
+						<div class="diamond center-block">
+							<i class="fa fa-flask fa-5x"></i>
+							<p>Aliado innovacion</p>
+						</div>
+					</div>
+					{{--@endforeach--}}
+				</div>
+			</div>
+			<br>
+			<div class="container">
+				<div class="row">
+					<h2 class="centre-line"><span>Creatividad</span></h2>
+				</div>
+			</div>
+			<div class="wide-container">
+				<div id="shuffle-grid" class="row amigos">
+					{{--@foreach($aliadosAmigos as $aliado)--}}
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-lightbulb-o fa-5x"></i>
+							<p>Aliado creatividad</p>
+						</div>
+					</div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-lightbulb-o fa-5x"></i>
+							<p>Aliado creatividad</p>
+						</div>
+					</div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-lightbulb-o fa-5x"></i>
+							<p>Aliado creatividad</p>
+						</div>
+					</div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-lightbulb-o fa-5x"></i>
+							<p>Aliado creatividad</p>
+						</div>
+					</div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-lightbulb-o fa-5x"></i>
+							<p>Aliado creatividad</p>
+						</div>
+					</div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-lightbulb-o fa-5x"></i>
+							<p>Aliado creatividad</p>
+						</div>
+					</div>
+					{{--@endforeach--}}
+				</div>
+			</div>
+			<br>
+			<div class="container">
+				<div class="row">
+					<h2 class="centre-line"><span>Aliado</span></h2>
+				</div>
+			</div>
+			<div class="wide-container">
+				<div id="shuffle-grid" class="row amigos">
+					{{--@foreach($aliadosAmigos as $aliado)--}}
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-heart fa-2x"></i>
+						</div>
+					</div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-heart fa-2x"></i>
+						</div>
+					</div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-heart fa-2x"></i>
+						</div>
+					</div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-heart fa-2x"></i>
+						</div>
+					</div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-heart fa-2x"></i>
+						</div>
+					</div>
+					<div class="col s4 m2 l2">
+						<div class="diamond center-block">
+							<i class="fa fa-heart fa-2x"></i>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<br>
-		<div class="container">
-			 <div class="row">
-			   <h2 class="centre-line"><span>Creatividad</span></h2>
-			</div>
-		</div>
-		<div class="wide-container">
-			<div id="shuffle-grid" class="row amigos">
-				{{--@foreach($aliadosAmigos as $aliado)--}}
-					<!--<a href="javascript:" class="col s4 m2 l2">
-
-						{{--<h5>Heisenberg ice-cream</h5>--}}
-					</a>-->
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-lightbulb-o fa-5x"></i>
-		                    <p>Aliado creatividad</p>
-						</div>
-					</div>
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-lightbulb-o fa-5x"></i>
-		                    <p>Aliado creatividad</p>
-						</div>
-					</div>
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-lightbulb-o fa-5x"></i>
-		                    <p>Aliado creatividad</p>
-						</div>
-					</div>
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-lightbulb-o fa-5x"></i>
-		                    <p>Aliado creatividad</p>
-						</div>
-					</div>
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-lightbulb-o fa-5x"></i>
-		                    <p>Aliado creatividad</p>
-						</div>
-					</div>
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-lightbulb-o fa-5x"></i>
-		                    <p>Aliado creatividad</p>
-						</div>
-					</div>
-
-				{{--@endforeach--}}
-			</div>
-		</div>
-		<br>
-		<div class="container">
-			 <div class="row">
-			   <h2 class="centre-line"><span>Aliado</span></h2>
-			</div>
-		</div>
-		<div class="wide-container">
-			<div id="shuffle-grid" class="row amigos">
-				{{--@foreach($aliadosAmigos as $aliado)--}}
-					<!--<a href="javascript:" class="col s2 m1 l1">
-
-
-						{{--<h5>Heisenberg ice-cream</h5>--}}
-					</a>-->
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-heart fa-2x"></i>
-						</div>
-					</div>
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-heart fa-2x"></i>
-						</div>
-					</div>
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-heart fa-2x"></i>
-						</div>
-					</div>
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-heart fa-2x"></i>
-						</div>
-					</div>
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-heart fa-2x"></i>
-						</div>
-					</div>
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-heart fa-2x"></i>
-						</div>
-					</div>
-				{{--@endforeach--}}
-			</div>
-		</div>
-	</div>
 @endsection
-@section('scriptside')
+
+@section('extra_js')
 <script type="text/javascript">
     $('.button-collapse').sideNav({
-         menuWidth: 300,
-         edge: 'left',
-         closeOnClick: true,
-         draggable: true
-       }
-     );
+		menuWidth: 300,
+		edge: 'left',
+		closeOnClick: true,
+		draggable: true
+	});
+
+	// Change navbar tab color when active 
+	$(this).siblings('li').removeClass('active');
+	$(".aliados").addClass('active');
 </script>
 @endsection

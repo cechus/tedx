@@ -33,6 +33,7 @@
     <link href="https://fonts.googleapis.com/css?family=Miriam+Libre" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
+    @yield('extra_css')
     <style type="text/css">
         h2{
             font-family: 'Miriam Libre', sans-serif;
@@ -84,18 +85,12 @@
         @include('partials.footer')
     </div>
     <!-- Scripts -->
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     <script type="text/javascript" src="{{ asset('/') }}libs/materialize/js/materialize.min.js"></script>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
     <script src="{{ asset('/') }}js/config.js"></script>
     <script src="{{ asset('/') }}js/build.js"></script>
-
-    <script>
-        $('.nav-wrapper ul li').click(function() {
-            $(this).siblings('li').removeClass('active');
-            $(this).addClass('active');
-        });
-    </script>
+    <script src="{{ asset('/') }}js/index.js"></script>
+    @yield('extra_js')
 </body>
 </html>
