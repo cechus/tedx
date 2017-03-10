@@ -20,7 +20,7 @@
 			<div class="col s12 m3 l3">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light" >
-						<img class="img-responsive activator" id="carlos" src="images/team/carlos.png" />
+						<img class="img-responsive activator" id="carlos" src="images/team/carlos.jpg" />
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">
@@ -41,7 +41,7 @@
 			<div class="col s12 m3 l3">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="img-responsive activator" src="images/team/ana.png" />
+						<img class="img-responsive activator" src="images/team/ana.jpg" />
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">
@@ -63,7 +63,7 @@
 			<div class="col s12 m3 l3">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="img-responsive activator" src="images/team/hermann.png" />
+						<img class="img-responsive activator" src="images/team/hermann.jpg" />
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">
@@ -85,7 +85,7 @@
 			<div class="col s12 m3 l3">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="img-responsive activator" src="images/team/andres.png" />
+						<img class="img-responsive activator" src="images/team/andres.jpg" />
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">
@@ -108,7 +108,7 @@
 			<div class="col s12 m3 l3 offset-m1 offset-l1">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="img-responsive activator" src="images/team/veronica.png" />
+						<img class="img-responsive activator" src="images/team/veronica.jpg" />
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">
@@ -150,7 +150,7 @@
 			<div class="col s12 m3 l3">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="img-responsive activator" src="images/team/karina.png" />
+						<img class="img-responsive activator" src="images/team/karina.jpg" />
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">

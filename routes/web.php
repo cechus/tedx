@@ -14,6 +14,7 @@
 Route::get('/', 'HomeController@index');
 
 Route::get('about',function(){return view ('about');});
+
 Route::get('aliados','AliadoController@aliados')->name('aliados');
 Route::get('expositores','SpeakerController@index');
 
