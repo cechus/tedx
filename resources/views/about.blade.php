@@ -125,7 +125,7 @@
     </div>
 
     <div class="parallax-container">
-        <div class="parallax"><img src="images/about/5.jpg"></div>
+        <div class="parallax"><img src="images/about/5.png"></div>
     </div>
 
     <div class="container">
