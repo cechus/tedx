@@ -18,7 +18,7 @@
         <div class="row" id="speakers">
             <h2>Expositores</h2>
             <!-- Recorriendo los speakers(EXPOSITORES) con foreach-->
-            @foreach ($speakers as $speaker)
+            <!-- @foreach ($speakers as $speaker)
             <div class="col s12 m6 l4">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
@@ -41,9 +41,30 @@
                     </div>
                 </div>
             </div>
-            @endforeach
+            @endforeach -->
         </div>
         <br><br><br><br><br><br>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row team">
+        @foreach($speakers as $speaker)
+        <div class="col s12 m6 animate">
+            <div class="description-ball"></div>
+            <div class="description center-align">
+                <div class="row h4-row">
+                    <h4>{{ $speaker->nombre }}<br><small>{{ $speaker->charla }}</small></h4>
+                </div>
+                <div class="row">
+                    <div class="col s12 l12">
+                        <p>{{ $speaker->descripcion }}</p>
+                    </div>
+                </div>
+            </div>
+            <img src="{{ $speaker->imagen }}" class="responsive-img" alt="{{ $speaker->nombre }}" data-pagespeed-url-hash="2781055604" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+        </div>
+        @endforeach
     </div>
 </div>
 @endsection
