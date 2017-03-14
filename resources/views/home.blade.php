@@ -37,50 +37,64 @@
     .leaflet-top, .leaflet-bottom{
       z-index: 799;
     }
+    #otriangles {
+        height: 580px;
+        background-image: url("images/home/bg_image.png");
+    }
+    #otriangles .h1-wrapper {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        color: white;
+    }
+    #otriangles .h1-wrapper h1 {
+        text-align: center;
+        font-weight: 200;
+        font-size: 3rem;
+        line-height: 3.92rem;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    @media only screen and (min-width: 601px) and (max-width: 992px) {
+        #otriangles .h1-wrapper h1 {
+            font-size: 4.5rem;
+            line-height: 4.7rem;
+        }
+    }
+    @media only screen and (min-width: 993px) {
+        #otriangles .h1-wrapper h1 {
+            font-size: 7.0rem;
+            line-height: 7.4rem;
+        }
+    }
+    #otriangles .h1-wrapper i {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    #otriangles #explore {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        margin-left: -27.75px;
+    }
+    strong{
+        font-weight: 600;
+    }
 </style>
 @endsection
 
 @section('content')
-<!-- The preloader we see before the whole site is loaded -->
-<div id="preloader" class="valign-wrapper">
-    <div class="preloader-wrapper big active">
-        <div class="spinner-layer spinner-blue-only actually-black">
-            <div class="circle-clipper left">
-                <div class="circle"></div>
-            </div>
-            <div class="gap-patch">
-                <div class="circle"></div>
-            </div>
-            <div class="circle-clipper right">
-                <div class="circle"></div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- A status spinner to indicate that some process is going on -->
-<div id="status">
-    <div class="preloader-wrapper small active">
-        <div class="spinner-layer spinner-blue-only actually-green">
-            <div class="circle-clipper left">
-                <div class="circle"></div>
-            </div>
-            <div class="gap-patch">
-                <div class="circle"></div>
-            </div>
-            <div class="circle-clipper right">
-                <div class="circle"></div>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- Triangles section -->
-<div id="triangles" class="scrollspy">
+<div id="otriangles" class="scrollspy">
     <div id="output">
         <div class="h1-wrapper valign-wrapper">
             <div class="container">
                 <div class="row">
                     <div class="col s12">
-                        <h1><strong>TEDx</strong>UMSA</h1>
+                        <h1 style="font-family:Arial,Helvetica"><strong>TEDx</strong><span class="brand">UMSA</span></h1>
                     </div>
                     <div class="col s12 text-center">
                         <h3 class="typed">13 de Mayo / 8:00 a 16:00 / Paraninfo Universitario</h3>
@@ -88,9 +102,8 @@
                     </div>
                 </div>
             </div>
-            <!-- Action button -->
-            <a class="btn-floating btn-large waves-effect waves-dark green accent-2" id="explore">
-                <i class="mdi-navigation-arrow-forward indigo-text text-darken-4"></i>
+            <a href="#services" class="btn-floating btn-large waves-effect waves-dark" id="explore" style="background-color:#07c7b9; color=#fff">
+                <i class="mdi-navigation-arrow-forward"></i>
             </a>
         </div>
     </div>
@@ -101,7 +114,7 @@
     <div class="container">
         <div class="row">
            <!--Section: event info-->
-           <h2 style="family-font:">Lugar del Evento</h2>
+           <h2>Lugar del Evento</h2>
                <!--First column-->
                <div class="col s12 m8 l8">
                    <!--Map container-->
@@ -111,7 +124,7 @@
                 <!--Second column-->
                 <div class="col s12 m4 l4">
                 <br><br>
-                <ul class="text-xs-center" style="text-align:center">
+                <ul class="text-xs-center" style="text-align:center" id="staggered-test">
                     <li class="event-info wow fadeInUp" data-wow-delay="0.3s"><i class="fa fa-calendar fa-3x"></i>
                         <p>13 / Mayo / 2017</p>
                     </li>
@@ -129,11 +142,56 @@
     </div>
 </div>
 
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="{{ asset('/') }}js/home.js"></script>
 @endsection
 
 @section('extra_js')
-<!-- are you there? -->
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<script src="{{ asset('/') }}js/home.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("#explore").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 300, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+                });
+            } // End if
+            Materialize.showStaggeredList('#staggered-test');
+            Materialize.fadeInImage('#map');
+        });
+        // var options = [
+        //     {
+        //         selector: '#staggered-test',
+        //         offset: 1000,
+        //         callback: function(el) {
+        //             Materialize.showStaggeredList($(el));
+        //         }
+        //     },
+        //     {
+        //         selector: '#map',
+        //         offset: 1500,
+        //         callback: function(el) {
+        //             Materialize.fadeInImage($(el));
+        //         }
+        //     }
+        // ];
+        //
+        // Materialize.scrollFire(options);
+    });
+</script>
 @endsection

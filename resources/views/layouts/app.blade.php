@@ -28,6 +28,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('/') }}libs/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="{{ asset('/') }}libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ asset('/') }}libs/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ asset('/') }}css/wata.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Miriam+Libre" rel="stylesheet">
@@ -36,6 +37,9 @@
     @yield('extra_css')
     <style type="text/css">
         h2{
+            font-family: 'Miriam Libre', sans-serif;
+        }
+        h3{
             font-family: 'Miriam Libre', sans-serif;
         }
         p{
