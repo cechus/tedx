@@ -85,6 +85,10 @@
         display: block;
         margin: auto;
     }
+
+    .parallax-container {
+        height: 380px !important;
+    }
 </style>
 @section('extra_css')
 
@@ -96,80 +100,63 @@
         </div>
     </div>
 
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/about/4.jpg"></div>
+    </div>
+
     <div class="container">
         <div class="row">
-            <div class="col s12 m4">
+            <div class="col s12 m6 offset-m3">
                 <div class="description-ball"></div>
                 <div class="description center-align">
-                    <img  id="charlas" src="{{asset('images')}}/about/charlas.jpg" >
+                    <div class="row h4-row">
+                        <h3>¿Qué es TED y TEDx?<small></small></h3>
+                    </div>
                 </div>
             </div>
-            <div class="col s12 m2">
-                <div class="description-ball"></div>
-                <div class="description center-align">
-                    <img  class="responsive-img" id="logos" src="{{asset('images')}}/about/TED.svg">
-                </div>
-            </div>
-            <div class="col s12 m6">
-                <div class="description-ball"></div>
-                <div class="description center-align">
-                <div class="row h4-row">
-                    <h4>¿Qué es TED y TEDx?<br><small></small></h4>
-                    <p>TED es una comunidad global sin fines de lucro, que mediante charlas se dedica a la difusión de ideas innovadoras de forma concisa.</p>
-                    <p>Los eventos TEDx, realizados en diferentes partes del mundo, se organizan sin fines políticos, religiosos, ni ganancias personales.Estos eventos son creados pensando en que una idea puede cambiar el mundo.</p>
-                </div>
-                </div>
+            <div class="col s12 m6 offset-m3">
+                <p>TED es una comunidad global sin fines de lucro, que mediante charlas se dedica a la difusión de ideas innovadoras de forma concisa.</p>
+                <p>Los eventos TEDx, realizados en diferentes partes del mundo, se organizan sin fines políticos, religiosos, ni ganancias personales.Estos eventos son creados pensando en que una idea puede cambiar el mundo.</p>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="divider"></div>
     </div>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/about/5.jpg"></div>
+    </div>
+
     <div class="container">
         <div class="row">
-        <div class="col s12 m4">
-            <div class="description-ball"></div>
-            <div class="description center-align">
-                <img id ="charlas" src="{{asset('images')}}/about/charla2.png" >
-            </div>
-        </div>
-        <div class="col s12 m2">
-            <div class="description-ball"></div>
-            <div class="description center-align">
-                <img class="responsive-img" id="logos" src="{{asset('images')}}/about/TEDxUMSA4.svg">
-            </div>
-        </div>
-        <div class="col s12 m6">
-            <div class="description-ball"></div>
-            <div class="description center-align">
-                <div class="row h4-row">
-                    <h4>¿Qué es TEDxUMSA?<br><small></small></h4>
-                    <p>TEDxUMSA es un evento que busca difundir ideas valiosas que provoquen en la juventud paceña la inquietud de encontrar su propósito personal para contribuir con soluciones creativas e innovadora a las necesidades y problemáticas de nuestra ciudad.</p>
+            <div class="col s12 m6 offset-m3">
+                <div class="description-ball"></div>
+                <div class="description center-align">
+                    <div class="row h4-row">
+                        <h3>¿Qué es TEDxUMSA?<small></small></h3>
+                    </div>
                 </div>
             </div>
+            <div class="col s12 m6 offset-m3">
+                <p>TEDxUMSA es un evento que busca difundir ideas valiosas que provoquen en la juventud paceña la inquietud de encontrar su propósito personal para contribuir con soluciones creativas e innovadora a las necesidades y problemáticas de nuestra ciudad.</p>
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="divider"></div>
+    </div>
+    <br>
+
     <div class="container video">
         <iframe align="middle" width="853" height="480" src="//www.youtube.com/embed/vzhu8QTA9cc?rel=0" frameborder="0" allowfullscreen></iframe>
     </div>
     <br>
     <div class="container">
-        <div class="row">
-            <h2 class="centre-line"><span>TEDxUMSA</span></h2>
-        </div>
-    </div>
-    <div class="container">
     </div>
     <div class="container">
         <div class="row">
-            <div class="col s12 m4">
-                <div class="description-ball"></div>
-                <div class="description center-align">
-                    <img id ="charlas" src="{{asset('images')}}/about/charla2.png" >
-                </div>
-            </div>
-            <div class="col s12 m8">
+            <div class="col s12 m8 offset-m2">
                 <div class="description-ball"></div>
                 <div class="description center-align">
                     <div class="row h4-row">
@@ -209,5 +196,9 @@
     <script type="text/javascript">
         $(this).siblings('li').removeClass('active');
         $(".about").addClass('active');
+
+        $(document).ready(function(){
+            $('.parallax').parallax();
+        });
     </script>
 @endsection
