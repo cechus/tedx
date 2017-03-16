@@ -24,22 +24,6 @@
         border-radius: 5px;
     }
 
-    .video-container1 {
-        position:relative;
-        padding-bottom:56.25%;
-        padding-top:30px;
-        height:0;
-        overflow:hidden;
-    }
-
-    .video-container1 iframe, .video-container1 object, .video-container1 embed {
-        position:absolute;
-        top:0;
-        left:15%;
-        width:70%;
-        height:60%;
-    }
-
     h3 {
         margin-bottom: 50px;
       text-align: center;
@@ -89,6 +73,23 @@
     .parallax-container {
         height: 380px !important;
     }
+
+    .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        text-align: center;
+    }
+    .embed-container iframe, .embed-container object, .embed-container embed {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 </style>
 @section('extra_css')
 
@@ -106,7 +107,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col s12 m6 offset-m3">
+            <div class="col s12 m12 l8 offset-l2">
                 <div class="description-ball"></div>
                 <div class="description center-align">
                     <div class="row h4-row">
@@ -114,7 +115,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s12 m6 offset-m3">
+            <div class="col s12 m12 l8 offset-l2">
                 <p>TED es una comunidad global sin fines de lucro, que mediante charlas se dedica a la difusión de ideas innovadoras de forma concisa.</p>
                 <p>Los eventos TEDx, realizados en diferentes partes del mundo, se organizan sin fines políticos, religiosos, ni ganancias personales.Estos eventos son creados pensando en que una idea puede cambiar el mundo.</p>
             </div>
@@ -130,7 +131,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col s12 m6 offset-m3">
+            <div class="col s12 m12 l8 offset-l2">
                 <div class="description-ball"></div>
                 <div class="description center-align">
                     <div class="row h4-row">
@@ -138,7 +139,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s12 m6 offset-m3">
+            <div class="col s12 m12 l8 offset-l2">
                 <p>TEDxUMSA es un evento que busca difundir ideas valiosas que provoquen en la juventud paceña la inquietud de encontrar su propósito personal para contribuir con soluciones creativas e innovadora a las necesidades y problemáticas de nuestra ciudad.</p>
             </div>
         </div>
@@ -147,9 +148,14 @@
         <div class="divider"></div>
     </div>
     <br>
-
-    <div class="container video">
-        <iframe align="middle" width="853" height="480" src="//www.youtube.com/embed/vzhu8QTA9cc?rel=0" frameborder="0" allowfullscreen></iframe>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6 l6 offset-m3 offset-l3">
+                <div class='embed-container'>
+                    <iframe src='https://www.youtube.com/embed/vzhu8QTA9cc' frameborder='0' allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
     </div>
     <br>
     <div class="container">
@@ -185,14 +191,6 @@
 @endsection
 
 @section('extra_js')
-    <script type="text/javascript">
-        $('.button-collapse').sideNav({
-            menuWidth: 300,
-            edge: 'left',
-            closeOnClick: true,
-            draggable: true
-        });
-    </script>
     <script type="text/javascript">
         $(this).siblings('li').removeClass('active');
         $(".about").addClass('active');

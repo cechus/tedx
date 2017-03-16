@@ -21,7 +21,7 @@
             </div>
 
             <div class="col s12 l4">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeB17txNlplaExo2ZrzUtEJQ_TSsH9Kjn_6UqpowhSLAhWfVw/viewform?c=0&w=1">
+                <a href="http://bit.ly/SoyParteDeTEDxUMSA">
                     <i class="fa fa-5x fa-comments-o animated-color"></i>
                     <div class="divider"></div>
                     <h5>Asistir Al evento</h5>
@@ -44,11 +44,6 @@
 @section('extra_js')
 <script type="text/javascript">
     $('.button-collapse').sideNav({
-        menuWidth: 300,
-        edge: 'left',
-        closeOnClick: true,
-        draggable: true
-    });
 
     // Change navbar tab color when active
 	$(this).siblings('li').removeClass('active');

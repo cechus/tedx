@@ -2,9 +2,18 @@
 
 @section('extra_css')
 <style>
-.col{
-	display: inline-block;
-}
+	.col{
+		display: inline-block;
+	}
+	.card{
+		display: inline-block;
+	}
+	.card a, .card i{
+		color: #fff !important;
+	}
+	.name{
+		color: #fff !important;
+	}
 </style>
 @endsection
 
@@ -20,37 +29,36 @@
 			<div class="col s12 m3 l3">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light" >
-						<img class="img-responsive activator" id="carlos" src="images/team/carlos.jpg" />
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">
+						<img class="img-responsive activator" id="carlos" src="images/team/carlos.png" />
+						<span class="card-title activator name">
 							Carlos Zabaleta
 							<i class="material-icons right">more_vert</i>
 						</span>
-						<p>Licenciatario / Organizador</p>
 					</div>
+					<!-- <div class="card-content">
+						<p>Licenciatario y Organizador TEDxUMSA</p>
+					</div> -->
 					<div class="card-reveal">
 						<span class="card-title grey-text text-darken-4">
 							<b>Carlos Zabaleta Copa</b>
 							<i class="material-icons right">close</i>
 						</span>
-						<h6>Licenciatario/Organizador</h6>
+						<h6>Licenciatario y Organizador TEDxUMSA</h6>
 					</div>
 				</div>
 			</div>
 			<div class="col s12 m3 l3">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="img-responsive activator" src="images/team/ana.jpg" />
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">
-							Ana Quispe
+						<img class="img-responsive activator" src="images/team/ana2.png" />
+						<span class="card-title activator name">
+							Ana Quispe &nbsp; &nbsp;
 							<i class="material-icons right">more_vert</i>
 						</span>
-						<p>Directora de protocolo y Produccion ejecutiva</p>
-						<br>
 					</div>
+					<!-- <div class="card-content">
+						<p>Directora de protocolo y Produccion ejecutiva</p>
+					</div> -->
 					<div class="card-reveal">
 						<span class="card-title grey-text text-darken-4">
 							<b>Ana Quispe</b>
@@ -63,16 +71,15 @@
 			<div class="col s12 m3 l3">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="img-responsive activator" src="images/team/hermann.jpg" />
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">
+						<img class="img-responsive activator" src="images/team/hermann2.png" />
+						<span class="card-title activator name">
 							Hermann Lino
 							<i class="material-icons right">more_vert</i>
 						</span>
-						<p>Director de Ventas</p>
-						<br>
 					</div>
+					<!-- <div class="card-content">
+						<p>Director de Ventas</p><br>
+					</div> -->
 					<div class="card-reveal">
 						<span class="card-title grey-text text-darken-4">
 							<b>Hermann Lino</b>
@@ -85,16 +92,15 @@
 			<div class="col s12 m3 l3">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="img-responsive activator" src="images/team/andres.jpg" />
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">
+						<img class="img-responsive activator" src="images/team/andres.png" />
+						<span class="card-title activator name">
 							Andrés Mamani
 							<i class="material-icons right">more_vert</i>
 						</span>
-						<p>Director de Media</p>
-						<br>
 					</div>
+					<!-- <div class="card-content">
+						<p>Director y coordinador de Media</p><br>
+					</div> -->
 					<div class="card-reveal">
 						<span class="card-title grey-text text-darken-4">
 							<b>Andrés Mamani</b>
@@ -104,25 +110,25 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col s12 m3 l3 offset-m1 offset-l1">
+		<div class="row center-align">
+			<div class="col s12 m3 l3">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="img-responsive activator" src="images/team/veronica.jpg" />
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">
+						<img class="img-responsive activator" src="images/team/veronica.png" />
+						<span class="card-title activator name">
 							Verónica Clavijo
 							<i class="material-icons right">more_vert</i>
 						</span>
-						<p>Directora de relaciones externas y Curaduría</p>
 					</div>
+					<!-- <div class="card-content">
+						<p>Directora de relaciones externas y Curaduría</p>
+					</div> -->
 					<div class="card-reveal">
 						<span class="card-title grey-text text-darken-4">
-							<b>Verónica Clavijo Altamirano</b>
+							<b>Verónica Clavijo</b>
 							<i class="material-icons right">close</i>
 						</span>
-						<h6>Directora de relaciones externas y Curaduría</h6>
+						<h6>Directora de relaciones externas con expositores y Curaduría</h6>
 					</div>
 				</div>
 			</div>
@@ -130,14 +136,14 @@
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
 						<img class="img-responsive activator" src="images/team/kevin.png" />
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">
+						<span class="card-title activator name">
 							Kevin Vásquez
 							<i class="material-icons right">more_vert</i>
 						</span>
-						<p>Director Creativo de Diseño</p>
 					</div>
+					<!-- <div class="card-content">
+						<p>Director Creativo de Diseño</p><br>
+					</div> -->
 					<div class="card-reveal">
 						<span class="card-title grey-text text-darken-4">
 							<b>Kevin Vásquez</b>
@@ -150,15 +156,15 @@
 			<div class="col s12 m3 l3">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="img-responsive activator" src="images/team/karina.jpg" />
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">
+						<img class="img-responsive activator" src="images/team/karina.png" />
+						<span class="card-title activator name">
 							Karina Llanos
 							<i class="material-icons right">more_vert</i>
 						</span>
-						<p>Directora de Marketing y Relaciones Publicas</p>
 					</div>
+					<!-- <div class="card-content">
+						<p>Directora de Marketing y Relaciones Publicas</p>
+					</div> -->
 					<div class="card-reveal">
 						<span class="card-title grey-text text-darken-4">
 							<b>Karina Alejandra Llanos</b>
@@ -176,18 +182,14 @@
 
 @section('extra_js')
 <script type="text/javascript">
-	$('.button-collapse').sideNav({
-		menuWidth: 300,
-		edge: 'left',
-		closeOnClick: true,
-		draggable: true
-	});
 
 	$(document).ready(function() {
 		$('#equipo').masonry({
 			itemSelector: '.col'
 		});
+		$('.scrollspy').scrollSpy();
 	});
+
 
 	// Change navbar tab color when active
 	$(this).siblings('li').removeClass('active');

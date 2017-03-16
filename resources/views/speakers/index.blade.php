@@ -71,13 +71,6 @@
 
 @section('extra_js')
 <script type="text/javascript">
-    $('.button-collapse').sideNav({
-         menuWidth: 300,
-         edge: 'left',
-         closeOnClick: true,
-         draggable: true
-    });
-
     $(document).ready(function() {
         $('#speakers').masonry({
             itemSelector: '.col'

@@ -90,41 +90,55 @@
 
 @section('content')
 
-	<div class="section scrollspy" id="works" style="padding-bottom:0px;">
-		<div class="container">
-			<div class="row">
-				<h2>Auspiciadores</h2>
+<div class="section scrollspy" id="works">
+	<div class="container">
+		<div class="row">
+			<h2>Auspiciadores</h2>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m12 l8 offset-l2">
+                <div class="description-ball"></div>
+                <div class="description center-align">
+                    <div class="row h4-row">
+						<h4 class="centre-line"><span>¿Por qué ser un auspiciador?</span></h4>
+                    </div>
+                </div>
+            </div>
+			<div class="col s12 m12 l8 offset-l2">
+				<p>
+					Siendo este evento parte de la organización internacional TED, esperamos contar con su apoyo para la realización del
+					TEDxUMSA ya que es una gran oportunidad para los jóvenes bolivianos de encontrar su propósito personal y así formar
+					una Bolivia mejor, mediante ideas que cambien actitudes.
+				</p>
+				<p>
+					Esto será posible gracias a los expositores y auspiciadores que serán reconocidos internacionalmente a través de este
+					evento.
+				</p>
 			</div>
 		</div>
-		<div class="container">
-			 <div class="row">
-			   <h2 class="centre-line"><span>¿Por qué ser un auspiciador?</span></h2>
-			</div>
-		 </div>
-		<div class="container">
-			<div id="shuffle-grids" class="row" style="">
-				<div class="col s12 m10 l10 offset-m1 offset-l1">
-					<p>Siendo este evento parte de la organización internacional TED, esperamos contar con su apoyo para la realización del TEDxUMSA ya que es una gran oportunidad para los jóvenes
-						bolivianos de encontrar su propósito personal y así formar una Bolivia mejor, mediante ideas que cambien actitudes.</p>
-					<p>Esto será posible gracias a los expositores y auspiciadores que serán reconocidos internacionalmente a través de este evento.</p>
-				</div>
-			</div>
-		</div>
+	</div>
 
-		<div class="container">
-			 <div class="row">
-			   <h2 class="centre-line"><span>¿Qué ofrecemos?</span></h2>
-			</div>
-		 </div>
-		<div class="container">
-			<div id="shuffle-grids" class="row" style="">
-				<div class="col s12 m10 l10 offset-m1 offset-l1">
-					<p>
-						Siendo este evento parte de la organización internacional TED, esperamos contar con su apoyo para la realización del TEDxUMSA debido a que es una gran oportunidad para los jóvenes bolivianos de encontrar su propósito personal y así formar una Bolivia mejor, mediante ideas que cambien actitudes.
-						Esto será posible gracias a los expositores y auspiciadores que serán reconocidos internacionalmente a través de este evento
-					</p>
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m12 l8 offset-l2">
+                <div class="description-ball"></div>
+                <div class="description center-align">
+                    <div class="row h4-row">
+						<h4 class="centre-line"><span>¿Qué ofrecemos?</span></h4>
+					</div>
 				</div>
 			</div>
+			<div class="col s12 m12 l8 offset-l2">
+				<p>
+					Siendo este evento parte de la organización internacional TED, esperamos contar con su apoyo para la realización del
+					TEDxUMSA debido a que es una gran oportunidad para los jóvenes bolivianos de encontrar su propósito personal y así
+					formar una Bolivia mejor, mediante ideas que cambien actitudes. Esto será posible gracias a los expositores y
+					auspiciadores que serán reconocidos internacionalmente a través de este evento.
+				</p>
+			</div>
+
 			<div class="row">
 				<div class="col s12 m3 l3 offset-m3 offset-l3">
 					<h4 class="centre-line" style="text-align:center"><strong>4</strong></h4>
@@ -137,176 +151,172 @@
 			</div>
 			<br><br>
 		</div>
+	</div>
+</div>
 
-		<!-- temporary div -->
-		<div style="display:none;">
-			<div class="container">
-				<div class="row">
-					<h2 class="centre-line"><span>Transformación</span></h2>
-				</div>
+	<!-- temporary div -->
+	<div style="display:none;">
+		<div class="container">
+			<div class="row">
+				<h2 class="centre-line"><span>Transformación</span></h2>
 			</div>
-			<div class="wide-container">
-				<!-- Gold -->
-				<div id="shuffle-grids" class="row" style="">
-					{{--@foreach($aliadosGold as $aliado)--}}
-					<div class="col s12 m6 l4">
-						<div class="diamond center-block">
-							<i class="fa fa-magic fa-5x"></i>
-							<p>Aliado Transformación</p>
-						</div>
+		</div>
+		<div class="wide-container">
+			<!-- Gold -->
+			<div id="shuffle-grids" class="row" style="">
+				{{--@foreach($aliadosGold as $aliado)--}}
+				<div class="col s12 m6 l4">
+					<div class="diamond center-block">
+						<i class="fa fa-magic fa-5x"></i>
+						<p>Aliado Transformación</p>
 					</div>
-					<div class="col s12 m6 l4">
-						<div class="diamond center-block">
-							<i class="fa fa-magic fa-5x"></i>
-							<p>Aliado Transformación</p>
-						</div>
-					</div>
-					<div class="col s12 m6 l4">
-						<div class="diamond center-block">
-							<i class="fa fa-magic fa-5x"></i>
-							<p>Aliado Transformación</p>
-						</div>
-					</div>
-					{{--@endforeach--}}
 				</div>
-			</div>
-			<br><br>
-			<div class="container">
-				<div class="row">
-					<h2 class="centre-line"><span>Innovación</span></h2>
+				<div class="col s12 m6 l4">
+					<div class="diamond center-block">
+						<i class="fa fa-magic fa-5x"></i>
+						<p>Aliado Transformación</p>
+					</div>
 				</div>
-			</div>
-			<div class="wide-container">
-				<!--Platinum-->
-				<div id="shuffle-grid" class="row platinum">
-					{{--@foreach($aliadosPlatimun as $aliado)--}}
-					<div class="col s6 m4 l3">
-						<div class="diamond center-block">
-							<i class="fa fa-flask fa-5x"></i>
-							<p>Aliado innovacion</p>
-						</div>
+				<div class="col s12 m6 l4">
+					<div class="diamond center-block">
+						<i class="fa fa-magic fa-5x"></i>
+						<p>Aliado Transformación</p>
 					</div>
-					<div class="col s6 m4 l3">
-						<div class="diamond center-block">
-							<i class="fa fa-flask fa-5x"></i>
-							<p>Aliado innovacion</p>
-						</div>
-					</div>
-					<div class="col s6 m4 l3">
-						<div class="diamond center-block">
-							<i class="fa fa-flask fa-5x"></i>
-							<p>Aliado innovacion</p>
-						</div>
-					</div>
-					<div class="col s6 m4 l3">
-						<div class="diamond center-block">
-							<i class="fa fa-flask fa-5x"></i>
-							<p>Aliado innovacion</p>
-						</div>
-					</div>
-					{{--@endforeach--}}
 				</div>
+				{{--@endforeach--}}
 			</div>
-			<br>
-			<div class="container">
-				<div class="row">
-					<h2 class="centre-line"><span>Creatividad</span></h2>
+		</div>
+		<br><br>
+		<div class="container">
+			<div class="row">
+				<h2 class="centre-line"><span>Innovación</span></h2>
+			</div>
+		</div>
+		<div class="wide-container">
+			<!--Platinum-->
+			<div id="shuffle-grid" class="row platinum">
+				{{--@foreach($aliadosPlatimun as $aliado)--}}
+				<div class="col s6 m4 l3">
+					<div class="diamond center-block">
+						<i class="fa fa-flask fa-5x"></i>
+						<p>Aliado innovacion</p>
+					</div>
 				</div>
-			</div>
-			<div class="wide-container">
-				<div id="shuffle-grid" class="row amigos">
-					{{--@foreach($aliadosAmigos as $aliado)--}}
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-lightbulb-o fa-5x"></i>
-							<p>Aliado creatividad</p>
-						</div>
+				<div class="col s6 m4 l3">
+					<div class="diamond center-block">
+						<i class="fa fa-flask fa-5x"></i>
+						<p>Aliado innovacion</p>
 					</div>
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-lightbulb-o fa-5x"></i>
-							<p>Aliado creatividad</p>
-						</div>
-					</div>
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-lightbulb-o fa-5x"></i>
-							<p>Aliado creatividad</p>
-						</div>
-					</div>
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-lightbulb-o fa-5x"></i>
-							<p>Aliado creatividad</p>
-						</div>
-					</div>
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-lightbulb-o fa-5x"></i>
-							<p>Aliado creatividad</p>
-						</div>
-					</div>
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-lightbulb-o fa-5x"></i>
-							<p>Aliado creatividad</p>
-						</div>
-					</div>
-					{{--@endforeach--}}
 				</div>
-			</div>
-			<br>
-			<div class="container">
-				<div class="row">
-					<h2 class="centre-line"><span>Aliado</span></h2>
+				<div class="col s6 m4 l3">
+					<div class="diamond center-block">
+						<i class="fa fa-flask fa-5x"></i>
+						<p>Aliado innovacion</p>
+					</div>
 				</div>
+				<div class="col s6 m4 l3">
+					<div class="diamond center-block">
+						<i class="fa fa-flask fa-5x"></i>
+						<p>Aliado innovacion</p>
+					</div>
+				</div>
+				{{--@endforeach--}}
 			</div>
-			<div class="wide-container">
-				<div id="shuffle-grid" class="row amigos">
-					{{--@foreach($aliadosAmigos as $aliado)--}}
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-heart fa-2x"></i>
-						</div>
+		</div>
+		<br>
+		<div class="container">
+			<div class="row">
+				<h2 class="centre-line"><span>Creatividad</span></h2>
+			</div>
+		</div>
+		<div class="wide-container">
+			<div id="shuffle-grid" class="row amigos">
+				{{--@foreach($aliadosAmigos as $aliado)--}}
+				<div class="col s4 m2 l2">
+					<div class="diamond center-block">
+						<i class="fa fa-lightbulb-o fa-5x"></i>
+						<p>Aliado creatividad</p>
 					</div>
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-heart fa-2x"></i>
-						</div>
+				</div>
+				<div class="col s4 m2 l2">
+					<div class="diamond center-block">
+						<i class="fa fa-lightbulb-o fa-5x"></i>
+						<p>Aliado creatividad</p>
 					</div>
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-heart fa-2x"></i>
-						</div>
+				</div>
+				<div class="col s4 m2 l2">
+					<div class="diamond center-block">
+						<i class="fa fa-lightbulb-o fa-5x"></i>
+						<p>Aliado creatividad</p>
 					</div>
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-heart fa-2x"></i>
-						</div>
+				</div>
+				<div class="col s4 m2 l2">
+					<div class="diamond center-block">
+						<i class="fa fa-lightbulb-o fa-5x"></i>
+						<p>Aliado creatividad</p>
 					</div>
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-heart fa-2x"></i>
-						</div>
+				</div>
+				<div class="col s4 m2 l2">
+					<div class="diamond center-block">
+						<i class="fa fa-lightbulb-o fa-5x"></i>
+						<p>Aliado creatividad</p>
 					</div>
-					<div class="col s4 m2 l2">
-						<div class="diamond center-block">
-							<i class="fa fa-heart fa-2x"></i>
-						</div>
+				</div>
+				<div class="col s4 m2 l2">
+					<div class="diamond center-block">
+						<i class="fa fa-lightbulb-o fa-5x"></i>
+						<p>Aliado creatividad</p>
+					</div>
+				</div>
+				{{--@endforeach--}}
+			</div>
+		</div>
+		<br>
+		<div class="container">
+			<div class="row">
+				<h2 class="centre-line"><span>Aliado</span></h2>
+			</div>
+		</div>
+		<div class="wide-container">
+			<div id="shuffle-grid" class="row amigos">
+				{{--@foreach($aliadosAmigos as $aliado)--}}
+				<div class="col s4 m2 l2">
+					<div class="diamond center-block">
+						<i class="fa fa-heart fa-2x"></i>
+					</div>
+				</div>
+				<div class="col s4 m2 l2">
+					<div class="diamond center-block">
+						<i class="fa fa-heart fa-2x"></i>
+					</div>
+				</div>
+				<div class="col s4 m2 l2">
+					<div class="diamond center-block">
+						<i class="fa fa-heart fa-2x"></i>
+					</div>
+				</div>
+				<div class="col s4 m2 l2">
+					<div class="diamond center-block">
+						<i class="fa fa-heart fa-2x"></i>
+					</div>
+				</div>
+				<div class="col s4 m2 l2">
+					<div class="diamond center-block">
+						<i class="fa fa-heart fa-2x"></i>
+					</div>
+				</div>
+				<div class="col s4 m2 l2">
+					<div class="diamond center-block">
+						<i class="fa fa-heart fa-2x"></i>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 @endsection
 
 @section('extra_js')
 <script type="text/javascript">
-    $('.button-collapse').sideNav({
-		menuWidth: 300,
-		edge: 'left',
-		closeOnClick: true,
-		draggable: true
-	});
 
 	// Change navbar tab color when active
 	$(this).siblings('li').removeClass('active');

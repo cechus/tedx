@@ -42,6 +42,9 @@
         h3{
             font-family: 'Miriam Libre', sans-serif;
         }
+        h4{
+            font-family: 'Miriam Libre', sans-serif;
+        }
         p{
             font-family: 'Open Sans', sans-serif;
         }
@@ -92,6 +95,11 @@
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     <script type="text/javascript" src="{{ asset('/') }}libs/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        $( document ).ready(function(){
+            $('.button-collapse').sideNav();
+        });
+    </script>
     <script src="{{ asset('/') }}js/config.js"></script>
     <script src="{{ asset('/') }}js/build.js"></script>
     <script src="{{ asset('/') }}js/index.js"></script>

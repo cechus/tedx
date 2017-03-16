@@ -38,8 +38,10 @@
       z-index: 799;
     }
     #otriangles {
-        height: 580px;
+        height: 600px;
         background-image: url("images/home/bg_image.png");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     #otriangles .h1-wrapper {
         position: absolute;
@@ -53,7 +55,7 @@
         font-weight: 200;
         font-size: 3rem;
         line-height: 3.92rem;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+        text-shadow: 1px 1px #000;
     }
     @media only screen and (min-width: 601px) and (max-width: 992px) {
         #otriangles .h1-wrapper h1 {
@@ -83,6 +85,9 @@
     strong{
         font-weight: 600;
     }
+    .tshadow{
+        text-shadow: 2px 2px #000;
+    }
 </style>
 @endsection
 
@@ -94,11 +99,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col s12">
-                        <h1 style="font-family:Arial,Helvetica"><strong>TEDx</strong><span class="brand">UMSA</span></h1>
+                        <h1 style="font-family:Arial,Helvetica" class="tshadow"><strong>TEDx</strong><span class="brand">UMSA</span></h1>
                     </div>
                     <div class="col s12 text-center">
-                        <h3 class="typed">13 de Mayo / 8:00 a 16:00 / Paraninfo Universitario</h3>
-                        <span class="typed-cursor">|</span>
+                        <h3 class="typed tshadow">13 de Mayo / 8:00 a 16:00 / Paraninfo Universitario</h3>
+                        <span class="typed-cursor tshadow">|</span>
                     </div>
                 </div>
             </div>
@@ -145,7 +150,7 @@
 @endsection
 
 @section('extra_js')
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 <script src="{{ asset('/') }}js/home.js"></script>
 
@@ -174,24 +179,23 @@
             Materialize.showStaggeredList('#staggered-test');
             Materialize.fadeInImage('#map');
         });
-        // var options = [
-        //     {
-        //         selector: '#staggered-test',
-        //         offset: 1000,
-        //         callback: function(el) {
-        //             Materialize.showStaggeredList($(el));
-        //         }
-        //     },
-        //     {
-        //         selector: '#map',
-        //         offset: 1500,
-        //         callback: function(el) {
-        //             Materialize.fadeInImage($(el));
-        //         }
-        //     }
-        // ];
-        //
-        // Materialize.scrollFire(options);
+
+        (function() {
+            var otriangles = document.getElementById('otriangles'),
+                nav = document.getElementById('nav'),
+                windowHeight,
+                navHeight,
+                otrianglesHeight;
+            function resizeTriangles() {
+                windowHeight = window.innerHeight;
+                navHeight = nav.clientHeight;
+                otrianglesHeight = windowHeight - navHeight;
+                otriangles.style.height = otrianglesHeight + 'px';
+            }
+            resizeTriangles();
+            window.addEventListener('resize', resizeTriangles);
+        })();
+        // $('.button-collapse').sideNav();
     });
 </script>
 @endsection
