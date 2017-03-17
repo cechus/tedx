@@ -85,17 +85,25 @@
 		   padding: 2rem;
 	   }
    }
+   .parallax-container {
+		height: 380px !important;
+   	}
 </style>
 @endsection
 
 @section('content')
 
 <div class="section scrollspy" id="works">
-	<div class="container">
+	<div class="container title-page">
 		<div class="row">
 			<h2>Auspiciadores</h2>
 		</div>
 	</div>
+
+	<div class="parallax-container">
+        <div class="parallax"><img src="images/aliados/umsa.jpg"></div>
+    </div>
+
 	<div class="container">
 		<div class="row">
 			<div class="col s12 m12 l8 offset-l2">
@@ -152,8 +160,44 @@
 			<br><br>
 		</div>
 	</div>
-</div>
 
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m12 l8 offset-l2">
+                <div class="description-ball"></div>
+                <div class="description center-align">
+                    <div class="row h4-row">
+						<h4 class="centre-line"><span>Paquetes ofrecidos</span></h4>
+                    </div>
+                </div>
+            </div>
+
+			<div class="row">
+                <div class="col s12 m3">
+                    <div class="price-container z-depth-1" id="standard">
+                        <div class="offer">Transformación</div>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="price-container z-depth-1 best-offer" id="professional">
+                        <div class="offer best-value">Innovación</div>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="price-container z-depth-1" id="extended">
+                        <div class="offer">Creatividad</div>
+                    </div>
+                </div>
+				<div class="col s12 m3">
+                    <div class="price-container z-depth-1" id="extended">
+                        <div class="offer">Aliado</div>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
+<!----------------------------------------------------------------------------------------------------------->
 	<!-- temporary div -->
 	<div style="display:none;">
 		<div class="container">
@@ -317,9 +361,11 @@
 
 @section('extra_js')
 <script type="text/javascript">
-
 	// Change navbar tab color when active
 	$(this).siblings('li').removeClass('active');
 	$(".aliados").addClass('active');
+	$(document).ready(function(){
+		$('.parallax').parallax();
+	});
 </script>
 @endsection
