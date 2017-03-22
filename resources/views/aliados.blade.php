@@ -88,6 +88,9 @@
    .parallax-container {
 		height: 380px !important;
    	}
+	.aligned{
+		text-align: justify;
+	}
 </style>
 @endsection
 
@@ -115,12 +118,12 @@
                 </div>
             </div>
 			<div class="col s12 m12 l8 offset-l2">
-				<p>
+				<p class="aligned">
 					Siendo este evento parte de la organización internacional TED, esperamos contar con su apoyo para la realización del
 					TEDxUMSA ya que es una gran oportunidad para los jóvenes bolivianos de encontrar su propósito personal y así formar
 					una Bolivia mejor, mediante ideas que cambien actitudes.
 				</p>
-				<p>
+				<p class="aligned">
 					Esto será posible gracias a los expositores y auspiciadores que serán reconocidos internacionalmente a través de este
 					evento.
 				</p>
@@ -139,7 +142,7 @@
 				</div>
 			</div>
 			<div class="col s12 m12 l8 offset-l2">
-				<p>
+				<p class="aligned">
 					Siendo este evento parte de la organización internacional TED, esperamos contar con su apoyo para la realización del
 					TEDxUMSA debido a que es una gran oportunidad para los jóvenes bolivianos de encontrar su propósito personal y así
 					formar una Bolivia mejor, mediante ideas que cambien actitudes. Esto será posible gracias a los expositores y

@@ -90,6 +90,9 @@
         width: 100%;
         height: 100%;
     }
+    .aligned{
+        text-align: center;
+    }
 </style>
 @section('extra_css')
 
@@ -116,8 +119,8 @@
                 </div>
             </div>
             <div class="col s12 m12 l8 offset-l2">
-                <p>TED es una comunidad global sin fines de lucro, que mediante charlas se dedica a la difusión de ideas innovadoras de forma concisa.</p>
-                <p>Los eventos TEDx, realizados en diferentes partes del mundo, se organizan sin fines políticos, religiosos, ni ganancias personales.Estos eventos son creados pensando en que una idea puede cambiar el mundo.</p>
+                <p class="aligned">TED es una comunidad global sin fines de lucro, que mediante charlas se dedica a la difusión de ideas innovadoras de forma concisa.</p>
+                <p class="aligned">Los eventos TEDx, realizados en diferentes partes del mundo, se organizan sin fines políticos, religiosos, ni ganancias personales.Estos eventos son creados pensando en que una idea puede cambiar el mundo.</p>
             </div>
         </div>
     </div>
@@ -140,7 +143,7 @@
                 </div>
             </div>
             <div class="col s12 m12 l8 offset-l2">
-                <p>TEDxUMSA es un evento que busca difundir ideas valiosas que provoquen en la juventud paceña la inquietud de encontrar su propósito personal para contribuir con soluciones creativas e innovadora a las necesidades y problemáticas de nuestra ciudad.</p>
+                <p class="aligned">TEDxUMSA es un evento que busca difundir ideas valiosas que provoquen en la juventud paceña la inquietud de encontrar su propósito personal para contribuir con soluciones creativas e innovadora a las necesidades y problemáticas de nuestra ciudad.</p>
             </div>
         </div>
     </div>
