@@ -15,7 +15,7 @@
                 <li class="expositores"><a href="{{url('expositores')}}">Expositores</a></li>
                 <li class="equipo"><a href="{{url('equipo')}}">Equipo</a></li>
                 <!-- <li class=""><a href="{{url('posts')}}">Blog</a></li> -->
-                <li class="participar"><a href="{{url('participar')}}">Participar</a></li>
+                <li class="participar" style="background-color:#07c7b9;"><a href="{{url('participar')}}" style="color:white !important"><b>Participar</b></a></li>
             </ul>
             <!-- Mobile menu, make sure it is equal to the statis menu -->
             <ul class="side-nav" id="mobile-menu">
@@ -23,8 +23,8 @@
                 <li class="aliados"><a href="{{url('aliados')}}">Auspiciadores</a></li>
                 <li class="expositores"><a href="{{url('expositores')}}">Expositores</a></li>
                 <li class="equipo"><a href="{{url('equipo')}}">Equipo</a></li>
-                <!-- <li class=""><a href="{{url('posts')}}">Blog</a></li> -->
-                <li class="participar"><a href="{{url('participar')}}">Participar</a></li>
+                <li class="participar" style="background-color:#07c7b9;"><a href="{{url('participar')}}" style="color:white !important"><b>Participar</b></a></li>
+                <!-- <li class="participar"><a href="{{url('participar')}}">Participar</a></li> -->
             </ul>
         </div>
     </nav>

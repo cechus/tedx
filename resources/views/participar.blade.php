@@ -12,15 +12,15 @@
         </div>
         <div class="row services">
             <div class="col s12 l4">
-                <a href="/error">
+                <!-- <a href="/error">
                     <i class="fa fa-5x fa-microphone animated-color"></i>
                     <div class="divider"></div>
                     <h5>Recomendar un Expositor</h5>
                 </a>
-                <p></p>
+                <p></p> -->
             </div>
 
-            <div class="col s12 l4">
+            <div class="col s12 l4 offset-l4">
                 <a href="http://bit.ly/SoyParteDeTEDxUMSA">
                     <i class="fa fa-5x fa-comments-o animated-color"></i>
                     <div class="divider"></div>
@@ -29,12 +29,12 @@
                 <p></p>
             </div>
             <div class="col s12 l4">
-                <a href="/error">
+                <!-- <a href="/error">
                     <i class="fa fa-5x fa-user-plus animated-color"></i>
                     <div class="divider"></div>
                     <h5>Ser voluntario</h5>
                     <p></p>
-                </a>
+                </a> -->
             </div>
         </div>
     </div>
