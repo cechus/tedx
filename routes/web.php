@@ -86,3 +86,8 @@ Route::post('update_tag/{idTag}','TagController@update')->name('update_tag');
 
 // Route::get('speaker', 'SpeakerController@create')->name('speaker');
 // Route::post('speaker', 'SpeakerController@store')->name('speaker');
+
+// Rutas de Vero!
+Route::group(['prefix' => 'administrador'], function(){
+    Route::resource('expositor', 'ExpositorController');
+});

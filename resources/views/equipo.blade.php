@@ -39,7 +39,7 @@
 			<div class="col s12 m3 l3">
 				<div class="card">
 					<div class="card-image" >
-						<img class="img-responsive activator" id="carlos" src="images/team/carlos.jpg" />
+						<img class="activator" id="carlos" src="images/team/carlos.jpg" />
 						<span class="card-title activator name">
 							Carlos Zabaleta
 							<i class="material-icons right">more_vert</i>
@@ -75,7 +75,7 @@
 			<div class="col s12 m3 l3">
 				<div class="card">
 					<div class="card-image">
-						<img class="img-responsive activator" src="images/team/hermann.jpg" />
+						<img class="img-responsive activator" src="images/team/hermann2.jpg" />
 						<span class="card-title activator name">
 							Hermann Lino
 							<i class="material-icons right">more_vert</i>
