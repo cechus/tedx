@@ -6,6 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 use Carbon\Carbon;
 class Post extends Model
 {
+    protected $fillable = ['title', 'description', 'image', 'date', 'posted'];
+
+    public function scopePosted($query){
+        return $query->where('posted', 1);
+    }
+
     public function tags()
     {
         return $this->belongsToMany('App\Tag','post_tag')->withPivot('post_id');
@@ -20,7 +26,7 @@ class Post extends Model
     	if ($month=$filters['month']) {
     		//$query->whereMonth('date',8);
     		$query->whereMonth('date',Carbon::parse($month)->month);
-    		
+
     	}
     	if ($year=$filters['year']) {
     		$query->whereYear('date',$year);
@@ -45,4 +51,3 @@ class Post extends Model
         ]);
     }
 }
-

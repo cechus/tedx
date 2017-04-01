@@ -88,13 +88,19 @@
     .tshadow{
         text-shadow: 2px 2px #000;
     }
+    iframe{
+        height: 100%;
+        width: 100%;
+    }
 </style>
 @endsection
 
 @section('content')
+
 <!-- Triangles section -->
-<div id="otriangles" class="scrollspy">
-    <div id="output">
+<div id="otriangles" class="scrollspy video-background pattern">
+    <div id="output video-foreground" style="height:100%">
+        <!-- <iframe id="video" src="https://www.youtube.com/embed/8YALuQ3IEAQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&branding=0" frameborder="0" allowfullscreen></iframe> -->
         <div class="h1-wrapper valign-wrapper">
             <div class="container">
                 <div class="row">
@@ -113,20 +119,14 @@
         </div>
     </div>
 </div>
-
 <!-- Services section -->
 <div class="section scrollspy" id="services">
     <div class="container">
         <div class="row">
-           <!--Section: event info-->
            <h2>Lugar del Evento</h2>
-               <!--First column-->
                <div class="col s12 m8 l8">
-                   <!--Map container-->
                    <div id="map" class="z-depth-1 wow fadeInUp" style="height: 400px"></div>
                </div>
-                <!--/First column-->
-                <!--Second column-->
                 <div class="col s12 m4 l4">
                 <br><br>
                 <ul class="text-xs-center" style="text-align:center" id="staggered-test">
@@ -141,8 +141,6 @@
                     </li>
                 </ul>
             </div>
-            <!--/Second column-->
-            <!--Section: event info-->
         </div>
     </div>
 </div>
@@ -150,10 +148,9 @@
 @endsection
 
 @section('extra_js')
-<!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> -->
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 <script src="{{ asset('/') }}js/home.js"></script>
-
 <script type="text/javascript">
     $(document).ready(function(){
         // Add smooth scrolling to all links
@@ -194,6 +191,22 @@
             }
             resizeTriangles();
             window.addEventListener('resize', resizeTriangles);
+        })();
+
+        (function() {
+            var otriangles = document.getElementById('video'),
+                nav = document.getElementById('nav'),
+                windowWidth,
+                navHeight,
+                otrianglesWidht;
+            function resizeVid() {
+                windowWidht = window.innerWidth;
+                navHeight = nav.clientHeight;
+                otrianglesWidth = windowWidth;
+                otriangles.style.width = otrianglesWidth + 'px';
+            }
+            resizeVid();
+            window.addEventListener('resize', resizeVid);
         })();
         // $('.button-collapse').sideNav();
     });

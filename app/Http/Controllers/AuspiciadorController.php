@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Speaker;
+use App\Aliado;
 
-class ExpositorController extends Controller
+class AuspiciadorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,20 +14,8 @@ class ExpositorController extends Controller
      */
     public function index()
     {
-        $expositores = Speaker::all();
-        return view('expositores.index', compact('expositores'));
-    }
-
-    /**
-    * Display the specified resource.
-    *
-    * @param  int  $id
-    * @return \Illuminate\Http\Response
-    */
-    public function show(Speaker $expositore)
-    {
-        // $expositor = Speaker::find($id);
-        return view('expositores.show',compact('expositore'));
+        $auspiciadores = Aliado::all();
+        return view('auspiciadores.index', compact('auspiciadores'));
     }
 
     /**
@@ -37,7 +25,7 @@ class ExpositorController extends Controller
      */
     public function create()
     {
-        return view("expositores.form");
+        //
     }
 
     /**
@@ -48,12 +36,18 @@ class ExpositorController extends Controller
      */
     public function store(Request $request)
     {
-        $expositor = new Speaker(array(
-            'nombre' => $request->get('nombre'),
-            'charla' => $request->get('charla'),
-            'descripcion' => $request->get('descripcion'),
-        ));
+        //
+    }
 
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
     }
 
     /**
@@ -62,9 +56,9 @@ class ExpositorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Speaker $expositor)
+    public function edit($id)
     {
-
+        //
     }
 
     /**
