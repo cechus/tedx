@@ -12,15 +12,16 @@ class Post extends Model
         return $query->where('posted', 1);
     }
 
+    public function comments()
+    {
+        return $this->hasMany('App\Comment');
+    }
+
     public function tags()
     {
         return $this->belongsToMany('App\Tag','post_tag')->withPivot('post_id');
     }
 
-    public function comments()
-    {
-        return $this->hasMany('App\Comment');
-    }
     public function scopeFilter($query, $filters)
     {
     	if ($month=$filters['month']) {

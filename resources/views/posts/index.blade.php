@@ -29,6 +29,7 @@
                     <td>{{ $post->image }}</td>
                     <td>
                         <div class="btn-group">
+                            <a href="posts/{{ $post->id }}"><button class="btn btn-sm btn-primary" type="button" name="button"><i class="fa fa-eye"></i></button></a>
                             <button class="btn btn-sm btn-warning" type="button" name="button"><i class="fa fa-pencil-square-o"></i></button>
                             <button class="btn btn-sm btn-danger" type="button" name="button"><i class="fa fa-trash-o"></i></button>
                         </div>

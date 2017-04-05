@@ -9,7 +9,7 @@ class PostsController extends Controller
 {
     public function index()
     {
-        $posts = Post::all();
+        $posts = Post::latest()->get();
         return view('posts.index', compact('posts'));
     }
 
@@ -20,6 +20,11 @@ class PostsController extends Controller
 
     // TODO: Image...
     public function store(){
+        $this->validate(request(), [
+            'title' => 'required',
+            'description' => 'required',
+        ]);
+
         if(request('posted') == "on")
             $pub = 1;
         else

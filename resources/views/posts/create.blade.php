@@ -20,6 +20,8 @@
         </div>
         <!-- /.box-footer -->
     </form>
+
+    @include('partials.errors')
 </div>
 @endsection
 
