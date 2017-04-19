@@ -13,7 +13,7 @@ class SpeakerSeeder extends Seeder
     {
 
         DB::table('speakers')->insert([
-            'nombre'=>"Alina Santander",
+            'nombre'=>"Alina Santander Vinokurova",
             'charla'=>"",
             'descripcion'=>"Joven cientifica de 17 años, ganadora de medalla de oro en astronomia y astrofísica de las Olimpiadas Cientificas Estudiantiles del año 2015 y unica participante boliviana seleccionada para el desafio Human Exploration Rover Challenge organizado por la NASA. Ella junto con su equipo consiguieron el primer lugar en la competencia. Ademas de diseñar parte del vehiculo es la encargada de pilotearlo en el momento de la competencia.",
             'imagen'=>'images/speakers/AlinaSantander.png'

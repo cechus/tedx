@@ -472,23 +472,26 @@ blockquote {
 /*
 /**********************************************************************************************************************/
 @media only screen and (max-width: 600px) {
-  .team.row > .col {
-    background: #f2f2f2;
-    margin-bottom: 1rem; } }
+    .team.row > .col {
+        background: #FFFAFA;
+        margin-bottom: 1rem;
+    }
+}
 .team > .col {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  position: relative;
-  overflow: hidden;
-  opacity: 0;
-  -webkit-transform: translate3d(0, 150px, 0);
-  -moz-transform: translate3d(0, 150px, 0);
-  -ms-transform: translate3d(0, 150px, 0);
-  -o-transform: translate3d(0, 150px, 0);
-  transform: translate3d(0, 150px, 0);
-  -webkit-transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-  -moz-transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 150px, 0);
+    -moz-transform: translate3d(0, 150px, 0);
+    -ms-transform: translate3d(0, 150px, 0);
+    -o-transform: translate3d(0, 150px, 0);
+    transform: translate3d(0, 150px, 0);
+    -webkit-transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -moz-transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
   .team > .col.animate {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
@@ -531,7 +534,7 @@ blockquote {
     width: 30px;
     height: 30px;
     border-radius: 30px;
-    background: rgba(251, 56, 70, 0.9); }
+    background: rgba(255, 255, 255, 0.9); }
   .team .description {
     opacity: 0;
     -webkit-transition: opacity 0.1s ease 0s;
@@ -545,12 +548,13 @@ blockquote {
     .team .description .h4-row {
       margin-top: 20%; }
       .team .description .h4-row h4 {
-        margin-left: auto;
-        margin-right: auto; }
+        margin-left: 6px;
+        margin-right: 6px;
+    font-size: 130%}
         .team .description .h4-row h4 small {
-          text-transform: uppercase;
-          letter-spacing: 4px;
-          font-size: 60%; } }
+          font-family: 'Miriam Libre', sans-serif;
+          color: #07c7b9;
+          font-size: 70%; } }
 @media only screen and (min-width: 601px) and (max-width: 992px) {
   .team .description .h4-row {
     margin-top: 10%; } }

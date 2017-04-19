@@ -10,10 +10,18 @@
       display: inline-block;
   }
     .spk-name{
-        font-size: 20px;
+        color: rgb(251, 56, 70);
+        /*font-size: 150%;*/
+        /*word-wrap: break-word !important;*/
     }
     .spk-bio{
-        font-size: 12px !important;
+        color: #000;
+        font-family: 'Miriam Libre', sans-serif;
+        font-size: 85% !important;
+    }
+    .team > .animate > .description{
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 </style>
 @endsection
@@ -32,22 +40,22 @@
     <div class="row team">
         @foreach($speakers as $speaker)
             @if($speaker->nombre !== "")
-                <div class="col s12 m4 animate">
+                <div class="col s12 m3 animate">
                     <div class="description-ball"></div>
                     <div class="description center-align">
                         <div class="row h4-row">
-                            <h4 class="spk-name">{{ $speaker->nombre }}<br><small>{{ $speaker->charla }}</small></h4>
+                            <h4 class="spk-name">{{ $speaker->nombre }}<br><small class="title">{{ $speaker->charla }}</small></h4>
                         </div>
-                        <div class="row">
-                            <div class="col s12 l12">
+                        <!-- <div class="row"> -->
+                            <!-- <div class="col s12 l12"> -->
                                 <p class="spk-bio">{{ $speaker->descripcion }}</p>
-                            </div>
-                        </div>
+                            <!-- </div> -->
+                        <!-- </div> -->
                     </div>
-                    <img src="{{ $speaker->imagen }}" class="responsive-img" alt="{{ $speaker->nombre }}" data-pagespeed-url-hash="2781055604" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                    <img src="{{ $speaker->imagen }}" class="responsive-img" alt="{{ $speaker->nombre }}" data-pagespeed-url-hash="2781055604">
                 </div>
             @else
-                <div class="col s12 m4 animate">
+                <div class="col s12 m3 animate">
                     <!-- <div class="description-ball"></div>
                     <div class="description center-align">
                         <div class="row h4-row">
@@ -59,7 +67,7 @@
                             </div>
                         </div>
                     </div> -->
-                    <img src="{{ $speaker->imagen }}" class="responsive-img" alt="{{ $speaker->nombre }}" data-pagespeed-url-hash="2781055604" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                    <img src="{{ $speaker->imagen }}" class="responsive-img" alt="{{ $speaker->nombre }}" data-pagespeed-url-hash="2781055604">
                 </div>
             @endif
         @endforeach
