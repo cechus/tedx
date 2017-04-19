@@ -31,20 +31,37 @@
 <div class="container">
     <div class="row team">
         @foreach($speakers as $speaker)
-        <div class="col s12 m4 animate">
-            <div class="description-ball"></div>
-            <div class="description center-align">
-                <div class="row h4-row">
-                    <h4 class="spk-name">{{ $speaker->nombre }}<br><small>{{ $speaker->charla }}</small></h4>
-                </div>
-                <div class="row">
-                    <div class="col s12 l12">
-                        <p class="spk-bio">{{ $speaker->descripcion }}</p>
+            @if($speaker->nombre !== "")
+                <div class="col s12 m4 animate">
+                    <div class="description-ball"></div>
+                    <div class="description center-align">
+                        <div class="row h4-row">
+                            <h4 class="spk-name">{{ $speaker->nombre }}<br><small>{{ $speaker->charla }}</small></h4>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 l12">
+                                <p class="spk-bio">{{ $speaker->descripcion }}</p>
+                            </div>
+                        </div>
                     </div>
+                    <img src="{{ $speaker->imagen }}" class="responsive-img" alt="{{ $speaker->nombre }}" data-pagespeed-url-hash="2781055604" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
                 </div>
-            </div>
-            <img src="{{ $speaker->imagen }}" class="responsive-img" alt="{{ $speaker->nombre }}" data-pagespeed-url-hash="2781055604" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-        </div>
+            @else
+                <div class="col s12 m4 animate">
+                    <!-- <div class="description-ball"></div>
+                    <div class="description center-align">
+                        <div class="row h4-row">
+                            <h4 class="spk-name">{{ $speaker->nombre }}<br><small>{{ $speaker->charla }}</small></h4>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 l12">
+                                <p class="spk-bio">{{ $speaker->descripcion }}</p>
+                            </div>
+                        </div>
+                    </div> -->
+                    <img src="{{ $speaker->imagen }}" class="responsive-img" alt="{{ $speaker->nombre }}" data-pagespeed-url-hash="2781055604" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+            @endif
         @endforeach
     </div>
 </div>

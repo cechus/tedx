@@ -117,16 +117,46 @@
                     </div>
                 </div>
             </div>
+
 			<div class="col s12 m12 l8 offset-l2">
 				<p class="aligned">
-					Siendo este evento parte de la organización internacional TED, esperamos contar con su apoyo para la realización del
-					TEDxUMSA ya que es una gran oportunidad para los jóvenes bolivianos de encontrar su propósito personal y así formar
-					una Bolivia mejor, mediante ideas que cambien actitudes.
+					La misión de TEDxUMSA es difundir las ideas valiosas de nuestro entorno a través de la organización de una
+					conferencia anual que reuna expositores inspiradores y a estudiantes motivados por cambiar el mundo a través
+					de charlas significativas y apasionantes.
 				</p>
 				<p class="aligned">
-					Esto será posible gracias a los expositores y auspiciadores que serán reconocidos internacionalmente a través de este
-					evento.
+					Como auspiciador de TEDxUMSA, podrá tener la oportunidad de entablar un diálogo auténtico con un público valioso
+					y ambicioso: gente apasionada y de mente abierta. Su participación en nuestro evento no es solo para presentar
+					nuevas ideas, sino también para aprender de TEDx y su comunidad.</p>
+				<p class="aligned">
+					Brinde una oportunidad para una comunidad universitaria
+					de pensadores, soñadores y visionarios de involucrarse en un tema que sea significativo para usted.
 				</p>
+			</div>
+
+			<div class="row">
+				<div class="col s12 m2 l2 offset-m2 offset-l2">
+					<h4 class="centre-line" style="text-align:center"><strong>+12,900</strong></h4>
+					<p style="text-align:center">eventos TEDx han sido realizado alrededor del mundo</p>
+				</div>
+				<div class="col s12 m2 l2 offset-m1 offset-l1">
+					<h4 class="centre-line" style="text-align:center"><strong>+3190</strong></h4>
+					<p style="text-align:center">ciudades alrededor del mundo fueron centros de uno o más eventos TEDx.</p>
+				</div>
+				<div class="col s12 m2 l2 offset-m1 offset-l1">
+					<h4 class="centre-line" style="text-align:center"><strong>+173</strong></h4>
+					<p style="text-align:center">países han organizado uno o más eventos TEDx</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col s12 m4 l4 offset-m4 offset-l4">
+					<div class="card-panel" style="background-color:#fb3846">
+						<span class="white-text">
+							El 2016, los videos de todos los eventos TEDx realizados alrededor del mundo alcanzaron <strong style="font-size:18px">1 billón de visualizaciones</strong>
+						</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

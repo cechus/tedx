@@ -145,6 +145,8 @@
             </div>
             <div class="col s12 m12 l8 offset-l2">
                 <p class="aligned">TEDxUMSA sigue la misma linea de TEDx. Es un evento independiente organizado por jóvenes universitarios que busca "difundir ideas valiosas" que provoquen en la juventud paceña la inquietud de encontrar su propósito personal para que rompan con barreras e impedimentos y puedan contribuir con soluciones creativas e innovadora a las necesidades y problemáticas de nuestra ciudad y país.</p>
+                <p class="aligned">El evento TEDxUMSA no es organizado por razones políticas, recompensas monetarias o ganancias personales. Sus organizadores realizan un arduo trabajo voluntario porque realmente creen en que una idea puede cambiar el mundo.</p>
+                <p class="aligned">Asi como en otros eventos TEDx, nuestro evento busca profundizar en las temáticas de Innovación y Creatividad. Aun así, seguimos la línea de TEDx en cuanto a las temáticas, buscando también difundir charlas de temática abierta, local y comunitaria, que inspire liderazgo de pensamiento y una visión transcendental.</p>
                 <p class="aligned">Los organizadores de TEDx no organizan eventos por razones políticas, recompensas monetarias o ganancias personales, lo hacen porque realmente creen en que una idea puede cambiar el mundo.</p>
                 <p class="aligned">Los eventos de TEDx son de tema abierto, de interés general y que inspira innovación, creatividad, liderazgo de pensamiento y una visión.</p>
             </div>

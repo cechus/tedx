@@ -88,12 +88,12 @@ Route::post('update_tag/{idTag}','TagController@update')->name('update_tag');
 // Route::post('speaker', 'SpeakerController@store')->name('speaker');
 
 // Rutas de Vero!
-Route::group(['prefix' => 'administrador'], function(){
-    Route::get('/', function(){
-        return view('adminwelcome');
-    });
-    Route::resource('posts', 'PostsController');
-    Route::resource('expositores', 'ExpositorController');
-    Route::resource('auspiciadores', 'AuspiciadorController');
-    Route::resource('etiquetas', 'EtiquetaController');
-});
+// Route::group(['prefix' => 'administrador'], function(){
+//     Route::get('/', function(){
+//         return view('adminwelcome');
+//     });
+//     Route::resource('posts', 'PostsController');
+//     Route::resource('expositores', 'ExpositorController');
+//     Route::resource('auspiciadores', 'AuspiciadorController');
+//     Route::resource('etiquetas', 'EtiquetaController');
+// });
