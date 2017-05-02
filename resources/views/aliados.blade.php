@@ -77,9 +77,6 @@
 	   }
 	   .diamond {
 		   width: 100%;
-		   border: 1px solid black;
-		   color: black;
-		   font-size: 20px;
 		   text-align: center;
 		   align-self: center;
 		   padding: 2rem;
@@ -104,7 +101,7 @@
 	</div>
 
 	<div class="parallax-container">
-        <div class="parallax"><img src="images/aliados/umsa.jpg"></div>
+        <div class="parallax"><img src="images/aliados/umsa1.jpg"></div>
     </div>
 
 	<div class="container">
@@ -186,8 +183,8 @@
 					<p style="text-align:center">Tenemos 4 tipos de paquetes para nuestros auspiciadores con diferentes beneficios de visibilidad antes, durante y despues del evento</p>
 				</div>
 				<div class="col s12 m3 l3">
-					<h4 class="centre-line" style="text-align:center"><strong>+ 1000</strong></h4>
-					<p style="text-align:center">Llegaremos a más de 1000 jovenes universitarios, entre los asistentes presenciales, los que verán el evento transmitido en vivo por streaming y por la red RUBI</p>
+					<h4 class="centre-line" style="text-align:center"><strong>+ 100</strong></h4>
+					<p style="text-align:center">Llegaremos a más de 100 jovenes universitarios, 100 asistentes presenciales mas los que verán el evento transmitido en vivo por streaming y por la red RUBI</p>
 				</div>
 			</div>
 			<br><br>
@@ -200,30 +197,7 @@
                 <div class="description-ball"></div>
                 <div class="description center-align">
                     <div class="row h4-row">
-						<h4 class="centre-line"><span>Paquetes ofrecidos</span></h4>
-                    </div>
-                </div>
-            </div>
-
-			<div class="row">
-                <div class="col s12 m3">
-                    <div class="price-container z-depth-1" id="standard">
-                        <div class="offer">Transformación</div>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="price-container z-depth-1 best-offer" id="professional">
-                        <div class="offer best-value">Innovación</div>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="price-container z-depth-1" id="extended">
-                        <div class="offer">Creatividad</div>
-                    </div>
-                </div>
-				<div class="col s12 m3">
-                    <div class="price-container z-depth-1" id="extended">
-                        <div class="offer">Aliado</div>
+						<h3 class="centre-line"><span>Nuestros Auspiciadores</span></h3>
                     </div>
                 </div>
             </div>
@@ -232,7 +206,7 @@
 </div>
 <!----------------------------------------------------------------------------------------------------------->
 	<!-- temporary div -->
-	<div style="display:none;">
+	<div>
 		<div class="container">
 			<div class="row">
 				<h2 class="centre-line"><span>Transformación</span></h2>
@@ -241,151 +215,32 @@
 		<div class="wide-container">
 			<!-- Gold -->
 			<div id="shuffle-grids" class="row" style="">
-				{{--@foreach($aliadosGold as $aliado)--}}
-				<div class="col s12 m6 l4">
-					<div class="diamond center-block">
-						<i class="fa fa-magic fa-5x"></i>
-						<p>Aliado Transformación</p>
+				@foreach($transformacion as $trans)
+					<div class="col s12 m6 l4">
+						<div class="diamond center-block">
+							<img class="materialboxed" data-caption="{{ $trans->descripcion }}" width="100%" src="{{ $trans->imagen }}">
+						</div>
 					</div>
-				</div>
-				<div class="col s12 m6 l4">
-					<div class="diamond center-block">
-						<i class="fa fa-magic fa-5x"></i>
-						<p>Aliado Transformación</p>
-					</div>
-				</div>
-				<div class="col s12 m6 l4">
-					<div class="diamond center-block">
-						<i class="fa fa-magic fa-5x"></i>
-						<p>Aliado Transformación</p>
-					</div>
-				</div>
-				{{--@endforeach--}}
+				@endforeach
 			</div>
 		</div>
 		<br><br>
+
 		<div class="container">
 			<div class="row">
-				<h2 class="centre-line"><span>Innovación</span></h2>
+				<h2 class="centre-line"><span>Aliados</span></h2>
 			</div>
 		</div>
-		<div class="wide-container">
-			<!--Platinum-->
-			<div id="shuffle-grid" class="row platinum">
-				{{--@foreach($aliadosPlatimun as $aliado)--}}
-				<div class="col s6 m4 l3">
-					<div class="diamond center-block">
-						<i class="fa fa-flask fa-5x"></i>
-						<p>Aliado innovacion</p>
-					</div>
-				</div>
-				<div class="col s6 m4 l3">
-					<div class="diamond center-block">
-						<i class="fa fa-flask fa-5x"></i>
-						<p>Aliado innovacion</p>
-					</div>
-				</div>
-				<div class="col s6 m4 l3">
-					<div class="diamond center-block">
-						<i class="fa fa-flask fa-5x"></i>
-						<p>Aliado innovacion</p>
-					</div>
-				</div>
-				<div class="col s6 m4 l3">
-					<div class="diamond center-block">
-						<i class="fa fa-flask fa-5x"></i>
-						<p>Aliado innovacion</p>
-					</div>
-				</div>
-				{{--@endforeach--}}
-			</div>
-		</div>
-		<br>
 		<div class="container">
-			<div class="row">
-				<h2 class="centre-line"><span>Creatividad</span></h2>
-			</div>
-		</div>
-		<div class="wide-container">
 			<div id="shuffle-grid" class="row amigos">
-				{{--@foreach($aliadosAmigos as $aliado)--}}
-				<div class="col s4 m2 l2">
-					<div class="diamond center-block">
-						<i class="fa fa-lightbulb-o fa-5x"></i>
-						<p>Aliado creatividad</p>
+				<div class="col s12 m12 l8 offset-l2">
+					@foreach($aliado as $al)
+					<div class="col s4 m4 l4">
+						<div class="diamond center-block">
+							<img width="100%" src="{{ $al->imagen }}">
+						</div>
 					</div>
-				</div>
-				<div class="col s4 m2 l2">
-					<div class="diamond center-block">
-						<i class="fa fa-lightbulb-o fa-5x"></i>
-						<p>Aliado creatividad</p>
-					</div>
-				</div>
-				<div class="col s4 m2 l2">
-					<div class="diamond center-block">
-						<i class="fa fa-lightbulb-o fa-5x"></i>
-						<p>Aliado creatividad</p>
-					</div>
-				</div>
-				<div class="col s4 m2 l2">
-					<div class="diamond center-block">
-						<i class="fa fa-lightbulb-o fa-5x"></i>
-						<p>Aliado creatividad</p>
-					</div>
-				</div>
-				<div class="col s4 m2 l2">
-					<div class="diamond center-block">
-						<i class="fa fa-lightbulb-o fa-5x"></i>
-						<p>Aliado creatividad</p>
-					</div>
-				</div>
-				<div class="col s4 m2 l2">
-					<div class="diamond center-block">
-						<i class="fa fa-lightbulb-o fa-5x"></i>
-						<p>Aliado creatividad</p>
-					</div>
-				</div>
-				{{--@endforeach--}}
-			</div>
-		</div>
-		<br>
-		<div class="container">
-			<div class="row">
-				<h2 class="centre-line"><span>Aliado</span></h2>
-			</div>
-		</div>
-		<div class="wide-container">
-			<div id="shuffle-grid" class="row amigos">
-				{{--@foreach($aliadosAmigos as $aliado)--}}
-				<div class="col s4 m2 l2">
-					<div class="diamond center-block">
-						<i class="fa fa-heart fa-2x"></i>
-					</div>
-				</div>
-				<div class="col s4 m2 l2">
-					<div class="diamond center-block">
-						<i class="fa fa-heart fa-2x"></i>
-					</div>
-				</div>
-				<div class="col s4 m2 l2">
-					<div class="diamond center-block">
-						<i class="fa fa-heart fa-2x"></i>
-					</div>
-				</div>
-				<div class="col s4 m2 l2">
-					<div class="diamond center-block">
-						<i class="fa fa-heart fa-2x"></i>
-					</div>
-				</div>
-				<div class="col s4 m2 l2">
-					<div class="diamond center-block">
-						<i class="fa fa-heart fa-2x"></i>
-					</div>
-				</div>
-				<div class="col s4 m2 l2">
-					<div class="diamond center-block">
-						<i class="fa fa-heart fa-2x"></i>
-					</div>
+					@endforeach
 				</div>
 			</div>
 		</div>

@@ -12,25 +12,41 @@ class AliadosSeeder extends Seeder
     public function run()
     {
         DB::table('aliados')->insert([
-        	'nombre' => 'Uno',
+        	'nombre' => 'UMSA',
         	'categoria' => 'Transformación',
-        	'imagen' => '/images/aliados/test.jpg',
-        	'descripcion'=> 'Description'
-        ]);DB::table('aliados')->insert([
-        	'nombre' => 'Uno',
-        	'categoria' => 'Innovación',
-        	'imagen' => '/images/aliados/test.jpg',
-        	'descripcion'=> 'Description'
-        ]);DB::table('aliados')->insert([
-        	'nombre' => 'Uno',
-        	'categoria' => 'Creatividad',
-        	'imagen' => '/images/aliados/test.jpg',
-        	'descripcion'=> 'Description'
-        ]);DB::table('aliados')->insert([
-        	'nombre' => 'Uno',
-        	'categoria' => 'Aliados',
-        	'imagen' => '/images/aliados/test.jpg',
-        	'descripcion'=> 'Description'
+        	'imagen' => '/images/aliados/umsa.jpg',
+        	'descripcion'=> 'Universidad Mayor de San Andres'
+        ]);
+        DB::table('aliados')->insert([
+        	'nombre' => 'BID',
+        	'categoria' => 'Transformación',
+        	'imagen' => '/images/aliados/bid.jpg',
+        	'descripcion'=> 'Banco Interamericano de Desarrollo'
+        ]);
+        DB::table('aliados')->insert([
+        	'nombre' => 'Hiller Electric',
+        	'categoria' => 'Transformación',
+        	'imagen' => '/images/aliados/hiller.jpg',
+        	'descripcion'=> 'Hiller Electric'
+        ]);
+
+        DB::table('aliados')->insert([
+        	'nombre' => 'Sociadem',
+        	'categoria' => 'Aliado',
+        	'imagen' => '/images/aliados/sociadem.jpg',
+        	'descripcion'=> 'Sociedad Científica de Administración de Empresas'
+        ]);
+        DB::table('aliados')->insert([
+        	'nombre' => 'Teleférico',
+        	'categoria' => 'Aliado',
+        	'imagen' => '/images/aliados/teleferico.jpg',
+        	'descripcion'=> 'Mi Teleférico'
+        ]);
+        DB::table('aliados')->insert([
+        	'nombre' => 'AEISEC',
+        	'categoria' => 'Aliado',
+        	'imagen' => '/images/aliados/aeisec.jpg',
+        	'descripcion'=> 'AEISEC'
         ]);
     }
 }
