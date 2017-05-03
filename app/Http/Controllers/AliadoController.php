@@ -25,7 +25,10 @@ class AliadoController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $transformacion = Aliado::where('categoria', 'Transformacion')->get();
+        $aliado = Aliado::where('categoria', 'Aliado')->get();
+
+        return view('aliados', compact('transformacion'), compact('aliado'));
     }
 
 
@@ -73,15 +76,16 @@ class AliadoController extends Controller
 
     public function aliados(){
         //$aliados = Aliado::get();
-        $ag = Aliado::where('categoria', 'Gold')->get();
-        $ap = Aliado::where('categoria', 'Platinum')->get();
-        $am = Aliado::where('categoria', 'Amigos')->get();
+        // $ag = Aliado::where('categoria', 'Gold')->get();
+        // $ap = Aliado::where('categoria', 'Platinum')->get();
+        // $am = Aliado::where('categoria', 'Amigos')->get();
         //return view('aliados')->with(compact('aliados'));
-        return view('aliados',[
-            'aliadosGold' => $ag,
-            'aliadosPlatimun' => $ap,
-            'aliadosAmigos' => $am
-        ]);
+        // return view('aliados',[
+        //     'aliadosGold' => $ag,
+        //     'aliadosPlatimun' => $ap,
+        //     'aliadosAmigos' => $am
+        // ]);
+        return view('aliados');
     }
 
     public function eliminar($idAliado){

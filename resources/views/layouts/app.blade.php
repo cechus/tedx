@@ -6,30 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TEDxUMSA</title>
     <meta name="description" content="TEDxUMSA es un evento que busca difundir ideas valiosas que provoquen en la juventud paceña la inquietud de encontrar su propósito personal para contribuir con soluciones creativas e innovadora a las necesidades y problemáticas de nuestra ciudad." />
+
     <!-- Para Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="TEDxUMSA" />
     <meta name="twitter:description" content="TEDxUMSA es un evento que busca difundir ideas valiosas que provoquen en la juventud paceña la inquietud de encontrar su propósito personal para contribuir con soluciones creativas e innovadora a las necesidades y problemáticas de nuestra ciudad." />
     <meta name="twitter:image:src" content="{{asset('/images/logo/TEDxUMSA.png')}}" />
+
     <!-- Para Facebook y otros -->
     <meta property="og:type" content="article" />
     <meta property="og:title" content="TEDxUMSA" />
     <meta property="og:description" content="TEDxUMSA es un evento que busca difundir ideas valiosas que provoquen en la juventud paceña la inquietud de encontrar su propósito personal para contribuir con soluciones creativas e innovadora a las necesidades y problemáticas de nuestra ciudad." />
     <meta property="og:image" content="{{asset('/images/logo/TEDxUMSA.png')}}" />
     <meta property="og:url" content="http://www.tedxumsa.com" />
+
     <!-- Para Google+ -->
     <meta itemprop="name" content="TEDxUMSA" />
     <meta itemprop="description" content="TEDxUMSA es un evento que busca difundir ideas valiosas que provoquen en la juventud paceña la inquietud de encontrar su propósito personal para contribuir con soluciones creativas e innovadora a las necesidades y problemáticas de nuestra ciudad." />
     <meta itemprop="image" content="{{asset('/images/logo/TEDxUMSA.png')}}" />
+
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('/') }}libs/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="{{ asset('/') }}libs/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ asset('/') }}libs/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ asset('/') }}css/wata.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Miriam+Libre" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    @yield('extra_css')
     <style type="text/css">
         h2{
+            font-family: 'Miriam Libre', sans-serif;
+        }
+        h3{
+            font-family: 'Miriam Libre', sans-serif;
+        }
+        h4{
             font-family: 'Miriam Libre', sans-serif;
         }
         p{
@@ -38,84 +51,68 @@
 
         footer.page-footer .footer-copyright{
             line-height: 0px;
+            margin: 4px;
         }
         ul{
             display: block;
             -webkit-margin-after: .5em;
             -webkit-margin-before: .5em;
         }
-        .ic{
-            font-size:19px;
+        /*.ic{
+            font-size:12px;
+        }*/
+
+        .nav-logo{
+            margin: 10px;
+            height: 65%;
+        }
+
+        .footer-logo{
+            margin: 10px;
+        }
+
+        .social > .ic{
+            font-size: 12px;
+        }
+
+        .row-footer{
+            margin-bottom: 0px !important;
         }
     </style>
-    <!--Scripts-->
-    <script>
-
-    </script>
 </head>
 <body>
     <div id="wrapper">
-        <!-- Navigation bar -->
-        <div class="navbar-fixed" id="nav">
-            <nav>
-                <div class="nav-wrapper">
-                    <!-- Site name -->
-                    <a href="/">
-                        <img src="/images/logo/TEDxUMSA-1.svg" style="margin:4px">
-                    </a>
-                    <!-- Mobile menu button -->
-                    <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-                    <!-- Static menu -->
-                    <ul class="right hide-on-med-and-down table-of-contents">
-                        <li><a href="{{url('about')}}">Acerca de</a></li>
-                        <li><a href="{{url('aliados')}}">Aliados</a></li>
-                        <li><a href="{{url('expositores')}}">Expositores</a></li>
-                        <li><a href="{{url('equipo')}}">Equipo</a></li>
-                        <li><a href="{{url('posts')}}">Blog</a></li>
-                        <li><a href="{{url('participar')}}">Participar</a></li>
-                    </ul>
-                    <!-- Mobile menu, make sure it is equal to the statis menu -->
-                    <ul class="side-nav" id="mobile-menu">
-                        <li><a href="{{url('about')}}">Acerca de</a></li>
-                        <li><a href="{{url('aliados')}}">Aliados</a></li>
-                        <li><a href="{{url('expositores')}}">Expositores</a></li>
-                        <li><a href="{{url('equipo')}}">Equipo</a></li>
-                        <li><a href="{{url('posts')}}">Blog</a></li>
-                        <li><a href="{{url('participar')}}">Participar</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <!--/navabar-->
+        <!-- navbar -->
+        @include('partials.navbar')
+
         <!--content-->
         @yield('content')
-        <!--/content-->
+
         <!-- Footer section -->
-        <footer class="page-footer">
-            <div class="footer-copyright" style=" height: auto">
-                <div class="container" style="height: auto">
-                    <a href="/">
-                        <img src="/images/logo/TEDxUMSA-1.svg" style="margin:10px" >
-                    </a>
-                    <!-- Social icons -->
-                    <!--<span class="social right">
-                        <a href=""><i class="fa fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-twitter"></i></a>
-                        <a href=""><i class="fa fa-send"></i></a>
-                    </span>-->
-                    <ul class="icons right">
-                        <li><a href="https://www.facebook.com/TEDxUMSA"><i class="fa ic fa-facebook"></i>  facebook.com/TEDxUMSA</a></li>
-                        <li><a href="https://www.twitter.com/tedxumsa"><i class="fa ic fa-twitter"></i> @tedxumsa</a></li>
-                        <li><a href="mailto:tedxumsa@gmail.com"><i class="fa ic fa-envelope"></i> tedxumsa@gmail.com</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+        @include('partials.footer')
     </div>
     <!-- Scripts -->
-    {{--<script src="https://maps.googleapis.com/maps/api/js"></script>--}}
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script type="text/javascript" src="{{ asset('/') }}libs/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        $( document ).ready(function(){
+            $('.button-collapse').sideNav();
+        });
+    </script>
     <script src="{{ asset('/') }}js/config.js"></script>
     <script src="{{ asset('/') }}js/build.js"></script>
-    @yield('scriptside')
+    <script src="{{ asset('/') }}js/index.js"></script>
+
+    <!-- Google analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-94119934-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    @yield('extra_js')
 </body>
 </html>

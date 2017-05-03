@@ -14,7 +14,8 @@
 Route::get('/', 'HomeController@index');
 
 Route::get('about',function(){return view ('about');});
-Route::get('aliados','AliadoController@aliados')->name('aliados');
+
+Route::get('aliados','AliadoController@index');
 Route::get('expositores','SpeakerController@index');
 
 Route::get('equipo',function(){return view ('equipo');});
@@ -85,3 +86,14 @@ Route::post('update_tag/{idTag}','TagController@update')->name('update_tag');
 
 // Route::get('speaker', 'SpeakerController@create')->name('speaker');
 // Route::post('speaker', 'SpeakerController@store')->name('speaker');
+
+// Rutas de Vero!
+// Route::group(['prefix' => 'administrador'], function(){
+//     Route::get('/', function(){
+//         return view('adminwelcome');
+//     });
+//     Route::resource('posts', 'PostsController');
+//     Route::resource('expositores', 'ExpositorController');
+//     Route::resource('auspiciadores', 'AuspiciadorController');
+//     Route::resource('etiquetas', 'EtiquetaController');
+// });

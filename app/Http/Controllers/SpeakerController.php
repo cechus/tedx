@@ -7,12 +7,13 @@ use App\Speaker;
 
 class SpeakerController extends Controller
 {
-    //
+    // Retorna lista de expositores para visitantes
     public function index () {
       $speakers = Speaker::all();
       return view('speakers.index', compact('speakers'));
     }
 
+    // Retorna lista de expositores para admins
     public function list_speaker(){
       $speakers = Speaker::all();
       return view('administrador.list_speaker', compact('speakers'));

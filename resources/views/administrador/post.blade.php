@@ -58,7 +58,7 @@
 @endsection
 
 @section('scripts')
-    <script src="{!! asset('plugins') !!}/jquery-2.2.3.min.js"></script>
+<script src="{!! asset('libs') !!}/jquery/jquery-2.1.1.min.js"></script>
 <script src="https://cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
 <script>
     $(function () {
