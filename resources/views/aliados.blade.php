@@ -204,47 +204,45 @@
 		</div>
 	</div>
 </div>
-<!----------------------------------------------------------------------------------------------------------->
-	<!-- temporary div -->
-	<div>
-		<div class="container">
-			<div class="row">
-				<h2 class="centre-line"><span>Transformación</span></h2>
-			</div>
+
+<div>
+	<div class="container">
+		<div class="row">
+			<h2 class="centre-line"><span>Transformación</span></h2>
 		</div>
-		<div class="wide-container">
-			<!-- Gold -->
-			<div id="shuffle-grids" class="row" style="">
-				@foreach($transformacion as $trans)
-					<div class="col s12 m6 l4 offset-m3 offset-l4">
-						<div class="diamond center-block">
-							<img class="materialboxed" data-caption="{{ $trans->descripcion }}" width="100%" src="{{ $trans->imagen }}">
-						</div>
+	</div>
+	<div class="wide-container">
+		<div id="shuffle-grids" class="row" style="">
+			@foreach($transformacion as $trans)
+				<div class="col s12 m6 l4 offset-m3 offset-l4">
+					<div class="diamond center-block">
+						<img class="materialboxed" data-caption="{{ $trans->descripcion }}" width="100%" src="{{ $trans->imagen }}">
 					</div>
+				</div>
+			@endforeach
+		</div>
+	</div>
+	<br><br>
+
+	<div class="container">
+		<div class="row">
+			<h2 class="centre-line"><span>Aliados</span></h2>
+		</div>
+	</div>
+	<div class="container">
+		<div id="shuffle-grid" class="row amigos">
+			<div class="col s12 m12 l8 offset-l2">
+				@foreach($aliado as $al)
+				<div class="col s12 m4 l4">
+					<div class="diamond center-block">
+						<img class="materialboxed" data-caption="{{ $al->descripcion }}" width="100%" src="{{ $al->imagen }}">
+					</div>
+				</div>
 				@endforeach
 			</div>
 		</div>
-		<br><br>
-
-		<div class="container">
-			<div class="row">
-				<h2 class="centre-line"><span>Aliados</span></h2>
-			</div>
-		</div>
-		<div class="container">
-			<div id="shuffle-grid" class="row amigos">
-				<div class="col s12 m12 l8 offset-l2">
-					@foreach($aliado as $al)
-					<div class="col s12 m4 l4">
-						<div class="diamond center-block">
-							<img class="materialboxed" data-caption="{{ $al->descripcion }}" width="100%" src="{{ $al->imagen }}">
-						</div>
-					</div>
-					@endforeach
-				</div>
-			</div>
-		</div>
 	</div>
+</div>
 @endsection
 
 @section('extra_js')
