@@ -11,18 +11,18 @@ class AliadosSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('aliados')->insert([
-        	'nombre' => 'UMSA',
-        	'categoria' => 'Transformación',
-        	'imagen' => '/images/aliados/umsa.jpg',
-        	'descripcion'=> 'Universidad Mayor de San Andres'
-        ]);
-        DB::table('aliados')->insert([
-        	'nombre' => 'BID',
-        	'categoria' => 'Transformación',
-        	'imagen' => '/images/aliados/bid.jpg',
-        	'descripcion'=> 'Banco Interamericano de Desarrollo'
-        ]);
+        // DB::table('aliados')->insert([
+        // 	'nombre' => 'UMSA',
+        // 	'categoria' => 'Transformación',
+        // 	'imagen' => '/images/aliados/umsa.jpg',
+        // 	'descripcion'=> 'Universidad Mayor de San Andres'
+        // ]);
+        // DB::table('aliados')->insert([
+        // 	'nombre' => 'BID',
+        // 	'categoria' => 'Transformación',
+        // 	'imagen' => '/images/aliados/bid.jpg',
+        // 	'descripcion'=> 'Banco Interamericano de Desarrollo'
+        // ]);
         DB::table('aliados')->insert([
         	'nombre' => 'Hiller Electric',
         	'categoria' => 'Transformación',
@@ -43,10 +43,16 @@ class AliadosSeeder extends Seeder
         	'descripcion'=> 'Mi Teleférico'
         ]);
         DB::table('aliados')->insert([
-        	'nombre' => 'AEISEC',
+        	'nombre' => 'Tigo',
         	'categoria' => 'Aliado',
-        	'imagen' => '/images/aliados/aeisec.jpg',
-        	'descripcion'=> 'AEISEC'
+        	'imagen' => '/images/aliados/tigo.jpg',
+        	'descripcion'=> 'Tigo'
         ]);
+        // DB::table('aliados')->insert([
+        // 	'nombre' => 'AEISEC',
+        // 	'categoria' => 'Aliado',
+        // 	'imagen' => '/images/aliados/aeisec.jpg',
+        // 	'descripcion'=> 'AEISEC'
+        // ]);
     }
 }
