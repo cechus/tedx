@@ -1,4 +1,4 @@
-<?php
+11<?php
 
 use Illuminate\Database\Seeder;
 
@@ -11,18 +11,18 @@ class AliadosSeeder extends Seeder
      */
     public function run()
     {
-        // DB::table('aliados')->insert([
-        // 	'nombre' => 'UMSA',
-        // 	'categoria' => 'Transformación',
-        // 	'imagen' => '/images/aliados/umsa.jpg',
-        // 	'descripcion'=> 'Universidad Mayor de San Andres'
-        // ]);
-        // DB::table('aliados')->insert([
-        // 	'nombre' => 'BID',
-        // 	'categoria' => 'Transformación',
-        // 	'imagen' => '/images/aliados/bid.jpg',
-        // 	'descripcion'=> 'Banco Interamericano de Desarrollo'
-        // ]);
+        DB::table('aliados')->insert([
+        	'nombre' => 'UMSA',
+        	'categoria' => 'Transformación',
+        	'imagen' => '/images/aliados/umsa.jpg',
+        	'descripcion'=> 'Universidad Mayor de San Andres'
+        ]);
+        DB::table('aliados')->insert([
+        	'nombre' => 'BID',
+        	'categoria' => 'Transformación',
+        	'imagen' => '/images/aliados/bid.jpg',
+        	'descripcion'=> 'Banco Interamericano de Desarrollo'
+        ]);
         DB::table('aliados')->insert([
         	'nombre' => 'Hiller Electric',
         	'categoria' => 'Transformación',

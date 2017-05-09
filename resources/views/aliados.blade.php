@@ -214,7 +214,7 @@
 	<div class="wide-container">
 		<div id="shuffle-grids" class="row" style="">
 			@foreach($transformacion as $trans)
-				<div class="col s12 m6 l4 offset-m3 offset-l4">
+				<div class="col s12 m6 l4">
 					<div class="diamond center-block">
 						<img class="materialboxed" data-caption="{{ $trans->descripcion }}" width="100%" src="{{ $trans->imagen }}">
 					</div>
