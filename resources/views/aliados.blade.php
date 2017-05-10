@@ -33,7 +33,7 @@
 		   line-height:0.1em;
 		   margin:2.5rem 5%;
 		   text-transform: none;
-		   font-size: 30px;
+		   font-size: 20px;
 	   }
 	   h2.centre-line span{
 		   background-color:#fff;
@@ -187,61 +187,23 @@
 					<p style="text-align:center">Llegaremos a más de 100 jovenes universitarios, 100 asistentes presenciales mas los que verán el evento transmitido en vivo por streaming y por la red RUBI</p>
 				</div>
 			</div>
+
 			<br><br>
 		</div>
-	</div>
 
-	<div class="container">
 		<div class="row">
-			<div class="col s12 m12 l8 offset-l2">
-                <div class="description-ball"></div>
-                <div class="description center-align">
-                    <div class="row h4-row">
-						<h3 class="centre-line"><span>Nuestros Auspiciadores</span></h3>
-                    </div>
-                </div>
-            </div>
+			<div class="col s12 m8 l8 offset-l2">
+				<img width="100%" src="/images/aliados/auspicios.jpg" alt="">
+			</div>
 		</div>
 	</div>
 </div>
 
 <div>
 	<div class="container">
-		<div class="row">
-			<h2 class="centre-line"><span>Transformación</span></h2>
-		</div>
-	</div>
-	<div class="wide-container">
-		<div id="shuffle-grids" class="row" style="">
-			@foreach($transformacion as $trans)
-				<div class="col s12 m6 l4">
-					<div class="diamond center-block">
-						<img class="materialboxed" data-caption="{{ $trans->descripcion }}" width="100%" src="{{ $trans->imagen }}">
-					</div>
-				</div>
-			@endforeach
-		</div>
 	</div>
 	<br><br>
 
-	<div class="container">
-		<div class="row">
-			<h2 class="centre-line"><span>Aliados</span></h2>
-		</div>
-	</div>
-	<div class="container">
-		<div id="shuffle-grid" class="row amigos">
-			<div class="col s12 m12 l8 offset-l2">
-				@foreach($aliado as $al)
-				<div class="col s12 m4 l4">
-					<div class="diamond center-block">
-						<img class="materialboxed" data-caption="{{ $al->descripcion }}" width="100%" src="{{ $al->imagen }}">
-					</div>
-				</div>
-				@endforeach
-			</div>
-		</div>
-	</div>
 </div>
 @endsection
 

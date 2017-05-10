@@ -26,9 +26,11 @@ class AliadoController extends Controller
     public function index()
     {
         $transformacion = Aliado::where('categoria', 'Transformacion')->get();
+        $apoyo = Aliado::where('categoria', 'Apoyo')->get();
+        $innovacion = Aliado::where('categoria', 'Innovacion')->get();
         $aliado = Aliado::where('categoria', 'Aliado')->get();
 
-        return view('aliados', compact('transformacion'), compact('aliado'));
+        return view('aliados', compact('transformacion', 'apoyo', 'aliado', 'innovacion'));
     }
 
 
