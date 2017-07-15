@@ -89,36 +89,18 @@ class SpeakerSeeder extends Seeder
             'imagen'=>'images/speakers/MiguelFigueroa.png'
         ]);
 
-        // DB::table('speakers')->insert([
-        //     'nombre'=>"Mohammed Mostajo",
-        //     'charla'=>"",
-        //     'descripcion'=>"El Dr. Mostajo Radji es actualmente un Investigador Postdoctoral en el laboratorio Pollen del Departamento de Neurologia y del Centro Ely and Edythe Broad de Estudios en Medicina Regenerativa y Celulas Madre en la Universidad de California San Francisco. En este laboratorio, utliza distintos metodos de genomica y biologia molecular para investigar mutaciones geneticas envueltas en la evolucion del cerebro. Completó su PhD en la Universidad de Harvard donde estudió la reprogramación de neuronas y la instrucción de cambios de conectividad en circuitos cerebrales. Mas allá de su interés en la manipulacion cerebral, está activamente envuelto en educacion científica. Actualmente, es Director Ejecutivo de Clubes de Ciencia Bolivia, una organización sin fines de lucro que busca traer educación científica de la mas alta calidad a estudiantes Bolivianos. También es Miembro Directivo de la organización Clubes de Ciencia Internacional.",
-        //     'imagen'=>'images/speakers/MohammedMostajo.png'
-        // ]);
+        DB::table('speakers')->insert([
+            'nombre'=>"Mohammed Mostajo",
+            'charla'=>"",
+            'descripcion'=>"El Dr. Mostajo Radji es actualmente un Investigador Postdoctoral en el laboratorio Pollen del Departamento de Neurologia y del Centro Ely and Edythe Broad de Estudios en Medicina Regenerativa y Celulas Madre en la Universidad de California San Francisco. En este laboratorio, utliza distintos metodos de genomica y biologia molecular para investigar mutaciones geneticas envueltas en la evolucion del cerebro. Completó su PhD en la Universidad de Harvard donde estudió la reprogramación de neuronas y la instrucción de cambios de conectividad en circuitos cerebrales. Mas allá de su interés en la manipulacion cerebral, está activamente envuelto en educacion científica. Actualmente, es Director Ejecutivo de Clubes de Ciencia Bolivia, una organización sin fines de lucro que busca traer educación científica de la mas alta calidad a estudiantes Bolivianos. También es Miembro Directivo de la organización Clubes de Ciencia Internacional.",
+            'imagen'=>'images/speakers/MohammedMostajo.png'
+        ]);
 
-        // DB::table('speakers')->insert([
-        //     'nombre'=>"Sergio Caballero",
-        //     'charla'=>"",
-        //     'descripcion'=>"Sergio Caballero nació el 18 de enero en La Paz Bolivia. Es bachiller en humanidades del Colegio La Salle de La Paz, en el año 2001 egresó como Director y Dramaturgo de la Real Escuela Superior de Arte Dramático en Madrid, España y en el año 2012 se licenció en Ciencias de la Educación en la Universidad San Francisco de Asís. Es Coach certificado por el International Coaching Certification y Facilitador en Aprendizaje experiencial y Outdoor Training. Trabajó en el Centro Cultural Pequeño Teatro como Director pedagógico y tallerista permanente hasta 2003. En esos años fue también co-organizador y co-productor del Encuentro de Teatro Breve. En 2005 empezó a trabajar en el Gobierno Autónomo Municipal de La Paz como Director de Teatros y Espacios Culturales hasta que, cinco años después, pasó a ser Asesor de Despacho de la Oficialía Mayor de Culturas del Municipio de La Paz. Actualmente es el Secretario Municipal de Educación y Cultura Ciudadana del GAMLP, donde diseña e implementa políticas, proyectos y programas de Educación Formal y Alternativa, además de gestionar proyectos de Formación Ciudadana en todo el Municipio de La Paz. Es el creador del Programa de la Felicidad en el Municipio de La Paz y del método vivencial motivacional para funcionarios del Gobierno Autónomo Municipal de La Paz y es gestor de la primera Escuela de Arte Dramático en Bolivia con el apoyo de la Real Escuela Superior de Arte Dramático de Madrid España.",
-        //     'imagen'=>'images/speakers/SergioCaballero.png'
-        // ]);
-
-        for ($i=0; $i < 2; $i++) {
-            if($i % 2 === 0){
-                $im = "images/speakers/man.png";
-            }
-            else{
-                $im = "images/speakers/woman.png";
-            }
-            $speaker = [
-                'nombre' => "",
-                'charla' => "",
-                'descripcion' => "Pronto revelaremos el nombre de este expositor. Tienes que estar muy atento!",
-                'imagen' => $im
-            ];
-            DB::table('speakers')->insert($speaker);
-        }
-
-
+        DB::table('speakers')->insert([
+            'nombre'=>"Sergio Caballero",
+            'charla'=>"",
+            'descripcion'=>"Sergio Caballero nació el 18 de enero en La Paz Bolivia. Es bachiller en humanidades del Colegio La Salle de La Paz, en el año 2001 egresó como Director y Dramaturgo de la Real Escuela Superior de Arte Dramático en Madrid, España y en el año 2012 se licenció en Ciencias de la Educación en la Universidad San Francisco de Asís. Es Coach certificado por el International Coaching Certification y Facilitador en Aprendizaje experiencial y Outdoor Training. Trabajó en el Centro Cultural Pequeño Teatro como Director pedagógico y tallerista permanente hasta 2003. En esos años fue también co-organizador y co-productor del Encuentro de Teatro Breve. En 2005 empezó a trabajar en el Gobierno Autónomo Municipal de La Paz como Director de Teatros y Espacios Culturales hasta que, cinco años después, pasó a ser Asesor de Despacho de la Oficialía Mayor de Culturas del Municipio de La Paz. Actualmente es el Secretario Municipal de Educación y Cultura Ciudadana del GAMLP, donde diseña e implementa políticas, proyectos y programas de Educación Formal y Alternativa, además de gestionar proyectos de Formación Ciudadana en todo el Municipio de La Paz. Es el creador del Programa de la Felicidad en el Municipio de La Paz y del método vivencial motivacional para funcionarios del Gobierno Autónomo Municipal de La Paz y es gestor de la primera Escuela de Arte Dramático en Bolivia con el apoyo de la Real Escuela Superior de Arte Dramático de Madrid España.",
+            'imagen'=>'images/speakers/SergioCaballero.png'
+        ]);
     }
 }
