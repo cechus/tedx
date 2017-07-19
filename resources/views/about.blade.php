@@ -55,8 +55,6 @@
     h2.centre-line{
         width: 90%;
         border-bottom:0.1rem solid #ccc;
-        line-height:0.1em;
-        margin:2.5rem 5%;
         text-transform: none;
     }
 
@@ -166,22 +164,6 @@
         </div>
     </div>
     <br>
-    <div class="container">
-    </div>
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col s12 m8 offset-m2">
-                <div class="description-ball"></div>
-                <div class="description center-align">
-                    <div class="row h4-row">
-                        <h4>Misión/Visión<br></h4>
-                        <p>Sembrar ideas que inspiren a jóvenes a encontrar su propósito.</p>
-                        <p>Ser una organización que promueva el intercambio de ideas para cambiar la actitud de los jóvenes frente a las necesidades y problemáticas de Bolivia.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div class="container">
         <div class="row">
             <div class="col s12 m12">
